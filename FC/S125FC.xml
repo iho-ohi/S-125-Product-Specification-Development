@@ -7182,6 +7182,31 @@
 			</S100FC:subAttributeBinding>
 		</S100FC:S100_FC_ComplexAttribute>
 		<S100FC:S100_FC_ComplexAttribute>
+			<S100FC:name>Expected Outages</S100FC:name>
+			<S100FC:definition>Expected outages period.</S100FC:definition>
+			<S100FC:code>expectedOutages</S100FC:code>
+			<S100FC:remarks>Dates must be encoded in the format YYYYMMDD; using 4 digits for the calendar year (YYYY) and, optionally, 2 digits for the month (MM) (for example April = 04) and 2 digits for the day (DD). When no specific month and/or day is required/known, the values are replaced with dashes (-). The date range of a recurring event or occurrence must be encoded using periodicDateRange.</S100FC:remarks>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>1241</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG" />
+			</S100FC:definitionReference>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="dateEnd" />
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="dateStart" />
+			</S100FC:subAttributeBinding>
+		</S100FC:S100_FC_ComplexAttribute>		
+	
+		<S100FC:S100_FC_ComplexAttribute>
 			<S100FC:name>Horizontal Position Uncertainty</S100FC:name>
 			<S100FC:definition>The best estimate of the accuracy of a position.</S100FC:definition>
 			<S100FC:code>horizontalPositionUncertainty</S100FC:code>
@@ -12363,7 +12388,14 @@
 			<S100FC:name>Discrepancy</S100FC:name>
 			<S100FC:definition>This information to disseminate navigation safety notices and updates to individuals upon request and to receive reports of aid to navigation outages.</S100FC:definition>
 			<S100FC:code>Discrepancy</S100FC:code>
-			
+
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="changeDetails" />
+			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
@@ -12377,6 +12409,13 @@
 				</S100FC:permittedValues>
 				<S100FC:attribute ref="changeTypes" />
 			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="expectedOutages" />
+			</S100FC:attributeBinding>			
 			
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
 			<S100FC:featureBinding roleType="aggregation">
