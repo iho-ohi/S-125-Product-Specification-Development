@@ -6843,6 +6843,25 @@
 	</S100FC:S100_FC_SimpleAttributes>
 	<S100FC:S100_FC_ComplexAttributes>
 		<S100FC:S100_FC_ComplexAttribute>
+			<S100FC:name>Feature Reference</S100FC:name>
+			<S100FC:definition>Reference to an object or feature that is external to the dataset.</S100FC:definition>
+			<S100FC:code>featureReference</S100FC:code>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="atoNNumber" />
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="interoperabilityIdentifier" />
+			</S100FC:subAttributeBinding>
+		</S100FC:S100_FC_ComplexAttribute>		
+		<S100FC:S100_FC_ComplexAttribute>
 			<S100FC:name>Change Details</S100FC:name>
 			<S100FC:definition>Specific information or description regarding modifications or updates made to an object, system, or dataset. This term typically includes the nature, scope, and reason for the change, as well as any impact it may have on operations or functionality.</S100FC:definition>
 			<S100FC:code>changeDetails</S100FC:code>
@@ -12416,6 +12435,13 @@
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="expectedOutages" />
 			</S100FC:attributeBinding>			
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="featureReference" />
+			</S100FC:attributeBinding>
 			
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
 			<S100FC:featureBinding roleType="aggregation">
@@ -12428,6 +12454,7 @@
 				<S100FC:featureType ref="StructureObject"/>
 				<S100FC:featureType ref="Equipment"/>				
 			</S100FC:featureBinding>
+			
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 	</S100FC:S100_FC_FeatureTypes>
