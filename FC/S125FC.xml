@@ -6819,7 +6819,7 @@
 			<S100FC:valueType>enumeration</S100FC:valueType>
 			<S100FC:listedValues>
 				<S100FC:listedValue>
-					<S100FC:label>Advanced notice of changes</S100FC:label>
+					<S100FC:label>Advanced notice of change</S100FC:label>
 					<S100FC:definition>-</S100FC:definition>
 					<S100FC:code>1</S100FC:code>
 				</S100FC:listedValue>
@@ -6829,12 +6829,12 @@
 					<S100FC:code>2</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
-					<S100FC:label>Proposed changes</S100FC:label>
+					<S100FC:label>Proposed change</S100FC:label>
 					<S100FC:definition>-</S100FC:definition>
 					<S100FC:code>3</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
-					<S100FC:label>Temporary changes</S100FC:label>
+					<S100FC:label>Temporary change</S100FC:label>
 					<S100FC:definition>-</S100FC:definition>
 					<S100FC:code>4</S100FC:code>
 				</S100FC:listedValue>
