@@ -1033,7 +1033,7 @@
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Sector Arc Extension</S100FC:name>
-			<S100FC:definition>	An indication that the default radius of a sector arc is to be extended by 5mm.</S100FC:definition>
+			<S100FC:definition>An indication that the default radius of a sector arc is to be extended by 5mm.</S100FC:definition>
 			<S100FC:code>sectorArcExtension</S100FC:code>
 			<S100FC:definitionReference>
 				<S100FC:sourceIdentifier>991</S100FC:sourceIdentifier>
@@ -1056,7 +1056,7 @@
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Electronic Aton Change</S100FC:name>
 			<S100FC:definition>Modifications to electronic or digital AtoNs, such as AIS (Automatic Identification System) AtoNs, virtual AtoNs, or remote-controlled systems.</S100FC:definition>
-			<S100FC:code>electronicAtoNChange</S100FC:code>
+			<S100FC:code>electronicAtonChange</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
 			<S100FC:valueType>enumeration</S100FC:valueType>
 			<S100FC:listedValues>
@@ -2932,7 +2932,7 @@
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>AtoN Number</S100FC:name>
 			<S100FC:definition>Identifier from a list of Aids to Navigation publication, such as List of Lights.</S100FC:definition>
-			<S100FC:code>atoNNumber</S100FC:code>
+			<S100FC:code>atonNumber</S100FC:code>
 			<S100FC:definitionReference>
 				<S100FC:sourceIdentifier>1072</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG" />
@@ -5445,7 +5445,7 @@
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Signal Period</S100FC:name>
-			<S100FC:definition>	The time occupied by an entire cycle of intervals of light and eclipse.</S100FC:definition>
+			<S100FC:definition>The time occupied by an entire cycle of intervals of light and eclipse.</S100FC:definition>
 			<S100FC:code>signalPeriod</S100FC:code>
 			<S100FC:definitionReference>
 				<S100FC:sourceIdentifier>1192</S100FC:sourceIdentifier>
@@ -6851,7 +6851,7 @@
 					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
-				<S100FC:attribute ref="atoNNumber" />
+				<S100FC:attribute ref="atonNumber" />
 			</S100FC:subAttributeBinding>
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
@@ -7086,7 +7086,7 @@
 					<S100FC:value>29</S100FC:value>
 					<S100FC:value>30</S100FC:value>
 				</S100FC:permittedValues>
-				<S100FC:attribute ref="electronicAtoNChange" />
+				<S100FC:attribute ref="electronicAtonChange" />
 			</S100FC:subAttributeBinding>
 		</S100FC:S100_FC_ComplexAttribute>
 		<S100FC:S100_FC_ComplexAttribute>
@@ -7863,22 +7863,22 @@
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Status Part</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>Statuspart</S100FC:code>
+			<S100FC:code>statusPart</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Physical AIS Broadcasts</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>physicalAISbroadcasts</S100FC:code>
+			<S100FC:code>physicalAISBroadcasts</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Virtual AIS Broadcasts</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>virtualAISbroadcasts</S100FC:code>
+			<S100FC:code>virtualAISBroadcasts</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Synthetic AIS Broadcasts</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>syntheticAISbroadcasts</S100FC:code>
+			<S100FC:code>syntheticAISBroadcasts</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Child</S100FC:name>
@@ -7908,7 +7908,7 @@
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Aton Part</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>Atonpart</S100FC:code>
+			<S100FC:code>atonPart</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Danger</S100FC:name>
@@ -7923,27 +7923,27 @@
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Physical AIS Broadcast By</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>physicalAISbroadcastBy</S100FC:code>
+			<S100FC:code>physicalAISBroadcastBy</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Synthetic AIS Broadcast By</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>syntheticAISbroadcastBy</S100FC:code>
+			<S100FC:code>syntheticAISBroadcastBy</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Virtual AIS Broadcast By</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>virtualAISbroadcastBy</S100FC:code>
+			<S100FC:code>virtualAISBroadcastBy</S100FC:code>
 		</S100FC:S100_FC_Role>
 	</S100FC:S100_FC_Roles>
 	<S100FC:S100_FC_InformationAssociations>
 		<S100FC:S100_FC_InformationAssociation>
 			<S100FC:name>Aton Status</S100FC:name>
 			<S100FC:definition></S100FC:definition>
-			<S100FC:code>Atonstatus</S100FC:code>
+			<S100FC:code>AtonStatus</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
-			<S100FC:role ref="Atonpart"/>
-			<S100FC:role ref="Statuspart"/>
+			<S100FC:role ref="atonPart"/>
+			<S100FC:role ref="statusPart"/>
 		</S100FC:S100_FC_InformationAssociation>
 	</S100FC:S100_FC_InformationAssociations>
 	<S100FC:S100_FC_FeatureAssociations>
@@ -8000,24 +8000,24 @@
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>PhysicalAIS</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
-			<S100FC:role ref="physicalAISbroadcastBy"/>
-			<S100FC:role ref="physicalAISbroadcasts"/>
+			<S100FC:role ref="physicalAISBroadcastBy"/>
+			<S100FC:role ref="physicalAISBroadcasts"/>
 		</S100FC:S100_FC_FeatureAssociation>
 		<S100FC:S100_FC_FeatureAssociation>
 			<S100FC:name>Synthetic AIS</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>SyntheticAIS</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
-			<S100FC:role ref="syntheticAISbroadcastBy"/>
-			<S100FC:role ref="syntheticAISbroadcasts"/>
+			<S100FC:role ref="syntheticAISBroadcastBy"/>
+			<S100FC:role ref="syntheticAISBroadcasts"/>
 		</S100FC:S100_FC_FeatureAssociation>
 		<S100FC:S100_FC_FeatureAssociation>
 			<S100FC:name>Virtual AIS</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>VirtualAIS</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
-			<S100FC:role ref="virtualAISbroadcastBy"/>
-			<S100FC:role ref="virtualAISbroadcasts"/>
+			<S100FC:role ref="virtualAISBroadcastBy"/>
+			<S100FC:role ref="virtualAISBroadcasts"/>
 		</S100FC:S100_FC_FeatureAssociation>
 	</S100FC:S100_FC_FeatureAssociations>
 	<S100FC:S100_FC_InformationTypes>
@@ -8175,8 +8175,8 @@
 					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
-				<S100FC:association ref="Atonstatus"/>
-				<S100FC:role ref="Statuspart"/>
+				<S100FC:association ref="AtonStatus"/>
+				<S100FC:role ref="statusPart"/>
 				<S100FC:informationType ref="AtonStatusInformation"/>
 			</S100FC:informationBinding>
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
@@ -8517,7 +8517,7 @@
 					<S100Base:lower>1</S100Base:lower>
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
-				<S100FC:attribute ref="atoNNumber" />
+				<S100FC:attribute ref="atonNumber" />
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
@@ -9768,7 +9768,7 @@
 					<S100Base:upper infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="PhysicalAIS"/>
-				<S100FC:role ref="physicalAISbroadcastBy"/>
+				<S100FC:role ref="physicalAISBroadcastBy"/>
 				<S100FC:featureType ref="PhysicalAISAidToNavigation"/>
 			</S100FC:featureBinding>
 			<S100FC:featureBinding roleType="association">
@@ -9777,7 +9777,7 @@
 					<S100Base:upper infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="SyntheticAIS"/>
-				<S100FC:role ref="syntheticAISbroadcastBy"/>
+				<S100FC:role ref="syntheticAISBroadcastBy"/>
 				<S100FC:featureType ref="SyntheticAISAidToNavigation"/>
 			</S100FC:featureBinding>
 			<S100FC:featureBinding roleType="association">
@@ -9786,7 +9786,7 @@
 					<S100Base:upper infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="VirtualAIS"/>
-				<S100FC:role ref="virtualAISbroadcastBy"/>
+				<S100FC:role ref="virtualAISBroadcastBy"/>
 				<S100FC:featureType ref="VirtualAISAidToNavigation"/>
 			</S100FC:featureBinding>
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
@@ -12086,7 +12086,7 @@
 					<S100Base:upper infinite="true" xsi:nil="true"/>
 				</S100FC:multiplicity>
 				<S100FC:association ref="SyntheticAIS"/>
-				<S100FC:role ref="syntheticAISbroadcasts"/>
+				<S100FC:role ref="syntheticAISBroadcasts"/>
 				<S100FC:featureType ref="RadioStation"/>
 			</S100FC:featureBinding>
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
@@ -12119,7 +12119,7 @@
 					<S100Base:upper infinite="true" xsi:nil="true"/>
 				</S100FC:multiplicity>
 				<S100FC:association ref="PhysicalAIS"/>
-				<S100FC:role ref="physicalAISbroadcasts"/>
+				<S100FC:role ref="physicalAISBroadcasts"/>
 				<S100FC:featureType ref="RadioStation"/>
 			</S100FC:featureBinding>
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
@@ -12161,7 +12161,7 @@
 					<S100Base:upper infinite="true" xsi:nil="true"/>
 				</S100FC:multiplicity>
 				<S100FC:association ref="VirtualAIS"/>
-				<S100FC:role ref="virtualAISbroadcasts"/>
+				<S100FC:role ref="virtualAISBroadcasts"/>
 				<S100FC:featureType ref="RadioStation"/>
 			</S100FC:featureBinding>
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
@@ -12175,7 +12175,7 @@
 					<S100Base:lower>1</S100Base:lower>
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
-				<S100FC:attribute ref="atoNNumber" />
+				<S100FC:attribute ref="atonNumber" />
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
