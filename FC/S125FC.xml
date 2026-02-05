@@ -6820,24 +6820,29 @@
 			<S100FC:listedValues>
 				<S100FC:listedValue>
 					<S100FC:label>Advanced notice of change</S100FC:label>
-					<S100FC:definition>-</S100FC:definition>
+					<S100FC:definition>Advance Notice of a change to an established Aid to Navigation or establishment of a new Aid to Navigation.</S100FC:definition>
 					<S100FC:code>1</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Discrepancy</S100FC:label>
-					<S100FC:definition>-</S100FC:definition>
+					<S100FC:definition>Active/Open Discrepancy or Outage to an established Aid to Navigation.</S100FC:definition>
 					<S100FC:code>2</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Proposed change</S100FC:label>
-					<S100FC:definition>-</S100FC:definition>
+					<S100FC:definition>Proposed change to an established Aid to Navigation or the establishment of a new Aid to Navigation (AtoN Authority is requesting feedback from Mariners).</S100FC:definition>
 					<S100FC:code>3</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Temporary change</S100FC:label>
-					<S100FC:definition>-</S100FC:definition>
+					<S100FC:definition>Temporary Change to established or newly established Aid to Navigation to mark a hazard, etc.</S100FC:definition>
 					<S100FC:code>4</S100FC:code>
 				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>Permanent change</S100FC:label>
+					<S100FC:definition>A Permanent Change to an established Aid to Navigation or establishment of a new Aid to Navigation, to be used until the S-101 chart can be updated.</S100FC:definition>
+					<S100FC:code>5</S100FC:code>
+				</S100FC:listedValue>				
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 	</S100FC:S100_FC_SimpleAttributes>
@@ -12431,7 +12436,14 @@
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="scaleMinimum" />
-			</S100FC:attributeBinding>			
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="featureName" />
+			</S100FC:attributeBinding>
 			
 			<S100FC:informationBinding roleType="association">
 				<S100FC:multiplicity>
