@@ -7836,16 +7836,6 @@
 	</S100FC:S100_FC_ComplexAttributes>
 	<S100FC:S100_FC_Roles>
 		<S100FC:S100_FC_Role>
-			<S100FC:name>AtonStatusIndication</S100FC:name>
-			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>theAtonStatusIndication</S100FC:code>
-		</S100FC:S100_FC_Role>
-		<S100FC:S100_FC_Role>
-			<S100FC:name>The outages feature</S100FC:name>
-			<S100FC:definition>-</S100FC:definition>
-			<S100FC:code>theAtonStatusIndicationFeature</S100FC:code>
-		</S100FC:S100_FC_Role>				
-		<S100FC:S100_FC_Role>
 			<S100FC:name>Navigation Line</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
 			<S100FC:code>navigationLine</S100FC:code>
@@ -7962,15 +7952,7 @@
 			<S100FC:remarks>-</S100FC:remarks>
 			<S100FC:role ref="peerAtonAggregation"/>
 			<S100FC:role ref="atonAggregationBy"/>
-		</S100FC:S100_FC_FeatureAssociation>
-		<S100FC:S100_FC_FeatureAssociation>
-			<S100FC:name>Aton Status Indication Aggregations</S100FC:name>
-			<S100FC:definition></S100FC:definition>
-			<S100FC:code>AtonStatusIndicationAggregations</S100FC:code>
-			<S100FC:remarks>-</S100FC:remarks>
-			<S100FC:role ref="theAtonStatusIndication"/>
-			<S100FC:role ref="theAtonStatusIndicationFeature"/>			
-		</S100FC:S100_FC_FeatureAssociation>		
+		</S100FC:S100_FC_FeatureAssociation>	
 		<S100FC:S100_FC_FeatureAssociation>
 			<S100FC:name>Aton Associations</S100FC:name>
 			<S100FC:definition></S100FC:definition>
@@ -8493,15 +8475,6 @@
 				<S100FC:role ref="parent"/>
 				<S100FC:featureType ref="StructureObject"/>
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="association">
-				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper>1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:association ref="AtonStatusIndicationAggregations"/>
-				<S100FC:role ref="theAtonStatusIndication"/>
-				<S100FC:featureType ref="AtonStatusIndication"/>			
-			</S100FC:featureBinding>				
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="true">
@@ -8536,15 +8509,6 @@
 				<S100FC:association ref="StructureEquipment"/>
 				<S100FC:role ref="child"/>
 				<S100FC:featureType ref="Equipment"/>
-			</S100FC:featureBinding>			
-			<S100FC:featureBinding roleType="association">
-				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper>1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:association ref="AtonStatusIndicationAggregations"/>
-				<S100FC:role ref="theAtonStatusIndication"/>
-				<S100FC:featureType ref="AtonStatusIndication"/>			
 			</S100FC:featureBinding>			
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
@@ -12410,26 +12374,6 @@
 
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
-					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:attribute ref="changeDetails" />
-			</S100FC:attributeBinding>
-			<S100FC:attributeBinding sequential="false">
-				<S100FC:multiplicity>
-					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:permittedValues>
-					<S100FC:value>1</S100FC:value>
-					<S100FC:value>2</S100FC:value>
-					<S100FC:value>3</S100FC:value>
-					<S100FC:value>4</S100FC:value>
-				</S100FC:permittedValues>
-				<S100FC:attribute ref="changeTypes" />
-			</S100FC:attributeBinding>
-			<S100FC:attributeBinding sequential="false">
-				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
@@ -12468,16 +12412,6 @@
 			</S100FC:informationBinding>
 			
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
-			<S100FC:featureBinding roleType="aggregation">
-				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper infinite="true" xsi:nil="true"/>
-				</S100FC:multiplicity>
-				<S100FC:association ref="AtonStatusIndicationAggregations"/>
-				<S100FC:role ref="theAtonStatusIndicationFeature"/>
-				<S100FC:featureType ref="StructureObject"/>
-				<S100FC:featureType ref="Equipment"/>				
-			</S100FC:featureBinding>
 			
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
