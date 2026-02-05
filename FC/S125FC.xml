@@ -1576,7 +1576,7 @@
 			<S100FC:valueType>text</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>language</S100FC:name>
+			<S100FC:name>Language</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
 			<S100FC:code>language</S100FC:code>
 			<S100FC:valueType>text</S100FC:valueType>
@@ -1667,7 +1667,7 @@
 			<S100FC:valueType>date</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Navigation Line</S100FC:name>
+			<S100FC:name>Category Of Navigation Line</S100FC:name>
 			<S100FC:definition>Classification of route guidance given to vessels.</S100FC:definition>
 			<S100FC:code>categoryOfNavigationLine</S100FC:code>
 			<S100FC:alias>CATNAV</S100FC:alias>
@@ -1741,7 +1741,7 @@
 			<S100FC:valueType>real</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Quality of Vertical Measurement</S100FC:name>
+			<S100FC:name>Quality Of Vertical Measurement</S100FC:name>
 			<S100FC:definition>The reliability of the value of a sounding.</S100FC:definition>
 			<S100FC:code>qualityOfVerticalMeasurement</S100FC:code>
 			<S100FC:alias>QUASOU</S100FC:alias>
@@ -2235,7 +2235,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>IsSlatted</S100FC:name>
+			<S100FC:name>Is Slatted</S100FC:name>
 			<S100FC:definition>A flag or attribute indicating whether an object has slats, which are flat, narrow strips of material, often used for ventilation or design.</S100FC:definition>
 			<S100FC:code>isSlatted</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
@@ -2256,7 +2256,7 @@
 			<S100FC:valueType>real</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Technique of Vertical Measurement</S100FC:name>
+			<S100FC:name>Technique Of Vertical Measurement</S100FC:name>
 			<S100FC:definition>Survey method used to obtain depth information.</S100FC:definition>
 			<S100FC:code>techniqueOfVerticalMeasurement</S100FC:code>
 			<S100FC:alias>TECSOU</S100FC:alias>
@@ -2930,7 +2930,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>AtoN Number</S100FC:name>
+			<S100FC:name>Aton Number</S100FC:name>
 			<S100FC:definition>Identifier from a list of Aids to Navigation publication, such as List of Lights.</S100FC:definition>
 			<S100FC:code>atonNumber</S100FC:code>
 			<S100FC:definitionReference>
@@ -3389,7 +3389,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Nature of Construction</S100FC:name>
+			<S100FC:name>Nature Of Construction</S100FC:name>
 			<S100FC:definition>The building&apos;s primary construction material.</S100FC:definition>
 			<S100FC:code>natureOfConstruction</S100FC:code>
 			<S100FC:alias>NATCON</S100FC:alias>
@@ -3528,7 +3528,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Type of Buoy</S100FC:name>
+			<S100FC:name>Type Of Buoy</S100FC:name>
 			<S100FC:definition>Type equipment used as a buoy in a particular installation.</S100FC:definition>
 			<S100FC:code>typeOfBuoy</S100FC:code>
 			<S100FC:remarks>Types of light buoy; for example LANBY-100, LS-35, LL-30, LL-28, LL-26, LL-26(M), LL-24, LS-24, LSP-24, LT-10Types of buoy e.g. U-17C(P), U-17S(P), U-17C(S), U-17S(S), UR-17C(P), UR-17S(P), UR-17C(S), UR-17.</S100FC:remarks>
@@ -3679,7 +3679,7 @@
 			<S100FC:valueType>real</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Landmark</S100FC:name>
+			<S100FC:name>Category Of Landmark</S100FC:name>
 			<S100FC:definition>Classification of prominent cultural and natural features in the landscape.</S100FC:definition>
 			<S100FC:code>categoryOfLandmark</S100FC:code>
 			<S100FC:alias>CATLMK</S100FC:alias>
@@ -4389,7 +4389,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Special Purpose Mark</S100FC:name>
+			<S100FC:name>Category Of Special Purpose Mark</S100FC:name>
 			<S100FC:definition>Classification of an aid to navigation which signifies some special purpose.</S100FC:definition>
 			<S100FC:code>categoryOfSpecialPurposeMark</S100FC:code>
 			<S100FC:remarks>A mark may be a beacon, a buoy, a signpost or may take another form.</S100FC:remarks>
@@ -5289,7 +5289,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Fog Signal</S100FC:name>
+			<S100FC:name>Category Of Fog Signal</S100FC:name>
 			<S100FC:definition>Classification of the various means of generating the fog signal.</S100FC:definition>
 			<S100FC:code>categoryOfFogSignal</S100FC:code>
 			<S100FC:remarks>The classification &apos;horn&apos; is the generic term for fog signals &apos;nautophone&apos;, &apos;reed&apos; and &apos;tyfon&apos;.</S100FC:remarks>
@@ -5393,7 +5393,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Radar Transponder Beacon</S100FC:name>
+			<S100FC:name>Category Of Radar Transponder Beacon</S100FC:name>
 			<S100FC:definition>Classification of radar transponder beacon based on functionality.</S100FC:definition>
 			<S100FC:code>categoryOfRadarTransponderBeacon</S100FC:code>
 			<S100FC:alias>CATRTB</S100FC:alias>
@@ -5454,7 +5454,7 @@
 			<S100FC:valueType>real</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Value of Nominal Range</S100FC:name>
+			<S100FC:name>Value Of Nominal Range</S100FC:name>
 			<S100FC:definition>The luminous range of a light in a homogenous atmosphere in which the meteorological visibility is 10 sea miles.</S100FC:definition>
 			<S100FC:code>valueOfNominalRange</S100FC:code>
 			<S100FC:alias>VALNMR</S100FC:alias>
@@ -5465,7 +5465,7 @@
 			<S100FC:valueType>real</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Radio Station</S100FC:name>
+			<S100FC:name>Category Of Radio Station</S100FC:name>
 			<S100FC:definition>Classification of radio services offered by a radio station.</S100FC:definition>
 			<S100FC:code>categoryOfRadioStation</S100FC:code>
 			<S100FC:remarks>A radiobeacon is a radio transmitter which emits a distinctive or characteristic signal on which a bearing may be taken.</S100FC:remarks>
@@ -5630,7 +5630,7 @@
 			<S100FC:valueType>real</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Estimated Range of Transmission</S100FC:name>
+			<S100FC:name>Estimated Range Of Transmission</S100FC:name>
 			<S100FC:definition>The estimated range of a non-optical electromagnetic transmission.</S100FC:definition>
 			<S100FC:code>estimatedRangeOfTransmission</S100FC:code>
 			<S100FC:remarks>The estimated range (distance) assumes &apos;in vacuo&apos; transmission and a standard antenna height of 5 metres. Thus it gives a hint to the mariner whether they are likely to receive transmission at a certain distance from an object.</S100FC:remarks>
@@ -5736,7 +5736,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Exhibition Condition of Light</S100FC:name>
+			<S100FC:name>Exhibition Condition Of Light</S100FC:name>
 			<S100FC:definition>The outward display of the light.</S100FC:definition>
 			<S100FC:code>exhibitionConditionOfLight</S100FC:code>
 			<S100FC:alias>EXCLIT</S100FC:alias>
@@ -5874,7 +5874,7 @@
 			<S100FC:valueType>boolean</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Light</S100FC:name>
+			<S100FC:name>Category Of Light</S100FC:name>
 			<S100FC:definition>Classification of different light types.</S100FC:definition>
 			<S100FC:code>categoryOfLight</S100FC:code>
 			<S100FC:remarks>All lights are considered to be marine lights unless the category of light indicates otherwise.</S100FC:remarks>
@@ -6032,7 +6032,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Offshore Platform</S100FC:name>
+			<S100FC:name>Category Of Offshore Platform</S100FC:name>
 			<S100FC:definition>Classification of an offshore raised structure.</S100FC:definition>
 			<S100FC:code>categoryOfOffshorePlatform</S100FC:code>
 			<S100FC:alias>CATOFP</S100FC:alias>
@@ -6203,7 +6203,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Pile</S100FC:name>
+			<S100FC:name>Category Of Pile</S100FC:name>
 			<S100FC:definition>Classification of pile, driven into the earth as a foundation or support for a structure.</S100FC:definition>
 			<S100FC:code>categoryOfPile</S100FC:code>
 			<S100FC:alias>CATPLE</S100FC:alias>
@@ -6337,7 +6337,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Silo/Tank</S100FC:name>
+			<S100FC:name>Category Of Silo/Tank</S100FC:name>
 			<S100FC:definition>Classification based on the product for which a silo or tank is used.</S100FC:definition>
 			<S100FC:code>categoryOfSiloTank</S100FC:code>
 			<S100FC:alias>CATSIL</S100FC:alias>
@@ -6386,7 +6386,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Lateral Mark</S100FC:name>
+			<S100FC:name>Category Of Lateral Mark</S100FC:name>
 			<S100FC:definition>Classification of lateral marks in the IALA Buoyage System.</S100FC:definition>
 			<S100FC:code>categoryOfLateralMark</S100FC:code>
 			<S100FC:remarks>There are two international buoyage regions, A and B, between which lateral marks differ. When top-marks, retro reflectors and/or lights are fitted to these marks, they are encoded as separate features.</S100FC:remarks>
@@ -6643,7 +6643,7 @@
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Cardinal Mark</S100FC:name>
+			<S100FC:name>Category Of Cardinal Mark</S100FC:name>
 			<S100FC:definition>The four quadrants (north, east, south and west) are bounded by the true bearings NW-NE, NE-SE, SE-SW and SW-NW taken from the point of interest. A cardinal mark is named after the quadrant in which it is placed. The name of the cardinal mark indicates that it should be passed to the named side of the mark.</S100FC:definition>
 			<S100FC:code>categoryOfCardinalMark</S100FC:code>
 			<S100FC:remarks>Cardinal marks are used in conjunction with the compass to indicate where a mariner will find safe navigable water.Cardinal marks do not have a distinctive shape but are normally pillar or spar. They are always painted in yellow and black horizontal bands and their distinctive double cone top-marks are always black. (Note that such top-marks are encoded as separate TOPMAR objects). Cardinal marks may also have a special system of flashing white lights and if such lights are fitted they are encoded as separate LIGHTS objects.</S100FC:remarks>
@@ -6724,7 +6724,7 @@
 			<S100FC:valueType>integer</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
-			<S100FC:name>Category of Temporal Variation</S100FC:name>
+			<S100FC:name>Category Of Temporal Variation</S100FC:name>
 			<S100FC:definition>An assessment of the likelihood of change over time.</S100FC:definition>
 			<S100FC:code>categoryOfTemporalVariation</S100FC:code>
 			<S100FC:definitionReference>
@@ -7229,7 +7229,6 @@
 				<S100FC:attribute ref="dateStart" />
 			</S100FC:subAttributeBinding>
 		</S100FC:S100_FC_ComplexAttribute>		
-	
 		<S100FC:S100_FC_ComplexAttribute>
 			<S100FC:name>Horizontal Position Uncertainty</S100FC:name>
 			<S100FC:definition>The best estimate of the accuracy of a position.</S100FC:definition>
@@ -7302,7 +7301,7 @@
 			</S100FC:subAttributeBinding>
 		</S100FC:S100_FC_ComplexAttribute>
 		<S100FC:S100_FC_ComplexAttribute>
-			<S100FC:name>Multiplicity of Features</S100FC:name>
+			<S100FC:name>Multiplicity Of Features</S100FC:name>
 			<S100FC:definition>The number of features of identical character that exist as a co-located group.</S100FC:definition>
 			<S100FC:code>multiplicityOfFeatures</S100FC:code>
 			<S100FC:definitionReference>
@@ -7929,22 +7928,21 @@
 			<S100FC:name>Virtual AIS Broadcast By</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
 			<S100FC:code>virtualAISBroadcastBy</S100FC:code>
-		</S100FC:S100_FC_Role>
-		
+		</S100FC:S100_FC_Role>		
 		<S100FC:S100_FC_Role>
-			<S100FC:name>Aids To Navigation feature </S100FC:name>
+			<S100FC:name>Aids To Navigation Feature </S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
 			<S100FC:code>theAidsToNavigation</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
-			<S100FC:name>Status indication feature</S100FC:name>
+			<S100FC:name>Status Indication Feature</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
 			<S100FC:code>theStatusIndication</S100FC:code>
 		</S100FC:S100_FC_Role>
 	</S100FC:S100_FC_Roles>
 	<S100FC:S100_FC_InformationAssociations>
 		<S100FC:S100_FC_InformationAssociation>
-			<S100FC:name>Aton Status</S100FC:name>
+			<S100FC:name>Aton status</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>AtonStatus</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
@@ -7952,19 +7950,17 @@
 			<S100FC:role ref="statusPart"/>
 		</S100FC:S100_FC_InformationAssociation>
 	</S100FC:S100_FC_InformationAssociations>
-	<S100FC:S100_FC_FeatureAssociations>
-		
+	<S100FC:S100_FC_FeatureAssociations>		
 		<S100FC:S100_FC_FeatureAssociation>
-			<S100FC:name>Aton Status Indication Association</S100FC:name>
+			<S100FC:name>Aton status indication association</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>AtonStatusIndicationAssociation</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
 			<S100FC:role ref="theAidsToNavigation"/>
 			<S100FC:role ref="theStatusIndication"/>
-		</S100FC:S100_FC_FeatureAssociation>
-		
+		</S100FC:S100_FC_FeatureAssociation>		
 		<S100FC:S100_FC_FeatureAssociation>
-			<S100FC:name>Range System</S100FC:name>
+			<S100FC:name>Range system</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>RangeSystem</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
@@ -7972,7 +7968,7 @@
 			<S100FC:role ref="navigationLine"/>
 		</S100FC:S100_FC_FeatureAssociation>
 		<S100FC:S100_FC_FeatureAssociation>
-			<S100FC:name>Aton Aggregations</S100FC:name>
+			<S100FC:name>Aton aggregations</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>AtonAggregations</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
@@ -7980,7 +7976,7 @@
 			<S100FC:role ref="atonAggregationBy"/>
 		</S100FC:S100_FC_FeatureAssociation>	
 		<S100FC:S100_FC_FeatureAssociation>
-			<S100FC:name>Aton Associations</S100FC:name>
+			<S100FC:name>Aton associations</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>AtonAssociations</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
@@ -7988,7 +7984,7 @@
 			<S100FC:role ref="atonAssociationBy"/>
 		</S100FC:S100_FC_FeatureAssociation>
 		<S100FC:S100_FC_FeatureAssociation>
-			<S100FC:name>Dangerous Feature Association</S100FC:name>
+			<S100FC:name>Dangerous feature association</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>DangerousFeatureAssociation</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
@@ -7996,7 +7992,7 @@
 			<S100FC:role ref="markingAton"/>
 		</S100FC:S100_FC_FeatureAssociation>
 		<S100FC:S100_FC_FeatureAssociation>
-			<S100FC:name>Structure Equipment</S100FC:name>
+			<S100FC:name>Structure equipment</S100FC:name>
 			<S100FC:definition></S100FC:definition>
 			<S100FC:code>StructureEquipment</S100FC:code>
 			<S100FC:remarks>-</S100FC:remarks>
@@ -8094,7 +8090,7 @@
 	</S100FC:S100_FC_InformationTypes>
 	<S100FC:S100_FC_FeatureTypes>
 		<S100FC:S100_FC_FeatureType isAbstract="true">
-			<S100FC:name>Aids to Navigation</S100FC:name>
+			<S100FC:name>Aids To Navigation</S100FC:name>
 			<S100FC:definition>A visual, acoustical, or radio device, external to a ship, designed to assist in determining a safe course or a vessel's position, or to warn of dangers and/or obstructions. Aids to navigation usually include buoys, beacons, fog signals, lights, radio beacons, leading marks, radio position fixing systems and GNSS which are chart-related and assist safe navigation.</S100FC:definition>
 			<S100FC:code>AidsToNavigation</S100FC:code>
 			<S100FC:definitionReference>
@@ -11710,7 +11706,7 @@
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
-			<S100FC:name>Local Direction of Buoyage</S100FC:name>
+			<S100FC:name>Local Direction Of Buoyage</S100FC:name>
 			<S100FC:definition>An area within which the navigational system of marks has been established in relation to a specific direction.</S100FC:definition>
 			<S100FC:code>LocalDirectionOfBuoyage</S100FC:code>
 			<S100FC:alias>M_NSYS</S100FC:alias>
@@ -11729,7 +11725,7 @@
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
-			<S100FC:name>Navigational System of Marks</S100FC:name>
+			<S100FC:name>Navigational System Of Marks</S100FC:name>
 			<S100FC:definition>An area within which the navigational system of marks has been established in relation to a specific direction.</S100FC:definition>
 			<S100FC:code>NavigationalSystemOfMarks</S100FC:code>
 			<S100FC:alias>M_NSYS</S100FC:alias>
@@ -11827,7 +11823,7 @@
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
-			<S100FC:name>Quality of Bathymetric Data</S100FC:name>
+			<S100FC:name>Quality Of Bathymetric Data</S100FC:name>
 			<S100FC:definition>An area within which a uniform assessment of the quality of the bathymetric data exists.</S100FC:definition>
 			<S100FC:code>QualityOfBathymetricData</S100FC:code>
 			<S100FC:alias>M_QUAL</S100FC:alias>
@@ -12093,7 +12089,7 @@
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
-			<S100FC:name>Physical AIS Aid to Navigation</S100FC:name>
+			<S100FC:name>Physical AIS Aid To Navigation</S100FC:name>
 			<S100FC:definition>An Automatic Identification System (AIS) message 21 transmitted from a physical Aid to Navigation, or transmitted from an AIS station for an Aid to Navigation which physically exists.</S100FC:definition>
 			<S100FC:code>PhysicalAISAidToNavigation</S100FC:code>
 			<S100FC:definitionReference>
@@ -12126,7 +12122,7 @@
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
-			<S100FC:name>Virtual AIS Aid to Navigation</S100FC:name>
+			<S100FC:name>Virtual AIS Aid To Navigation</S100FC:name>
 			<S100FC:definition>An Automatic Identification System (AIS) message 21 transmitted from an AIS station to simulate on navigation systems an Aid to Navigation which does not physically exist.</S100FC:definition>
 			<S100FC:code>VirtualAISAidToNavigation</S100FC:code>
 			<S100FC:definitionReference>
@@ -12168,7 +12164,7 @@
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="true">
-			<S100FC:name>Electronic AtoN</S100FC:name>
+			<S100FC:name>Electronic Aton</S100FC:name>
 			<S100FC:definition>-</S100FC:definition>
 			<S100FC:code>ElectronicAtoN</S100FC:code>
 			<S100FC:attributeBinding sequential="false">
@@ -12404,11 +12400,10 @@
 			</S100FC:featureBinding>
 			<S100FC:permittedPrimitives>noGeometry</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>		
-		<S100FC:S100_FC_FeatureType>
+		<S100FC:S100_FC_FeatureType isAbstract="false">
 			<S100FC:name>Aton Status Indication</S100FC:name>
 			<S100FC:definition>This information to disseminate navigation safety notices and updates to individuals upon request and to receive reports of aid to navigation outages.</S100FC:definition>
 			<S100FC:code>AtonStatusIndication</S100FC:code>
-
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
@@ -12443,8 +12438,7 @@
 					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="featureName" />
-			</S100FC:attributeBinding>
-			
+			</S100FC:attributeBinding>			
 			<S100FC:informationBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
@@ -12453,10 +12447,8 @@
 				<S100FC:association ref="AtonStatus"/>
 				<S100FC:role ref="statusPart"/>
 				<S100FC:informationType ref="AtonStatusInformation"/>
-			</S100FC:informationBinding>
-			
+			</S100FC:informationBinding>			
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
-
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
@@ -12466,7 +12458,6 @@
 				<S100FC:role ref="theAidsToNavigation"/>
 				<S100FC:featureType ref="AidsToNavigation"/>			
 			</S100FC:featureBinding>
-
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 	</S100FC:S100_FC_FeatureTypes>
