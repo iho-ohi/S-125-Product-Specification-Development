@@ -1272,14 +1272,22 @@
 			<S100FC:valueType>enumeration</S100FC:valueType>
 			<S100FC:listedValues>
 				<S100FC:listedValue>
-					<S100FC:label>catenary anchor leg mooring (CALM)</S100FC:label>
+					<S100FC:label>Catenary Anchor Leg Mooring</S100FC:label>
 					<S100FC:definition>incorporates a large buoy which remains on the surface at all times and is moored by 4 or more anchors. Mooring hawsers and cargo hoses lead from a turntable on top of the buoy, so that the buoy does not turn as the ship swings to wind and stream.</S100FC:definition>
 					<S100FC:code>1</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>161</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG" />
+					</S100FC:definitionReference>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
-					<S100FC:label>catenary anchor leg mooring (CALM)</S100FC:label>
+					<S100FC:label>Single Buoy Mooring</S100FC:label>
 					<S100FC:definition>a mooring structure used by tankers to load and unload in port approaches or in offshore oil and gas fields. The size of the structure can vary between a large mooring buoy and a manned floating structure. Also known as single point mooring (SPM)</S100FC:definition>
 					<S100FC:code>2</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>162</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG" />
+					</S100FC:definitionReference>
 				</S100FC:listedValue>
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
