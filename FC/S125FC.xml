@@ -12447,7 +12447,7 @@
 
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
-					<S100Base:lower>1</S100Base:lower>
+					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="AtonStatusIndicationAssociation"/>
