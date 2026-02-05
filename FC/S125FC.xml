@@ -7925,6 +7925,17 @@
 			<S100FC:definition>-</S100FC:definition>
 			<S100FC:code>virtualAISBroadcastBy</S100FC:code>
 		</S100FC:S100_FC_Role>
+		
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Aids To Navigation feature </S100FC:name>
+			<S100FC:definition>-</S100FC:definition>
+			<S100FC:code>theAidsToNavigation</S100FC:code>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Status indication feature</S100FC:name>
+			<S100FC:definition>-</S100FC:definition>
+			<S100FC:code>theStatusIndication</S100FC:code>
+		</S100FC:S100_FC_Role>
 	</S100FC:S100_FC_Roles>
 	<S100FC:S100_FC_InformationAssociations>
 		<S100FC:S100_FC_InformationAssociation>
@@ -7937,6 +7948,16 @@
 		</S100FC:S100_FC_InformationAssociation>
 	</S100FC:S100_FC_InformationAssociations>
 	<S100FC:S100_FC_FeatureAssociations>
+		
+		<S100FC:S100_FC_FeatureAssociation>
+			<S100FC:name>Aton Status Indication Association</S100FC:name>
+			<S100FC:definition></S100FC:definition>
+			<S100FC:code>AtonStatusIndicationAssociation</S100FC:code>
+			<S100FC:remarks>-</S100FC:remarks>
+			<S100FC:role ref="theAidsToNavigation"/>
+			<S100FC:role ref="theStatusIndication"/>
+		</S100FC:S100_FC_FeatureAssociation>
+		
 		<S100FC:S100_FC_FeatureAssociation>
 			<S100FC:name>Range System</S100FC:name>
 			<S100FC:definition></S100FC:definition>
@@ -8180,6 +8201,17 @@
 				<S100FC:role ref="peerAtonAssociation"/>
 				<S100FC:featureType ref="AtonAssociation"/>
 			</S100FC:featureBinding>
+			
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:association ref="AtonStatusIndicationAssociation"/>
+				<S100FC:role ref="theStatusIndication"/>
+				<S100FC:featureType ref="AtonStatusIndication"/>			
+			</S100FC:featureBinding>
+			
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
@@ -12412,7 +12444,17 @@
 			</S100FC:informationBinding>
 			
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
-			
+
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:association ref="AtonStatusIndicationAssociation"/>
+				<S100FC:role ref="theAidsToNavigation"/>
+				<S100FC:featureType ref="AidsToNavigation"/>			
+			</S100FC:featureBinding>
+
 			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 	</S100FC:S100_FC_FeatureTypes>
