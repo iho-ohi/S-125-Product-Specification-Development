@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://schemas.s100dev.net/schemas/S100/5.2.0/S100FC/20240515/S100_FC.sch"?>
-<S100FC:S100_FC_FeatureCatalogue xmlns:S100FC="http://www.iho.int/S100FC/5.2"
-                                 xmlns:S100Base="http://www.iho.int/S100Base/5.0"
-                                 xmlns:S100CI="http://www.iho.int/S100CI/5.0"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 xmlns:S100CD="http://www.iho.int/S100CD/5.0"
-                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                 xsi:schemaLocation="http://www.iho.int/S100FC/5.2 https://schemas.s100dev.net/schemas/S100/5.2.0/S100FC/20231214/S100FC.xsd">
+<S100FC:S100_FC_FeatureCatalogue xmlns:S100FC="http://www.iho.int/S100FC/5.2" xmlns:S100Base="http://www.iho.int/S100Base/5.0" xmlns:S100CI="http://www.iho.int/S100CI/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:S100CD="http://www.iho.int/S100CD/5.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iho.int/S100FC/5.2 https://schemas.s100dev.net/schemas/S100/5.2.0/S100FC/20231214/S100FC.xsd">
 	<S100FC:name>Marine Aids to Navigation (AtoN)</S100FC:name>
 	<S100FC:scope>Ocean, Coastal, Ports and Harbors. Excludes Inland waters.</S100FC:scope>
 	<S100FC:versionNumber>1.0.0</S100FC:versionNumber>
@@ -6860,16 +6854,14 @@
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="atoNNumber"/>
 			</S100FC:subAttributeBinding>
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="interoperabilityIdentifier"/>
 			</S100FC:subAttributeBinding>
@@ -7342,8 +7334,7 @@
 			<S100FC:subAttributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -7372,8 +7363,7 @@
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -7405,8 +7395,7 @@
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="sectorInformation"/>
 			</S100FC:subAttributeBinding>
@@ -7829,8 +7818,7 @@
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="signalGroup"/>
 			</S100FC:subAttributeBinding>
@@ -7844,8 +7832,7 @@
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="signalSequence"/>
 			</S100FC:subAttributeBinding>
@@ -8121,16 +8108,14 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="information"/>
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="featureName"/>
 			</S100FC:attributeBinding>
@@ -8186,8 +8171,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="seasonalActionRequired"/>
 			</S100FC:attributeBinding>
@@ -8204,8 +8188,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="AtonAggregations"/>
 				<S100FC:role ref="peerAtonAggregation"/>
@@ -8214,8 +8197,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="AtonAssociations"/>
 				<S100FC:role ref="peerAtonAssociation"/>
@@ -8280,8 +8262,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="StructureEquipment"/>
 				<S100FC:role ref="child"/>
@@ -8318,8 +8299,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8341,8 +8321,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8384,8 +8363,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -8403,8 +8381,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8490,8 +8467,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8513,8 +8489,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8575,8 +8550,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -8601,8 +8575,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8732,8 +8705,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8830,8 +8802,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="status"/>
 			</S100FC:attributeBinding>
@@ -8840,8 +8811,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="RangeSystem"/>
 				<S100FC:role ref="navigableTrack"/>
@@ -8890,8 +8860,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8918,8 +8887,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -8969,8 +8937,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9069,8 +9036,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="RangeSystem"/>
 				<S100FC:role ref="navigationLine"/>
@@ -9090,8 +9056,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9127,8 +9092,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9150,8 +9114,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9188,8 +9151,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>2</S100FC:value>
@@ -9254,8 +9216,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -9273,8 +9234,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9409,8 +9369,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9432,8 +9391,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9458,8 +9416,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -9477,8 +9434,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9610,8 +9566,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9689,8 +9644,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9796,8 +9750,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9893,8 +9846,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -9985,8 +9937,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10008,8 +9959,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10044,8 +9994,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10108,8 +10057,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10131,8 +10079,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10204,8 +10151,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10292,8 +10238,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>4</S100FC:value>
@@ -10358,8 +10303,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10457,8 +10401,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>4</S100FC:value>
@@ -10481,16 +10424,14 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="sectorCharacteristics"/>
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="obscuredSector"/>
 			</S100FC:attributeBinding>
@@ -10518,8 +10459,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10541,8 +10481,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10579,8 +10518,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -10598,8 +10536,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10664,8 +10601,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10687,8 +10623,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10725,8 +10660,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -10744,8 +10678,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10808,8 +10741,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10829,8 +10761,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10852,8 +10783,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -10904,8 +10834,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -10923,8 +10852,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11003,8 +10931,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11026,8 +10953,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11104,8 +11030,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11127,8 +11052,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11172,8 +11096,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -11191,8 +11114,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11410,8 +11332,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11552,8 +11473,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11688,8 +11608,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -11750,8 +11669,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>6</S100FC:value>
@@ -11769,16 +11687,14 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="radarConspicuous"/>
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -12126,8 +12042,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="information"/>
 			</S100FC:attributeBinding>
@@ -12135,8 +12050,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="DangerousFeatureAssociation"/>
 				<S100FC:role ref="markingAton"/>
@@ -12165,8 +12079,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -12238,8 +12151,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="SyntheticAIS"/>
 				<S100FC:role ref="syntheticAISBroadcasts"/>
@@ -12272,8 +12184,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="PhysicalAIS"/>
 				<S100FC:role ref="physicalAISBroadcasts"/>
@@ -12315,8 +12226,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="VirtualAIS"/>
 				<S100FC:role ref="virtualAISBroadcasts"/>
@@ -12332,8 +12242,7 @@
 			<S100FC:attributeBinding sequential="true">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -12355,8 +12264,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
@@ -12374,8 +12282,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="status"/>
 			</S100FC:attributeBinding>
@@ -12447,8 +12354,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="AtonAggregations"/>
 				<S100FC:role ref="atonAggregationBy"/>
@@ -12476,8 +12382,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="DangerousFeatureAssociation"/>
 				<S100FC:role ref="danger"/>
@@ -12486,8 +12391,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="AtonAssociations"/>
 				<S100FC:role ref="atonAssociationBy"/>
@@ -12509,16 +12413,14 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="featureReference"/>
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="information"/>
 			</S100FC:attributeBinding>
@@ -12532,8 +12434,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					                xsi:nil="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="featureName"/>
 			</S100FC:attributeBinding>
