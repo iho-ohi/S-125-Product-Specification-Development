@@ -11,6 +11,14 @@
   <xsl:include href="simpleLineStyle.xsl"/>
 
   <!--Include templates/rules for: csps-->
+  
+  <!--
+  <xsl:include href="AtoNStatusInformation.xsl"/>
+  
+  -->
+  
+  <!--
+  
   <xsl:include href="Obstruction.xsl"/>
   <xsl:include href="UnderWaterAwashRock.xsl"/>
   <xsl:include href="LightDescription.xsl"/>
@@ -28,12 +36,21 @@
   <xsl:include href="soundg02.xsl"/>
   <xsl:include href="sndfrm04.xsl"/>
   <xsl:include href="Wreck.xsl"/>
-    <xsl:include href="AtoNStatusInformation.xsl"/>
-
+  
+  -->
+  
+  <xsl:include href="AtoNStatusInformation.xsl"/>
+  <xsl:include href="AtoNStatusIndication.xsl"/>
+  
+  <!--
   <xsl:include href="LightSectored.xsl"/>
   <xsl:include href="Landmark.xsl"/>
   <xsl:include href="NavigationalSystemOfMarks.xsl"/>
+  -->
+  
   <xsl:include href="DataCoverage.xsl"/>
+  
+  <!--
   <xsl:include href="QualityOfNonBathymetricData.xsl"/>
   <xsl:include href="SoundingDatum.xsl"/>
   <xsl:include href="Topmark.xsl"/>
@@ -62,6 +79,9 @@
   <xsl:include href="OffshoreProductionArea_PLAIN_BOUNDARIES.xsl"/>
   <xsl:include href="OffshoreProductionArea_SYMBOLIZED_BOUNDARIES.xsl"/>
   <xsl:include href="Pile.xsl"/>
+  -->
+  
+  <!--
   <xsl:include href="RadarLine.xsl"/>
   <xsl:include href="RadarRange.xsl"/>
   <xsl:include href="RadarReflector.xsl"/>
@@ -77,7 +97,9 @@
   <xsl:include href="Waterfall.xsl"/>
   <xsl:include href="WaterTurbulence.xsl"/>
   <xsl:include href="Topmark.xsl"/>
-
+  
+  -->
+  
   <xsl:param name="TWO_SHADES">true</xsl:param>
   <xsl:param name="SAFETY_DEPTH" select="30.0"/>
   <xsl:param name="SAFETY_CONTOUR" select="30.0"/>
