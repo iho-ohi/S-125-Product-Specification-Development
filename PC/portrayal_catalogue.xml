@@ -40,6 +40,16 @@
       <fileType>Symbol</fileType>
       <fileFormat>SVG</fileFormat>
     </symbol>
+    <symbol id="CHNGCC01">
+      <description>
+        <name>CHNGCC01</name>
+        <description> </description>
+        <language>en</language>
+      </description>
+      <fileName>CHNGCC01.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>	
     <symbol id="CHNGDC01">
       <description>
         <name>CHNGDC01</name>
@@ -67,46 +77,6 @@
         <language>en</language>
       </description>
       <fileName>CHNGTC01.svg</fileName>
-      <fileType>Symbol</fileType>
-      <fileFormat>SVG</fileFormat>
-    </symbol>
-    <symbol id="CHNGAC02">
-      <description>
-        <name>CHNGAC02</name>
-        <description> </description>
-        <language>en</language>
-      </description>
-      <fileName>CHNGAC02.svg</fileName>
-      <fileType>Symbol</fileType>
-      <fileFormat>SVG</fileFormat>
-    </symbol>
-    <symbol id="CHNGDC02">
-      <description>
-        <name>CHNGDC02</name>
-        <description> </description>
-        <language>en</language>
-      </description>
-      <fileName>CHNGDC02.svg</fileName>
-      <fileType>Symbol</fileType>
-      <fileFormat>SVG</fileFormat>
-    </symbol>
-    <symbol id="CHNGPC02">
-      <description>
-        <name>CHNGPC02</name>
-        <description> </description>
-        <language>en</language>
-      </description>
-      <fileName>CHNGPC02.svg</fileName>
-      <fileType>Symbol</fileType>
-      <fileFormat>SVG</fileFormat>
-    </symbol>
-    <symbol id="CHNGTC02">
-      <description>
-        <name>CHNGTC02</name>
-        <description> </description>
-        <language>en</language>
-      </description>
-      <fileName>CHNGTC02.svg</fileName>
       <fileType>Symbol</fileType>
       <fileFormat>SVG</fileFormat>
     </symbol>

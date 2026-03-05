@@ -13,17 +13,20 @@
          <drawingPriority>15</drawingPriority>		 
 		 <xsl:choose>
 			<xsl:when test="changeTypes = '1'">
-			  <symbol reference="CHNGAC02"/>
+			  <symbol reference="CHNGAC01"/>
 			</xsl:when>
 			<xsl:when test="changeTypes = '2'">
-			  <symbol reference="CHNGDC02"/>
+			  <symbol reference="CHNGDC01"/>
 			</xsl:when>
 			<xsl:when test="changeTypes = '3'">
-			  <symbol reference="CHNGPC02"/>
+			  <symbol reference="CHNGPC01"/>
 			</xsl:when>
 			<xsl:when test="changeTypes = '4'">
-			  <symbol reference="CHNGTC02"/>
+			  <symbol reference="CHNGTC01"/>
 			</xsl:when>
+			<xsl:when test="changeTypes = '5'">
+			  <symbol reference="CHNGCC01"/>
+			</xsl:when>			
 			<xsl:otherwise>
 			  <symbol reference="QUESMRK1"/>
 			</xsl:otherwise>

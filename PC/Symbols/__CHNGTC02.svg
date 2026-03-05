@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="SVGStyle.css" type="text/css"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="14.57mm" height="12.72mm" viewBox="0 0 1024 1024">
-  <title>CHNGTC01</title>
+  <title>CHNGTC04</title>
   <desc>TC - Temporary change to established or newly established Aid to Navigation to mark a hazard, etc.</desc>
   <metadata>
     <S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
@@ -22,5 +22,5 @@
         font-weight="normal"
         fill="#DB4996"
         text-anchor="end"
-        dominant-baseline="middle">TC</text>
+        dominant-baseline="middle">TC</text>  
 </svg>
