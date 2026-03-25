@@ -6829,11 +6829,6 @@
 					<S100FC:code>2</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
-					<S100FC:label>Proposed Change</S100FC:label>
-					<S100FC:definition>Proposed change to an established Aid to Navigation or the establishment of a new Aid to Navigation.</S100FC:definition>
-					<S100FC:code>3</S100FC:code>
-				</S100FC:listedValue>
-				<S100FC:listedValue>
 					<S100FC:label>Temporary Change</S100FC:label>
 					<S100FC:definition>Temporary change to established or newly established Aid to Navigation to mark a hazard, etc.</S100FC:definition>
 					<S100FC:code>4</S100FC:code>
