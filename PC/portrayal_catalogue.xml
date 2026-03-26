@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?pcbinfo name="S-125_ENC Product Specification_NewSyms" fieldOfApplication="WithNewSyms" scope="Testing" versionDate="2014-07-01T18:56:34+0000" user="Test User" organization="IHO-Test"?>
-<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-125" version="0.0.3">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<?pcbinfo name="S-125_ENC Product Specification_NewSyms" fieldOfApplication="WithNewSyms" scope="Testing" versionDate="2014-07-01T18:56:34+0000" user="Test User" organization="IHO-Test"?>
+<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-125" version="1.0.0">
 	<pixmaps/>
 	<colorProfiles>
-		<colorProfile id="sample1">
+		<colorProfile id="colorProfiles">
 			<description>
-				<name>sample1</name>
+				<name>colorProfiles</name>
 				<description>color profile with day colors for testing</description>
 				<language>eng</language>
 			</description>
@@ -31,16 +33,6 @@
 				<language>eng</language>
 			</description>
 			<fileName>CHNGAC01.svg</fileName>
-			<fileType>Symbol</fileType>
-			<fileFormat>SVG</fileFormat>
-		</symbol>
-		<symbol id="CHNGCC01">
-			<description>
-				<name>CHNGCC01</name>
-				<description> </description>
-				<language>eng</language>
-			</description>
-			<fileName>CHNGCC01.svg</fileName>
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
 		</symbol>
@@ -74,95 +66,83 @@
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
 		</symbol>
+		<symbol id="CHNGAC02">
+			<description>
+				<name>CHNGAC02</name>
+				<description> </description>
+				<language>eng</language>
+			</description>
+			<fileName>CHNGAC02.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>
+		<symbol id="CHNGDC02">
+			<description>
+				<name>CHNGDC02</name>
+				<description> </description>
+				<language>eng</language>
+			</description>
+			<fileName>CHNGDC02.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>
+		<symbol id="CHNGPC02">
+			<description>
+				<name>CHNGPC02</name>
+				<description> </description>
+				<language>eng</language>
+			</description>
+			<fileName>CHNGPC02.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>
+		<symbol id="CHNGTC02">
+			<description>
+				<name>CHNGTC02</name>
+				<description> </description>
+				<language>eng</language>
+			</description>
+			<fileName>CHNGTC02.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>
 	</symbols>
+	<styleSheets>
+		<styleSheet id="daySvgStyle.css">
+			<description>
+				<name>Day</name>
+				<description>CSS file for day palette</description>
+				<language>eng</language>
+			</description>
+			<fileName>daySvgStyle.css</fileName>
+			<fileType>StyleSheet</fileType>
+			<fileFormat>CSS</fileFormat>
+		</styleSheet>
+		<styleSheet id="duskSvgStyle">
+			<description>
+				<name>Dusk</name>
+				<description>CSS file for dusk palette</description>
+				<language>eng</language>
+			</description>
+			<fileName>duskSvgStyle.css</fileName>
+			<fileType>StyleSheet</fileType>
+			<fileFormat>CSS</fileFormat>
+		</styleSheet>
+		<styleSheet id="nightSvgStyle">
+			<description>
+				<name>Night</name>
+				<description>CSS file for night palette</description>
+				<language>eng</language>
+			</description>
+			<fileName>nightSvgStyle.css</fileName>
+			<fileType>StyleSheet</fileType>
+			<fileFormat>CSS</fileFormat>
+		</styleSheet>
+	</styleSheets>
 	<lineStyles/>
 	<areaFills/>
-	<fonts>
-		<font id="droid">
-			<description>
-				<name>DroidSans</name>
-				<description>Droid sans serif, from http://www.fontsquirrel.com</description>
-				<language>eng</language>
-			</description>
-			<fileName>DroidSans.ttf</fileName>
-			<fileType>Font</fileType>
-			<fileFormat>TTF</fileFormat>
-		</font>
-		<font id="droidBold">
-			<description>
-				<name>DroidSansBold</name>
-				<description>Droid sans serif Bold, from http://www.fontsquirrel.com</description>
-				<language>eng</language>
-			</description>
-			<fileName>DroidSans-Bold.ttf</fileName>
-			<fileType>Font</fileType>
-			<fileFormat>TTF</fileFormat>
-		</font>
-		<font id="OpenSans">
-			<description>
-				<name>OpenSans</name>
-				<description>Open sans serif, from http://www.fontsquirrel.com</description>
-				<language>eng</language>
-			</description>
-			<fileName>OpenSans-Regular.ttf</fileName>
-			<fileType>Font</fileType>
-			<fileFormat>TTF</fileFormat>
-		</font>
-		<font id="OpenSansBold">
-			<description>
-				<name>OpenSansBold</name>
-				<description>Open sans serif Bold, from http://www.fontsquirrel.com</description>
-				<language>eng</language>
-			</description>
-			<fileName>OpenSans-Bold.ttf</fileName>
-			<fileType>Font</fileType>
-			<fileFormat>TTF</fileFormat>
-		</font>
-	</fonts>
-	<viewingGroups>
-		<viewingGroup id="79">
-			<description>
-				<name>31020</name>
-				<description/>
-				<language>eng</language>
-			</description>
-		</viewingGroup>
-	</viewingGroups>
-	<foundationMode/>
-	<viewingGroupLayers>
-		<viewingGroupLayer id="1">
-			<description>
-				<name>viewingGroupLayer1</name>
-				<description>Test Viewing Group Layer</description>
-				<language>eng</language>
-			</description>
-			<viewingGroup>1</viewingGroup>
-		</viewingGroupLayer>
-		<viewingGroupLayer id="2">
-			<description>
-				<name>viewingGroupLayer2</name>
-				<description>Test Viewing Group Layer</description>
-				<language>eng</language>
-			</description>
-			<viewingGroup>2</viewingGroup>
-		</viewingGroupLayer>
-		<viewingGroupLayer id="3">
-			<description>
-				<name>viewingGroupLayer3</name>
-				<description>Test Viewing Group Layer</description>
-				<language>eng</language>
-			</description>
-			<viewingGroup>3</viewingGroup>
-		</viewingGroupLayer>
-		<viewingGroupLayer id="4">
-			<description>
-				<name>viewingGroupLayer4</name>
-				<description>Test Viewing Group Layer</description>
-				<language>eng</language>
-			</description>
-			<viewingGroup>4</viewingGroup>
-		</viewingGroupLayer>
-	</viewingGroupLayers>
+	<fonts/>
+	<viewingGroups/>
 	<displayModes>
 		<displayMode id="1">
 			<description>
@@ -172,13 +152,13 @@
 			</description>
 			<viewingGroupLayer>1</viewingGroupLayer>
 		</displayMode>
-		<displayMode id="4">
+		<displayMode id="2">
 			<description>
-				<name>Mariners</name>
-				<description>Display Mariner's Objects</description>
+				<name>Standard Display</name>
+				<description>ECDIS default display</description>
 				<language>eng</language>
 			</description>
-			<viewingGroupLayer>4</viewingGroupLayer>
+			<viewingGroupLayer>2</viewingGroupLayer>
 		</displayMode>
 		<displayMode id="3">
 			<description>
@@ -188,13 +168,13 @@
 			</description>
 			<viewingGroupLayer>3</viewingGroupLayer>
 		</displayMode>
-		<displayMode id="2">
+		<displayMode id="4">
 			<description>
-				<name>Standard Display</name>
-				<description>ECDIS default display</description>
+				<name>Mariners</name>
+				<description>Display Mariner's Objects</description>
 				<language>eng</language>
 			</description>
-			<viewingGroupLayer>2</viewingGroupLayer>
+			<viewingGroupLayer>4</viewingGroupLayer>
 		</displayMode>
 	</displayModes>
 	<displayPlane>
@@ -214,69 +194,6 @@
 		</displayPlane>
 	</displayPlane>
 	<context>
-		<parameter id="SAFETY_CONTOUR">
-			<description>
-				<name>SAFETY_CONTOUR</name>
-				<description>selected safety contour (meters)</description>
-				<language>eng</language>
-			</description>
-			<type>Double</type>
-			<default>2</default>
-		</parameter>
-		<parameter id="SAFETY_DEPTH">
-			<description>
-				<name>SAFETY_DEPTH</name>
-				<description>selected safety depth (meters)</description>
-				<language>eng</language>
-			</description>
-			<type>Double</type>
-			<default>30</default>
-		</parameter>
-		<parameter id="SHALLOW_CONTOUR">
-			<description>
-				<name>SHALLOW_CONTOUR</name>
-				<description>selected shallow water contour (meters) (optional)</description>
-				<language>eng</language>
-			</description>
-			<type>Double</type>
-			<default>30</default>
-		</parameter>
-		<parameter id="TWO_SHADES">
-			<description>
-				<name>TWO_SHADES</name>
-				<description>show two depth shades only, safe vs unsafe</description>
-				<language>eng</language>
-			</description>
-			<type>Boolean</type>
-			<default>true</default>
-		</parameter>
-		<parameter id="DEEP_CONTOUR">
-			<description>
-				<name>DEEP_CONTOUR</name>
-				<description>selected deep water contour (meters) (optional)</description>
-				<language>eng</language>
-			</description>
-			<type>Double</type>
-			<default>30</default>
-		</parameter>
-		<parameter id="SHALLOW_PATTERN">
-			<description>
-				<name>SHALLOW_PATTERN</name>
-				<description>show the shallow diamond pattern in shallow water</description>
-				<language>eng</language>
-			</description>
-			<type>Boolean</type>
-			<default>false</default>
-		</parameter>
-		<parameter id="SHOW_ISOLATED_DANGERS_IN_SHALLOW_WATERS">
-			<description>
-				<name>SHOW_ISOLATED_DANGERS_IN_SHALLOW_WATERS</name>
-				<description>show isolated dangers in shallow waters</description>
-				<language>eng</language>
-			</description>
-			<type>Boolean</type>
-			<default>false</default>
-		</parameter>
 		<parameter id="ATON_STATUS_SYMBOL_MODE">
 			<description>
 				<name>ATON_STATUS_SYMBOL_MODE</name>
@@ -288,73 +205,7 @@
 		</parameter>
 	</context>
 	<rules>
-		<ruleFile id="main">
-			<description>
-				<name>main</name>
-				<description>Top level rule</description>
-				<language>eng</language>
-			</description>
-			<fileName>main.lua</fileName>
-			<fileType>Rule</fileType>
-			<fileFormat>LUA</fileFormat>
-			<ruleType>TopLevelTemplate</ruleType>
-		</ruleFile>
-		<ruleFile id="S100Scripting">
-			<description>
-				<name>S100Scripting</name>
-				<description>Scripting support</description>
-				<language>eng</language>
-			</description>
-			<fileName>S100Scripting.lua</fileName>
-			<fileType>Rule</fileType>
-			<fileFormat>LUA</fileFormat>
-			<ruleType>SubTemplate</ruleType>
-		</ruleFile>
-		<ruleFile id="PortrayalAPI">
-			<description>
-				<name>PortrayalAPI</name>
-				<description>Portrayal API</description>
-				<language>eng</language>
-			</description>
-			<fileName>PortrayalAPI.lua</fileName>
-			<fileType>Rule</fileType>
-			<fileFormat>LUA</fileFormat>
-			<ruleType>SubTemplate</ruleType>
-		</ruleFile>
-		<ruleFile id="PortrayalModel">
-			<description>
-				<name>PortrayalModel</name>
-				<description>Portrayal Model</description>
-				<language>eng</language>
-			</description>
-			<fileName>PortrayalModel.lua</fileName>
-			<fileType>Rule</fileType>
-			<fileFormat>LUA</fileFormat>
-			<ruleType>SubTemplate</ruleType>
-		</ruleFile>
-		<ruleFile id="Default">
-			<description>
-				<name>Default</name>
-				<description>Default portrayal rules</description>
-				<language>eng</language>
-			</description>
-			<fileName>Default.lua</fileName>
-			<fileType>Rule</fileType>
-			<fileFormat>LUA</fileFormat>
-			<ruleType>SubTemplate</ruleType>
-		</ruleFile>
 		<ruleFile id="1">
-			<description>
-				<name>attributeRules</name>
-				<description>attributeRules</description>
-				<language>eng</language>
-			</description>
-			<fileName>attributeRules.xsl</fileName>
-			<fileType>Rule</fileType>
-			<fileFormat>XSLT</fileFormat>
-			<ruleType>SubTemplate</ruleType>
-		</ruleFile>
-		<ruleFile id="26">
 			<description>
 				<name>main</name>
 				<description>main</description>
@@ -365,15 +216,26 @@
 			<fileFormat>XSLT</fileFormat>
 			<ruleType>TopLevelTemplate</ruleType>
 		</ruleFile>
-		<ruleFile id="AtoNStatusIndication">
+		<ruleFile id="2">
+			<description>
+				<name>AtoNStatusInformation</name>
+				<description>AtoNStatusInformation</description>
+				<language>eng</language>
+			</description>
+			<fileName>AtoNStatusInformation.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="3">
 			<description>
 				<name>AtoNStatusIndication</name>
 				<description>AtoNStatusIndication</description>
 				<language>eng</language>
 			</description>
-			<fileName>AtoNStatusIndication.lua</fileName>
+			<fileName>AtoNStatusIndication.xsl</fileName>
 			<fileType>Rule</fileType>
-			<fileFormat>LUA</fileFormat>
+			<fileFormat>XSLT</fileFormat>
 			<ruleType>SubTemplate</ruleType>
 		</ruleFile>
 	</rules>
