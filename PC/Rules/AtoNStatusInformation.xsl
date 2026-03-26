@@ -11,10 +11,11 @@
                     <xsl:when test="$ATON_STATUS_SYMBOL_MODE = 'true'">
                         <xsl:variable name="symbolRef">
                             <xsl:choose>
-                                <xsl:when test="changeTypes = 1">CHNGAC01</xsl:when>
-                                <xsl:when test="changeTypes = 2">CHNGDC01</xsl:when>
-                                <xsl:when test="changeTypes = 3">CHNGPC01</xsl:when>
-                                <xsl:when test="changeTypes = 4">CHNGTC01</xsl:when>
+                                <xsl:when test="changeTypes = 1">CHNGAC02</xsl:when>
+                                <xsl:when test="changeTypes = 2">CHNGDC02</xsl:when>
+                                <xsl:when test="changeTypes = 3">CHNGCC01</xsl:when>
+                                <xsl:when test="changeTypes = 4">CHNGTC02</xsl:when>
+								<xsl:when test="changeTypes = 5">CHNGCC01</xsl:when>
                                 <xsl:otherwise>UNKNOWN</xsl:otherwise>
                             </xsl:choose>
                         </xsl:variable>
@@ -33,8 +34,9 @@
                             <xsl:choose>
                                 <xsl:when test="changeTypes = 1">CHNGAC02</xsl:when>
                                 <xsl:when test="changeTypes = 2">CHNGDC02</xsl:when>
-                                <xsl:when test="changeTypes = 3">CHNGPC02</xsl:when>
+                                <xsl:when test="changeTypes = 3">CHNGCC01</xsl:when>
                                 <xsl:when test="changeTypes = 4">CHNGTC02</xsl:when>
+								<xsl:when test="changeTypes = 5">CHNGCC01</xsl:when>
                                 <xsl:otherwise>UNKNOWN</xsl:otherwise>
                             </xsl:choose>
                         </xsl:variable>
