@@ -36,6 +36,16 @@
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
 		</symbol>
+		<symbol id="CHNGCC01">
+			<description>
+				<name>CHNGCC01</name>
+				<description> </description>
+				<language>eng</language>
+			</description>
+			<fileName>CHNGCC01.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>		
 		<symbol id="CHNGDC01">
 			<description>
 				<name>CHNGDC01</name>
@@ -56,6 +66,16 @@
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
 		</symbol>
+		<symbol id="CHNGSC01">
+			<description>
+				<name>CHNGSC01</name>
+				<description> </description>
+				<language>eng</language>
+			</description>
+			<fileName>CHNGSC01.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>		
 		<symbol id="CHNGTC01">
 			<description>
 				<name>CHNGTC01</name>
