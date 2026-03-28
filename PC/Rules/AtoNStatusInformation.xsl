@@ -13,7 +13,7 @@
                             <xsl:choose>
                                 <xsl:when test="changeTypes = 1">CHNGAC02</xsl:when>
                                 <xsl:when test="changeTypes = 2">CHNGDC02</xsl:when>
-                                <xsl:when test="changeTypes = 3">CHNGSC01</xsl:when>
+                                <xsl:when test="changeTypes = 3">CHNGSC02</xsl:when>
                                 <xsl:when test="changeTypes = 4">CHNGTC02</xsl:when>
 								<xsl:when test="changeTypes = 5">CHNGCC01</xsl:when>
                                 <xsl:otherwise>UNKNOWN</xsl:otherwise>
@@ -34,7 +34,7 @@
                             <xsl:choose>
                                 <xsl:when test="changeTypes = 1">CHNGAC02</xsl:when>
                                 <xsl:when test="changeTypes = 2">CHNGDC02</xsl:when>
-                                <xsl:when test="changeTypes = 3">CHNGCC01</xsl:when>
+                                <xsl:when test="changeTypes = 3">CHNGSC02</xsl:when>
                                 <xsl:when test="changeTypes = 4">CHNGTC02</xsl:when>
 								<xsl:when test="changeTypes = 5">CHNGCC01</xsl:when>
                                 <xsl:otherwise>UNKNOWN</xsl:otherwise>

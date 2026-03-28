@@ -116,6 +116,16 @@
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
 		</symbol>
+		<symbol id="CHNGSC01">
+			<description>
+				<name>CHNGSC02</name>
+				<description> </description>
+				<language>eng</language>
+			</description>
+			<fileName>CHNGSC02.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>				
 		<symbol id="CHNGTC02">
 			<description>
 				<name>CHNGTC02</name>
