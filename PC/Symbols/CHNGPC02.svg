@@ -10,8 +10,8 @@
   </metadata>
   <rect class="symbolBox layout" fill="none" x="-9.95" y="5.47" height="12.67" width="15.42" />
   <rect class="svgBox layout" fill="none" x="-9.95" y="-7.2" height="12.67" width="15.42" />
-  <path d=" M -4.17,-6.17 L -4.46,-6.45 L -4.94,-6.69 L -5.46,-6.69 L -6,-6.45 L -6.24,-6.17 L -6.48,-5.61 L -6.48,-5.08 L -6.24,-4.52 L -6,-4.23 L -5.46,-3.92 L -4.94,-3.92 L -4.46,-4.23 L -4.17,-4.52" class="sl f0 sCHRED" style="stroke-width:0.32;" />
+  <path d=" M -4.17,-6.17 L -4.46,-6.45 L -4.94,-6.69 L -5.46,-6.69 L -6,-6.45 L -6.24,-6.17 L -6.48,-5.61 L -6.48,-5.08 L -6.24,-4.52 L -6,-4.24 L -5.46,-4 L -4.94,-4 L -4.46,-4.24 L -4.17,-4.52" class="sl f0 sCHRED" style="stroke-width:0.32;" />
   <circle cx="0.01" cy="0.01" r="4.96" class="sl f0 sCHRED" style="stroke-width:0.32" />
-  <path d=" M -9.45,-6.64 L -8.26,-6.64 L -7.36,-6.34 L -7.06,-5.84 L -7.06,-5.34 L -7.36,-4.84 L -8.35,-4.63 L -9.45,-4.63" class="sl f0 sCHRED" style="stroke-width:0.32;" />
-  <path d=" M -9.39,-6.7 L -9.39,-2.9" class="sl f0 sCHRED" style="stroke-width:0.32;" />
+  <path d=" M -9.45,-6.64 L -8.26,-6.64 L -7.46,-6.44 L -7.06,-6.04 L -7.06,-5.6 L -7.46,-5.2 L -8.26,-5 L -9.45,-5" class="sl f0 sCHRED" style="stroke-width:0.32;" />
+  <path d=" M -9.45,-6.64 L -9.45,-3.9" class="sl f0 sCHRED" style="stroke-width:0.32;" />
 </svg>
