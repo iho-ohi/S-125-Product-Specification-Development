@@ -23,9 +23,9 @@
                             <featureReference>
                                 <xsl:value-of select="$fid"/>
                             </featureReference>
-                            <viewingGroup>31020</viewingGroup>
+                            <viewingGroup>27020</viewingGroup>
                             <displayPlane>overRadar</displayPlane>
-                            <drawingPriority>15</drawingPriority>
+                            <drawingPriority>24</drawingPriority>
                             <symbol reference="{$symbolRef}"/>
                         </pointInstruction>
                     </xsl:when>
@@ -44,9 +44,9 @@
                             <featureReference>
                                 <xsl:value-of select="$fid"/>
                             </featureReference>
-                            <viewingGroup>31020</viewingGroup>
+                            <viewingGroup>27020</viewingGroup>
                             <displayPlane>overRadar</displayPlane>
-                            <drawingPriority>15</drawingPriority>
+                            <drawingPriority>24</drawingPriority>
                             <symbol reference="{$symbolRef}"/>
                         </pointInstruction>
                     </xsl:otherwise>

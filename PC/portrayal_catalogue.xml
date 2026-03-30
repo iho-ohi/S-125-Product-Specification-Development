@@ -116,7 +116,7 @@
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
 		</symbol>
-		<symbol id="CHNGSC01">
+		<symbol id="CHNGSC02">
 			<description>
 				<name>CHNGSC02</name>
 				<description> </description>
@@ -247,17 +247,6 @@
 			<ruleType>TopLevelTemplate</ruleType>
 		</ruleFile>
 		<ruleFile id="2">
-			<description>
-				<name>AtoNStatusInformation</name>
-				<description>AtoNStatusInformation</description>
-				<language>eng</language>
-			</description>
-			<fileName>AtoNStatusInformation.xsl</fileName>
-			<fileType>Rule</fileType>
-			<fileFormat>XSLT</fileFormat>
-			<ruleType>SubTemplate</ruleType>
-		</ruleFile>
-		<ruleFile id="3">
 			<description>
 				<name>AtoNStatusIndication</name>
 				<description>AtoNStatusIndication</description>

@@ -19,7 +19,7 @@
 			  <symbol reference="CHNGDC02"/>
 			</xsl:when>
 			<xsl:when test="changeTypes = '3'">
-			  <symbol reference="CHNGCC01"/>
+			  <symbol reference="CHNGSC02"/>
 			</xsl:when>			
 			<xsl:when test="changeTypes = '4'">
 			  <symbol reference="CHNGTC02"/>
