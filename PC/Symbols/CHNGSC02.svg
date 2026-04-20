@@ -1,23 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="14.57mm" height="12.77mm" viewBox="-9.1 -7.3 14.57 12.77">
-  <title>CHNGSC02</title>
-  <metadata>
-  <desc>SC - Proposed change to an established Aid to Navigation or the establishment of a new Aid to Navigation.</desc>
-    <S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
-      <Description publisher="IHB" creationDate="10/24/2022" source="S52Preslib4.0" format="S100SVG" version="0.1" />
-    </S100SVG>
-  </metadata>
-  <rect class="symbolBox layout" fill="none" x="-9.1" y="5.47" height="12.77" width="14.57" />
-  <rect class="svgBox layout" fill="none" x="-9.1" y="-7.3" height="12.77" width="14.57" />
-  <path d=" M -3.64,-6.23 L -3.92,-6.51 L -4.4,-6.75 L -4.92,-6.75 L -5.46,-6.51 L -5.7,-6.23 L -5.94,-5.67 L -5.94,-5.14 L -5.7,-4.58 L -5.46,-4.3 L -4.92,-3.98 L -4.4,-3.98 L -3.92,-4.3 L -3.64,-4.58" class="sl f0 sCHRED" style="stroke-width:0.32;" />
-  <circle cx="0.01" cy="0.01" r="4.96" class="sl f0 sCHRED" style="stroke-width:0.32" />
-  <!--
+	<title>CHNGSC02</title>
+	<desc>SC - Proposed change to an established Aid to Navigation or the establishment of a new Aid to Navigation.</desc>
+	<metadata>
+		<S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+			<Description publisher="IHB" creationDate="10/24/2022" source="S52Preslib4.0" format="S100SVG" version="0.1"/>
+		</S100SVG>
+	</metadata>
+	<rect class="symbolBox layout" fill="none" x="-9.1" y="5.47" height="12.77" width="14.57"/>
+	<rect class="svgBox layout" fill="none" x="-9.1" y="-7.3" height="12.77" width="14.57"/>
+	<path d=" M -3.64,-6.23 L -3.92,-6.51 L -4.4,-6.75 L -4.92,-6.75 L -5.46,-6.51 L -5.7,-6.23 L -5.94,-5.67 L -5.94,-5.14 L -5.7,-4.58 L -5.46,-4.3 L -4.92,-3.98 L -4.4,-3.98 L -3.92,-4.3 L -3.64,-4.58" class="sl f0 sCHRED" style="stroke-width:0.32;"/>
+	<circle cx="0.01" cy="0.01" r="4.96" class="sl f0 sCHRED" style="stroke-width:0.32"/>
+	<!--
   <path d="M -6.6,-6.5 C -6.9,-6.8 -8.0,-6.9 -8.4,-6.4 C -8.7,-5.9 -8.1,-5.6 -7.5,-5.5 C -6.8,-5.4 -6.4,-5.1 -6.5,-4.6
   C -6.6,-4.1 -7.6,-3.9 -8.4,-4.2" class="sl f0 sCHRED" style="stroke-width:0.32;" fill="none" />
   -->
-  
-  <path d="M -6.6,-6.5
+	<path d="M -6.6,-6.5
   L -6.864,-6.653
   L -7.248,-6.738
   L -7.680,-6.738
@@ -37,8 +36,5 @@
   L -6.982,-4.157
   L -7.414,-4.067
   L -7.905,-4.078
-  L -8.4,-4.2"
-  class="sl f0 sCHRED"
-  style="stroke-width:0.32;"
-  fill="none" />
+  L -8.4,-4.2" class="sl f0 sCHRED" style="stroke-width:0.32;" fill="none"/>
 </svg>
