@@ -1,0 +1,66 @@
+== Reference
+
+[bibliography,normative=false]
+=== Informative
+
+The following normative documents contain provisions that, through
+reference in this text, constitute provisions of this document.
+
+* [[[S100,IHO S-100]]]
+
+* [[[ISO8601,ISO 8601]]]
+
+* [[[ISO19101-2,ISO/TS 19101-2:2008]]]
+
+* [[[ISO19103,ISO/TS 19103:2005]]]
+
+* [[[ISO19106,ISO 19106:2004]]]
+
+* [[[ISO19107,ISO 19107:2003]]]
+
+* [[[ISO19109,ISO 19109:2005]]]
+
+* [[[ISO19111,ISO 19111:2003]]]
+
+* [[[ISO19115-1,ISO 19115-1:2014]]]
+
+* [[[ISO19115-2,ISO 19115-2:2009]]]
+
+* [[[ISO19123,ISO 19123:2005]]]
+
+* [[[ISO19129,ISO/TS 19129:2009]]]
+
+* [[[ISO19131,ISO 19131:2007]]]
+
+* [[[ISO19136,ISO 19136:2007]]]
+
+* [[[ISO19136-2,ISO 19136-2:2015]]]
+
+* [[[ISO19139,ISO/TS 19139]]]
+
+* [[[ISO19101,hidden(ISO 19101 (all parts))]]]
+
+* [[[ISO19101-1,hidden(ISO 19101-1)]]]
+
+* [[[ISO19110,hidden(ISO 19110)]]]
+
+* [[[ISO19117,hidden(ISO 19117)]]]
+
+* [[[S57,hidden(IHO S-57)]]]
+
+* [[[ISO19108,hidden(ISO 19108)]]]
+
+* [[[ISO10646-1,hidden(ISO/IEC 10646-1)]]]
+
+[bibliography,normative=true]
+=== Normative
+
+The following informative documents provide additional information,
+including background information, but are not required to develop
+applications for data conforming to this specification.
+
+* [[[ISO19757-3,ISO/IEC 19757-3]]]
+
+* [[[ISO19115,ISO 19115 (all parts)]]]
+
+* [[[S101,IHO S-101]]]

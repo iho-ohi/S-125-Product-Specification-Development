@@ -1,0 +1,121 @@
+== Data Content and Structure
+
+=== Introduction
+
+A Marine Aids to Navigation (AtoN) dataset is a feature-based product.
+The following sub-sections contain the product application schema
+expressed in UML and an associated feature catalogue. The feature
+catalogue provides a full description of each feature type including its
+attributes and attribute values in the data product.
+
+=== Application Schema
+
+The application schema conforms to the modelling conventions of UML as
+constrained in <<S100,part=1>>, and conforms to the General Feature Model
+described in <<S100,part=3>>.
+
+An overview of the application schema is provided in the following figure
+(<<fig-1>>). The subsequent figures provide details for feature types and
+their relationships. The allowed values for enumeration attributes are
+depicted in the following Figures. In conformance to <<S57>> and
+<<S101>>, aids to navigation are described by combinations of structure
+and equipment features.
+
+* The feature type AidsToNavigation is an abstract type from which the
+geographic feature types for aids to navigation are ultimately derived.
+* StructureObject and Equipment are abstract types which collect the
+attributes and relationships common to structure and equipment features
+respectively. The relationship that exists between them is between
+structure and equipment features in the combining of structure and
+equipment object(s) to make up an individual aid to navigation.
+* GenericBeacon and GenericBuoy are abstract types which collect
+attributes common to multiple types of beacon and buoy features
+respectively.
+* Links to the geographic features for individual AtoNs constituting the
+collection object are modelled by feature associations (the
+"Aggregations" and "Associations" links between Aggregation and
+Association classes and the common supertype for geographic AtoN features
+(AidsToNavigation)). The type of the collection feature is indicated by
+the attribute categoryOfAggregation which can take the allowed values
+listed in the codelists of the same names.
+* Structure-equipment associations are modelled by the association
+labelled StructureEquipment, between classes Structure and Equipment in
+<<fig-1>> below.
+* Features participating in the same range system are indicated by the
+association labelled RangeSystem, between feature classes NavigationLine
+and RecommendedTrack.
+* The S-125 model supports three types of AIS features, physical (real),
+virtual and synthetic. The broadcasting station for virtual AIS is
+encoded as RadioStation, and may be associated with the virtual AIS it
+broadcasts by an association labelled VirtualAIS. AIS related items are
+shown in <<fig-6>>.
+* Only RadioStation that are AIS base stations can be included.
+* The structure features include Lighthouse, Landmark, Pile, LightFloat,
+OffShorePlatform, LightVessel, and SiloTank features as well as buoys and
+beacons of different kinds. The detailed models of structure features are
+depicted in <<fig-2>>.
+* The equipment features include Daymark, FogSignal, RadarReflector,
+Light, Retroreflector, Topmark, RadarTransponderBeacon,
+EnvironmentalObservationEquipment, PhysicalAISAidToNavigation, and
+RadioStation. Daymark is allowed to act as either a structure or
+equipment feature in practice but this cannot at present be modelled in
+the application schema since S-100 discourages multiple inheritance. The
+detailed model of equipment features is depicted in <<fig-3>>.
+* Every feature AtoN feature can have information association with
+AtoNStatusInformation which includes changeTypes and changeDetails.
+* changeDetails is defined to describe type of AtoN change and the
+detailed model is depicted in <<fig-7>>.
+
+The feature classes NavigationLine and RecommendedTrack are neither
+structure nor equipment objects and are depicted in complete detail in
+the overview (<<fig-1>>).
+
+[%landscape]
+<<<
+
+[[fig-1]]
+.Overview of Feature types
+image::img01.png[height=50%]
+
+[[fig-2]]
+.Structure Feature Types
+image::img02.png[height=60%]
+
+[%portrait]
+<<<
+
+[[fig-3]]
+.Equipment Feature Types
+image::img03.png["",759,711]
+
+[[fig-4]]
+.Light Feature Types
+image::img04.png["",759,382]
+
+[[fig-5]]
+.Mooring Buoy and Emergency Wreck Marking Buoy Feature Types
+image::img05.png["",759,739]
+
+[[fig-6]]
+.AIS Feature Types
+image::img06.png["",759,644]
+
+[[fig-7]]
+.Aton change details Enumeration
+image::img07.png["",759,734]
+
+[[fig-8]]
+.Categories Enumeration
+image::img08.png["",759,828]
+
+[[fig-9]]
+.Colors and Shapes Enumeration
+image::img09.png["",759,850]
+
+[[fig-10]]
+.Others Enumeration
+image::img10.png["",759,823]
+
+[[fig-11]]
+.Code lists
+image::img11.png["",717,370]

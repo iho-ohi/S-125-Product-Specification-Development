@@ -1,0 +1,6 @@
+== Attribute and Enumerate Descriptions
+
+[yaml2text,sections/yaml/06-tables.yaml,att]
+----
+include::templates/06-table-template.adoc[]
+----

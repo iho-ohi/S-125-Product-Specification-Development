@@ -1,0 +1,6 @@
+== Complex Attributes
+
+[yaml2text,sections/yaml/07-tables.yaml,att]
+----
+include::templates/07-table-template.adoc[]
+----

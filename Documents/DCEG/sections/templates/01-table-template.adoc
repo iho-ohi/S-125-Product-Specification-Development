@@ -1,0 +1,40 @@
+{% for mf in feat.features %}
+=== {{ mf.name }}
+
+.{{ mf.name }}
+[cols="a,a,a,a,a",options=noheader]
+|===
+5+| [underline]#IHO Definition:# {{ mf.definition }}
+
+5+| [underline]#*S-10x Metadata Feature:*# *{{ mf.name }} ({{ mf.id }})*
+
+5+| [underline]#*Super Type:*# {{ mf.super_type }}
+
+5+| [underline]#*Primitives:*# *{{ mf.primitives }}*
+
+| _span:blue[Real World]_
+2+| _span:blue[Paper Chart Symbol]_
+2+| _span:blue[ECDIS Symbol]_
+
+h| S-10x Attribute
+h| S-57 Acronym
+h| Allowable Encoding Value
+h| Type
+h| Multiplicity
+
+{% for att in mf.attributes%}
+| {{ att.name }}
+| {{ att.s57_acronym }}
+| {{ att.encoding_value }}
+| {{ att.type }}
+| {{ att.multiplicity }}
+{% endfor %}
+
+5+| [underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+|===
+
+{% endfor %}

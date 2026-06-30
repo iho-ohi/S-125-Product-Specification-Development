@@ -1,0 +1,6 @@
+== Association Names
+
+[yaml2text,sections/yaml/04-tables.yaml,assoc]
+----
+include::templates/04-table-template.adoc[]
+----

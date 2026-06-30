@@ -1,0 +1,85 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" script="Latn" type="title-intro">Geographic information</title>
+  <title language="en" script="Latn" type="title-main">Temporal schema</title>
+  <title language="en" script="Latn" type="main">Geographic information - Temporal schema</title>
+  <title language="fr" script="Latn" type="title-intro">Information géographique</title>
+  <title language="fr" script="Latn" type="title-main">Schéma temporel</title>
+  <title language="fr" script="Latn" type="main">Information géographique - Schéma temporel</title>
+  <uri type="src">https://www.iso.org/standard/26013.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26013:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26013.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19108:2002</docidentifier>
+  <docidentifier type="iso-reference">ISO 19108:2002(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19108</docidentifier>
+  <docnumber>19108</docnumber>
+  <date type="published">
+    <on>2002-09-12</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <subdivision type="technical-committee" subtype="TC">
+        <name>Geographic information/Geomatics</name>
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">ISO 19108:2002 defines concepts for describing temporal characteristics of geographic information. It depends upon existing information technology standards for the interchange of temporal information. It provides a basis for defining temporal feature attributes, feature operations, and feature associations, and for defining the temporal aspects of metadata about geographic information. Since this International Standard is concerned with the temporal characteristics of geographic information as they are abstracted from the real world, it emphasizes valid time rather than transaction time.</abstract>
+  <status>
+    <stage>90</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2002</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/PWI 19108</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/PWI 19108</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO 19108:2002/Cor 1:2006</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19108:2002/Cor 1:2006</docidentifier>
+      <date type="published">
+        <on>2006-10-16</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+  <ext schema-version="v1.1.2">
+    <doctype>international-standard</doctype>
+    <flavor>iso</flavor>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>26013</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

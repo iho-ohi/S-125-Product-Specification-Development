@@ -1,0 +1,6 @@
+== Metadata Features
+
+[yaml2text,sections/yaml/01-tables.yaml,feat]
+----
+include::templates/01-table-template.adoc[]
+----

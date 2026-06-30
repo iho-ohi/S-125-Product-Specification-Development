@@ -1,0 +1,40 @@
+{% for it in info.types %}
+=== {{ it.name }}
+
+.{{ it.name }}
+[cols="a,a,a,a,a",options=noheader]
+|===
+5+| [underline]#IHO Definition:# {{ it.definition }}
+
+5+| [underline]#*S-10x Information Type:*# *{{ it.name }}*
+
+5+| [underline]#*Super Type:*# {{ it.super_type }}
+
+5+| [underline]#*Primitives:*# *{{ it.primitives }}*
+
+| _span:blue[Real World]_
+2+| _span:blue[Paper Chart Symbol]_
+2+| _span:blue[ECDIS Symbol]_
+
+h| S-10x Attribute
+h| S-57 Acronym
+h| Allowable Encoding Value
+h| Type
+h| Multiplicity
+
+{% for att in it.attributes%}
+| {{ att.name }}
+| {{ att.s57_acronym }}
+| {{ att.encoding_value }}
+| {{ att.type }}
+| {{ att.multiplicity }}
+{% endfor %}
+
+5+| [underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+|===
+
+{% endfor %}

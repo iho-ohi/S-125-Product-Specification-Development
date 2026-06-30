@@ -1,0 +1,86 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" script="Latn" type="title-intro">Geographic information</title>
+  <title language="en" script="Latn" type="title-main">Geography Markup Language (GML)</title>
+  <title language="en" script="Latn" type="main">Geographic information - Geography Markup Language (GML)</title>
+  <title language="fr" script="Latn" type="title-intro">Information géographique</title>
+  <title language="fr" script="Latn" type="title-main">Langage de balisage en géographie (GML)</title>
+  <title language="fr" script="Latn" type="main">Information géographique - Langage de balisage en géographie (GML)</title>
+  <uri type="src">https://www.iso.org/standard/32554.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32554:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32554.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19136:2007</docidentifier>
+  <docidentifier type="iso-reference">ISO 19136:2007(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19136:stage-95.99</docidentifier>
+  <docnumber>19136</docnumber>
+  <date type="published">
+    <on>2007-08-23</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <subdivision type="technical-committee" subtype="TC">
+        <name>Geographic information/Geomatics</name>
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">The Geography Markup Language (GML) is an XML encoding in compliance with ISO 19118 for the transport and storage of geographic information modelled in accordance with the conceptual modelling framework used in the ISO 19100 series of International Standards and including both the spatial and non-spatial properties of geographic features. ISO 19136:2007 defines the XML Schema syntax, mechanisms and conventions that: provide an open, vendor-neutral framework for the description of geospatial application schemas for the transport and storage of geographic information in XML; allow profiles that support proper subsets of GML framework descriptive capabilities; support the description of geospatial application schemas for specialized domains and information communities; enable the creation and maintenance of linked geographic application schemas and datasets; support the storage and transport of application schemas and data sets; increase the ability of organizations to share geographic application schemas and the information they describe. Implementers may decide to store geographic application schemas and information in GML, or they may decide to convert from some other storage format on demand and use GML only for schema and data transport. NOTE If an ISO 19109 conformant application schema described in UML is used as the basis for the storage and transportation of geographic information, ISO 19136 provides normative rules for the mapping of such an application schema to a GML application schema in XML Schema and, as such, to an XML encoding for data with a logical structure in accordance with the ISO 19109 conformant application schema.</abstract>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2007</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO 19136-1:2020</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19136-1:2020</docidentifier>
+      <date type="published">
+        <on>2020-01-09</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/NP 19136-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/NP 19136-1</docidentifier>
+    </bibitem>
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+  <ext schema-version="v1.1.2">
+    <doctype>international-standard</doctype>
+    <flavor>iso</flavor>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>32554</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

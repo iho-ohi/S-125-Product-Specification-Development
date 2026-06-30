@@ -1,0 +1,23 @@
+{% for an in assoc.names %}
+=== {{ an.title }}
+
+.{{ an.title }}
+[cols="a,a,a,a",options=noheader]
+|===
+4+| [underline]#IHO Definition:# {% if an.definition %}{{ an.definition }} {% endif %}
+
+[underline]#Remarks:# {% if an.remarks %} {{ an.remarks }} {% else %} - {% endif %}
+
+h| Role Type
+h| Role
+h| Associated With
+h| Multiplicity
+
+.{{ an.rows.size }}+| {{ an.role_type }}
+{% for row in an.rows %}
+| {{ row.role }}
+| {% if row.associated_with %} *{{ row.associated_with }}* {% endif %}
+| {{ row.multiplicity }}
+{% endfor %}
+|===
+{% endfor %}

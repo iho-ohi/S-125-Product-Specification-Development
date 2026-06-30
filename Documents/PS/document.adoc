@@ -1,0 +1,51 @@
+= Marine Aids to Navigation (AtoN)
+:series: S
+:docnumber: 125
+:doctype: standard
+:edition: 1.0.0
+:language: en
+:published-date: 2025-04-01
+:copyright-year: 2025
+:status: in-force
+:committee: hssc
+:workgroup: tsmad
+:committee_2: HSSC
+:workgroup_2: NIPWG
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+:toclevels: 3
+
+include::sections/00-doc-history.adoc[]
+
+include::sections/01-overview.adoc[]
+
+include::sections/02-reference.adoc[]
+
+include::sections/03-terms.adoc[]
+
+include::sections/04-specification.adoc[]
+
+include::sections/05-data-product-id.adoc[]
+
+include::sections/06-data-content.adoc[]
+
+include::sections/07-feature-catalogue.adoc[]
+
+include::sections/08-crs.adoc[]
+
+include::sections/09-data-quality.adoc[]
+
+include::sections/10-data-capture.adoc[]
+
+include::sections/11-data-delivery.adoc[]
+
+include::sections/12-dataset-maintenance.adoc[]
+
+include::sections/13-portrayal.adoc[]
+
+include::sections/14-metadata.adoc[]
+
+include::sections/aa-change-proposal-form.adoc[]

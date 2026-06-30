@@ -1,0 +1,190 @@
+== Data Delivery
+
+=== Data Product Delivery Information
+
+This data product specification defines GML as the primary format in
+which Marine AtoN data products are delivered. The delivery format is
+described by the following items (from <<ISO19131>>): format name,
+version, specification, language, and character set.
+
+[[tab-11-1]]
+.Data product delivery format
+[cols="a,a,a",options=header]
+|===
+| Name | ISO 19131 Elements | Value
+
+| Format name
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.formatName
+| GML{blank}footnoteblock:[gml]
+
+| Version
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.version
+| 3.2.1
+
+| Specification description
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.specification
+| GML{blank}footnoteblock:[gml]
+
+| Language
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.language
+| English
+
+| Character set
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.characterSet >
+
+MD_CharacterSetCode
+| 004 - utf8
+|===
+
+[[gml]]
+[NOTE]
+--
+GML is an XML encoding for the transport and storage of geographic information,
+including both the geometry and the properties of geographic features, between
+distributed systems. The XML Schema for the GML application schema is provided
+in a schema document `S125.xsd` which imports other schema(s) defining common
+types. These files are available in the IHO Geospatial Information Registry.
+Feature instance shall validate against `S125.xsd` and conform to all other
+requirements specified in this data product specification including all
+constraints not captured in the XML Schema document.
+--
+
+==== Dataset loading
+
+New datasets must always replace old datasets.
+
+==== New editions
+
+When a new edition of a dataset is received, the system must replace the
+previous edition, along with any updates, with the new edition of the
+dataset.
+
+=== Dataset size
+
+Marine AtoN datasets must not exceed 10MB in accordance with other S-100
+products displayed on ECDIS.
+
+=== Exchange Set
+
+Data which conforms to this product specification must be delivered by
+means of an exchange set. An exchange set will consist of one or more
+Marine AtoN datasets. An exchange set may also include one or more
+support files containing supplementary information encoded in separate
+files. These are linked to the Marine AtoN dataset features, by feature
+and information type attributes defined in the application schema, e.g.,
+*fileReference*. Each exchange set will include a single (XML) exchange
+catalogue file. S-125 exchange set catalogues conform to
+<<S100,part=17>> without modification, containing discovery metadata for
+each Marine AtoN dataset as well as support files. S-125 exchange set
+structure conforms to <<S100,part=17>> without modification.
+
+=== Support Files
+
+Support files contain ancillary textual or graphic information in
+separate (linked to the dataset) files. The following formats are
+allowed for support files:
+
+* Text files must contain only UTF-8 encoded text as defined by this
+standard (text consisting only of printable characters and without HTML,
+XML, or other markup).
+* Picture files must be in TIFF Revision 6.0 (TIFF).
+
+Support files shall be used for data management and additional
+information to users. Portraying and using support files in ECDIS or
+other systems is not mandatory.
+
+=== Support File Naming Convention
+
+All support files will have unique world-wide file identifiers. The file
+identifier of support information should not be used to describe the
+physical content of the file. The support file metadata that accompanies
+the file will inform the user of the name and purpose of the file (new,
+replacement, and deletion).
+
+In this encoding the support files are named according to the
+specifications given below:
+
+125CCCCXXXXXXXXXX.YYY
+
+The main part forms an identifier where:
+
+* The first three characters are always "125" and identify the dataset
+as an S-125 dataset.
+* The next four characters identify the issuing agency by its
+alphanumeric agency code in the IHO producer code register in the IHO GI
+Registry (i.e., the IHO is identified as "AA", not "1810"). Where the
+agency code consists of fewer than four characters, sufficient zeros
+must be suffixed to make the length exactly four characters (e.g.,
+"AA00" for IHO).
+* The eighth up to the seventeenth character can be used in any way by
+the producer to provide a unique file name for the dataset. The
+following characters are allowed in the dataset name. A to Z, 0 to 9,
+and the special character _ (underscore). The ninth through seventeenth
+characters are optional (i.e., at least one character must be used).
+* .YYY - support file extension.
+
+[[cls-11.6]]
+=== Dataset Naming Convention
+
+All dataset files will have unique world-wide file identifiers. The file
+identifier of the dataset should not be used to describe the physical
+content of the file. The dataset file metadata that accompanies the file
+will inform the user of the name and purpose of the file (new,
+replacement, and deletion).
+
+In this encoding the dataset files are named according to the
+specifications given below:
+
+125CCCCXXXXXXXXXX.GML
+
+The main part forms an identifier where:
+
+* The first three characters are always "125" and identify the dataset
+as an S-125 dataset.
+* The next four characters identify the issuing agency by its
+alphanumeric agency code in the IHO producer code register in the IHO GI
+Registry (i.e., the IHO is identified as "AA", not "1810"). Where the
+agency code consists of fewer than four characters, sufficient zeros
+must be suffixed to make the length exactly four characters (e.g.,
+"AA00" for IHO).
+* The eighth up to the seventeenth character can be used in any way by
+the producer to provide a unique file name for the dataset. The
+following characters are allowed in the dataset name, A to Z, 0 to 9 and
+the special character _ (underscore). The ninth through seventeenth
+characters are optional (i.e., at least one character must be used).
+
+=== Update dataset naming convention
+
+All update dataset files will have an identical name to the base
+dataset, aside from the separator and update number sequence.
+
+In this encoding the update dataset files are named according to the
+specifications given below:
+
+125CCCCXXXXXXXXXX_XXX.GML
+
+The main part forms an identifier where:
+
+* The first up to the seventeenth characters are the same as the dataset
+being updated and therefore conform to the rules described in
+<<cls-11.6>>.
+* The next character must be an underscore "_".
+* The next three characters must be numerical (0-9) characters to
+indicate the place of the update dataset in the update sequence.
+
+=== Catalogue File Naming Convention
+
+The exchange catalogue acts as the table of contents for the exchange
+set. The catalogue file of the exchange set must be named CATALOG.XML.
+No other file in the exchange set may be named CATALOG.XML. The content
+of the exchange catalogue file is described in <<S100,part=17>>.

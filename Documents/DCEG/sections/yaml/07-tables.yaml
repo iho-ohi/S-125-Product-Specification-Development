@@ -1,0 +1,304 @@
+---
+attributes:
+  - title: Contact Address
+    definition: Direction or superscription of a letter, package, etc., specifying the name of the place to which it is directed, and optionally a contact person or organisation who should receive it.
+    sub_attributes:
+      - attribute: Delivery Point
+        note: see <<cls-6.116>>
+      - attribute: City Name
+        note: see <<cls-6.117>>
+      - attribute: Administrative Division
+        note: see <<cls-6.118>>
+      - attribute: Country Name
+        note: see <<cls-6.119>>
+      - attribute: Postal Code
+        note: see <<cls-6.120>>
+    remarks: No remarks.
+
+  - title: Directional Character
+    definition: A directional light is a light illuminating a sector of very narrow angle and intended to mark a direction to follow.
+    sub_attributes:
+      - attribute: Moire Effect
+        note: see <<cls-6.33>>
+      - attribute: Orientation
+        note: see <<cls-7.7>>
+    remarks: No remarks.
+
+  - title: Feature Name
+    definition: Provides the name of an entity, defines the national language of the name, and provides the option to display the name at various system display settings.
+    sub_attributes:
+      - attribute: Display Name
+        note: see <<cls-6.111>>
+      - attribute: Language
+        note: see <<cls-6.123>>
+      - attribute: Name
+        note: see <<cls-6.112>>
+    remarks: No remarks.
+
+  - title: Fixed Date Range
+    definition: An active period of a single fixed event or occurrence, as the date range between discrete start and end dates.
+    sub_attributes:
+      - attribute: Date End
+        note: see <<cls-6.99>>
+      - attribute: Date Start
+        note: see <<cls-6.98>>
+    remarks: Dates must be encoded in the format YYYYMMDD; using 4 digits for the calendar year (YYYY) and, optionally, 2 digits for the month (MM) (for example April = 04) and 2 digits for the day (DD). When no specific month and/or day is required/known, the values are replaced with dashes (-). The date range of a recurring event or occurrence must be encoded using periodicDateRange.
+
+  - title: Light Sector
+    definition: A sector is the part of a circle between two straight lines drawn from the centre to the circumference.
+    sub_attributes:
+      - attribute: Colour
+        note: see <<cls-6.96>>
+      - attribute: Directional Character
+        note: see <<cls-7.2>>
+      - attribute: Light Visibility
+        note: see <<cls-6.69>>
+      - attribute: Sector Limit
+        note: see <<cls-7.13>>
+      - attribute: Value of Nominal Range
+        note: see <<cls-6.65>>
+      - attribute: Sector Information
+        note: see <<cls-7.12>>
+      - attribute: Sector Extension
+        note: see <<cls-6.32>>
+    remarks: No remarks.
+
+  - title: Multiplicity of Features
+    definition: The number of features of identical character that exist as a colocated group.
+    sub_attributes:
+      - attribute: Multiplicity Known
+        note: see <<cls-6.31>>
+      - attribute: Number of Features
+        note: see <<cls-6.30>>
+    remarks: No remarks.
+
+  - title: Orientation
+    definition: |
+      +
+      --
+      . The angular distance measured from true north to the major axis of the feature.
+      
+      . In ECDIS, the mode in which information on the ECDIS is being presented. Typical modes include: north-up - as shown on a nautical chart, north is at the top of the display; Ships head-up - based on the actual heading of the ship, (e.g. Ships gyrocompass); course-up display - based on the course or route being taken.
+      --
+    sub_attributes:
+      - attribute: Orientation Uncertainty
+        note: see <<cls-6.131>>
+      - attribute: Orientation Value
+        note: see <<cls-6.54>>
+    remarks: No remarks.
+
+  - title: Periodic Date Range
+    definition: The active period of a recurring event or occurrence.
+    sub_attributes:
+      - attribute: Date End
+        note: see <<cls-6.99>>
+      - attribute: Date Start
+        note: see <<cls-6.98>>
+    remarks: No remarks.
+
+  - title: Radar Wave Length
+    definition: The distance between two successive peaks (or other points of identical phase) on an electromagnetic wave in the radar band of the electromagnetic spectrum.
+    sub_attributes:
+      - attribute: Radar Band
+        note: see <<cls-6.29>>
+      - attribute: Wave Length Value
+        note: see <<cls-6.28>>
+    remarks: No remarks.
+
+  - title: Rhythm of Light
+    definition: The sequence of times occupied by intervals of light/sound and eclipse/silence for all light characteristics or sound signals.
+    sub_attributes:
+      - attribute: Light Characteristic
+        note: see <<cls-6.46>>
+      - attribute: Signal Group
+        note: see <<cls-6.62>>
+      - attribute: Signal Period
+        note: see <<cls-6.60>>
+      - attribute: Signal Sequence
+        note: see <<cls-7.17>>
+    remarks: No remarks.
+
+  - title: Sector Characteristics
+    definition: Describes the characteristics of a light sector.
+    sub_attributes:
+      - attribute: Light Characteristic
+        note: see <<cls-6.46>>
+      - attribute: Light Sector
+        note: see <<cls-7.5>>
+      - attribute: Signal Group
+        note: see <<cls-6.62>>
+      - attribute: Signal Period
+        note: see <<cls-6.60>>
+      - attribute: Signal Sequence
+        note: see <<cls-7.17>>
+    remarks: No remarks.
+
+  - title: Sector Information
+    definition: Additional textual information about a light sector.
+    sub_attributes:
+      - attribute: Language
+        note: see <<cls-6.123>>
+      - attribute: Text
+        note: see <<cls-6.122>>
+    remarks: No remarks.
+
+  - title: Sector Limit
+    definition: A sector is the part of a circle between two straight lines drawn from the centre to the circumference. The sector limit specifies the limits of the sector In a clockwise direction around the central feature (for example a light).
+    sub_attributes:
+      - attribute: Sector Limit One
+        note: see <<cls-7.14>>
+      - attribute: Sector Limit Two
+        note: see <<cls-7.15>>
+    remarks: No remarks.
+
+  - title: Sector Limit One
+    definition: A sector is the part of a circle between two straight lines drawn from the centre to the circumference. Sector limit one specifies the first limit of the sector. The order of sector limit one and sector limit two is clockwise around the central feature (for example a light).
+    sub_attributes:
+      - attribute: Sector Bearing
+        note: see <<cls-6.27>>
+      - attribute: Sector Line Length
+        note: see <<cls-6.26>>
+    remarks: No remarks.
+
+  - title: Sector Limit Two
+    definition: A sector is the part of a circle between two straight lines drawn from the centre to the circumference. Sector limit two specifies the second limit of the sector. The order of sector limit one and sector limit two is clockwise around the central feature (for example a light).
+    sub_attributes:
+      - attribute: Sector Bearing
+        note: see <<cls-6.27>>
+      - attribute: Sector Line Length
+        note: see <<cls-6.26>>
+    remarks: No remarks.
+
+  - title: Shape Information
+    definition: Textual information about the shape of a non-standard topmark.
+    sub_attributes:
+      - attribute: Language
+        note: see <<cls-6.123>>
+      - attribute: Text
+        note: see <<cls-6.122>>
+    remarks: No formatting of text is possible within shape information. If formatted text is required, then an associated text file referenced by the complex attribute textual description must be used.
+
+  - title: Signal Sequence
+    definition: The sequence of times occupied by intervals of light and eclipse for all light characteristics.
+    sub_attributes:
+      - attribute: Signal Duration
+        note: see <<cls-6.25>>
+      - attribute: Signal Status
+        note: see <<cls-6.24>>
+    remarks: No remarks.
+
+  - title: Spatial Accuracy
+    definition: Provides an indication of the vertical and horizontal positional uncertainty of bathymetric data, optionally within a specified date range.
+    sub_attributes:
+      - attribute: Fixed Date Range
+        note: see <<cls-7.4>>
+      - attribute: Horizontal Position Uncertainty
+        note: see <<cls-7.24>>
+      - attribute: Vertical Uncertainty
+        note: see <<cls-7.27>>
+    remarks: No remarks.
+
+  - title: Cable Dimensions
+    definition: The dimensions of a cable to give its length and diameter.
+    sub_attributes:
+      - attribute: Cable Length
+        note: see <<cls-6.9>>
+      - attribute: Height Length Units
+        note: see <<cls-6.20>>
+      - attribute: Diameter
+        note: see <<cls-6.10>>
+    remarks: ""
+
+  - title: Change Details
+    definition: "-"
+    sub_attributes:
+      - attribute: Aton Commissioning
+        note: see <<cls-6.135>>
+      - attribute: Aton Removal
+        note: see <<cls-6.136>>
+      - attribute: Aton Replacement
+        note: see <<cls-6.137>>
+      - attribute: Fixed Aton Change
+        note: see <<cls-6.138>>
+      - attribute: Floating Aton Change
+        note: see <<cls-6.139>>
+      - attribute: Audible Signal Aton Change
+        note: see <<cls-6.140>>
+      - attribute: Lighted Aton Change
+        note: see <<cls-6.141>>
+      - attribute: Electronic Aton Change
+        note: see <<cls-6.142>>
+    remarks: ""
+
+  - title: Obscured Sector
+    definition: "-"
+    sub_attributes:
+      - attribute: Sector Limit
+        note: see <<cls-7.13>>
+      - attribute: Sector Information
+        note: see <<cls-7.12>>
+    remarks: ""
+
+  - title: Sinker Dimensions
+    definition: The dimensions of a sinker/anchor to give its three dimensional shape measurements.
+    sub_attributes:
+      - attribute: Height Length Units
+        note: see <<cls-6.20>>
+      - attribute: Horizontal Length
+        note: see <<cls-6.42>>
+      - attribute: Horizontal Width
+        note: see <<cls-6.41>>
+      - attribute: Vertical Length
+        note: see <<cls-6.88>>
+    remarks: ""
+
+  - title: Positioning Method
+    definition: A description of the method used to obtain a position.(proposed by CCG)
+    sub_attributes:
+      - attribute: Positioning Equipment
+        note: see <<cls-6.143>>
+      - attribute: NMEAString
+        note: see <<cls-6.45>>
+    remarks: ""
+
+  - title: Horizontal Position Uncertainty
+    definition: The best estimate of the accuracy of a position.
+    sub_attributes:
+      - attribute: Uncertainty Fixed
+        note: see <<cls-6.128>>
+      - attribute: Uncertainty Variable Factor
+        note: see <<cls-6.127>>
+    remarks: The expected input is the maximum of the two-dimensional error. The error is assumed to be positive and negative.
+
+  - title: Information
+    definition: Textual information about the feature. The information may be provided as a string of text or as a file name of a single external text file that contains the text.
+    sub_attributes:
+      - attribute: File Locator
+        note: see <<cls-6.126>>
+      - attribute: File Reference
+        note: see <<cls-6.125>>
+      - attribute: Headline
+        note: see <<cls-6.124>>
+      - attribute: Language
+        note: see <<cls-6.123>>
+      - attribute: Text
+        note: see <<cls-6.122>>
+    remarks: At least one of the sub-attributes file reference or text must be populated.The sub-attribute file reference is generally used for long text strings or those that require formatting, however, there is no restriction on the type of text (except for lexical level) that can be held in files referenced by sub-attribute file reference.
+
+  - title: Textual Description
+    definition: Encodes the file name of a single external text file that contains the text in a defined language, which provides additional textual information that cannot be provided using other allowable attributes for the feature.
+    sub_attributes:
+      - attribute: File Reference
+        note: see <<cls-6.125>>
+      - attribute: Language
+        note: see <<cls-6.123>>
+    remarks: No remarks.
+
+  - title: Vertical Uncertainty
+    definition: The best estimate of the vertical accuracy of depths, heights, vertical distances and vertical clearances.
+    sub_attributes:
+      - attribute: Uncertainty Fixed
+        note: see <<cls-6.128>>
+      - attribute: Uncertainty Variable Factor
+        note: see <<cls-6.127>>
+    remarks: Encodes the vertical uncertainty associated with any vertical measurement.

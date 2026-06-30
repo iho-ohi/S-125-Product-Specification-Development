@@ -1,0 +1,35 @@
+[[cls-14]]
+== Metadata
+
+=== Introduction
+
+The Marine AtoN metadata specification conforms to the S-100 metadata
+specification in <<S100,part=4a>>, which is a profile of the
+<<ISO19115-1>> standard. These documents provide a structure for
+describing digital geographic data and define metadata elements, a
+common set of metadata terminology, definitions, and extension
+procedures.
+
+The overall structure of metadata in S-125 exchange sets is the same as
+in S-100. Metadata in exchange sets consists of discovery metadata for
+the datasets and support files in the exchange set (classes
+S100_DatasetDiscoveryMetadata and S100_SupportFileDiscoveryMetadata),
+metadata in <<ISO19115-1>> format for datasets, and metadata about any
+feature, portrayal, or interoperability catalogues which are in the
+exchange set (S100_CatalogueMetadata).
+
+The discovery metadata classes have numerous attributes which enable
+important information about the datasets and accompanying support files
+to be examined without the need to process the data, for example
+decrypt, decompress, load, etc. Other catalogues such as feature and
+portrayal catalogues can be included in the exchange set in support of
+the datasets.
+
+Since the class S100_DatasetDiscoveryMetadata aggregates <<ISO19115>>
+metadata (class S100_19115DatasetMetadata), metadata conforming to
+<<ISO19115>> is required to be included. Metadata for each support file
+is required if the exchange set contains support files.
+
+=== Metadata classes
+
+Details for the S-100 metadata classes are depicted in <<S100,part=17>>.

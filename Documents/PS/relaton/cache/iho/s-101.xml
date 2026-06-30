@@ -1,0 +1,72 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" type="main">ENC Product Specification</title>
+  <title language="fr" type="main">Spécification de produit pour les ENC</title>
+  <uri type="pdf">https://registry.iho.int/productspec/view.do?idx=78&amp;product_ID=S-101</uri>
+  <docidentifier type="IHO" primary="true">S-101</docidentifier>
+  <docnumber>101</docnumber>
+  <date type="published">
+    <from>2018-12-01</from>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+      <uri>www.iho.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <subdivision type="technical-committee">
+        <name>Hydrographic Services and Standards Committee</name>
+        <identifier>HSSC</identifier>
+      </subdivision>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.0.0</edition>
+  <version>2018-12-01</version>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+        <uri>www.iho.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title language="en" script="Latn" type="original">Standards and Specifications</title>
+    <title language="fr" script="Latn" type="original">Normes et Spécifications</title>
+    <place>
+      <formattedPlace>Monaco</formattedPlace>
+    </place>
+    <organization>International Hydrographic Organization</organization>
+    <number>S</number>
+  </series>
+  <place>
+    <formattedPlace>Monaco</formattedPlace>
+  </place>
+  <validity>
+    <validityBegins>2018-12-01T00:00:00Z</validityBegins>
+  </validity>
+  <ext schema-version="v1.1.2">
+    <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>S-101</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata>

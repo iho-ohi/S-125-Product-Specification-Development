@@ -1,0 +1,99 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" script="Latn" type="title-intro">Data elements and interchange formats</title>
+  <title language="en" script="Latn" type="title-main">Information interchange</title>
+  <title language="en" script="Latn" type="title-part">Representation of dates and times</title>
+  <title language="en" script="Latn" type="main">Data elements and interchange formats - Information interchange - Representation of dates and times</title>
+  <title language="fr" script="Latn" type="title-intro">Éléments de données et formats d'échange</title>
+  <title language="fr" script="Latn" type="title-main">Échange d'information</title>
+  <title language="fr" script="Latn" type="title-part">Représentation de la date et de l'heure</title>
+  <title language="fr" script="Latn" type="main">Éléments de données et formats d'échange - Échange d'information - Représentation de la date et de l'heure</title>
+  <uri type="src">https://www.iso.org/standard/40874.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40874:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/08/40874.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>
+  <docidentifier type="iso-reference">ISO 8601:2004(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:8601:stage-95.99</docidentifier>
+  <docnumber>8601</docnumber>
+  <date type="published">
+    <on>2004-12-03</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <subdivision type="technical-committee" subtype="TC">
+        <name>Processes, data elements and documents in commerce, industry and administration</name>
+        <identifier>ISO/TC 154</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">ISO 8601:2004 is applicable whenever representation of dates in the Gregorian calendar, times in the 24-hour timekeeping system, time intervals and recurring time intervals or of the formats of these representations are included in information interchange. It includes calendar dates expressed in terms of calendar year, calendar month and calendar day of the month;ordinal dates expressed in terms of calendar year and calendar day of the year;week dates expressed in terms of calendar year, calendar week number and calendar day of the week;local time based upon the 24-hour timekeeping system;Coordinated Universal Time of day;local time and the difference from Coordinated Universal Time;combination of date and time of day;time intervals;recurring time intervals. ISO 8601:2004 does not cover dates and times where words are used in the representation and dates and times where characters are not used in the representation. ISO 8601:2004 does not assign any particular meaning or interpretation to any data element that uses representations in accordance with ISO 8601:2004. Such meaning will be determined by the context of the application.</abstract>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2004</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO 8601:2000</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 8601:2000</docidentifier>
+      <date type="published">
+        <on>2000-12-21</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO 8601-1:2019</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 8601-1:2019</docidentifier>
+      <date type="published">
+        <on>2019-02-25</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO 8601-2:2019</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 8601-2:2019</docidentifier>
+      <date type="published">
+        <on>2019-02-25</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+  <ext schema-version="v1.1.2">
+    <doctype>international-standard</doctype>
+    <flavor>iso</flavor>
+    <ics>
+      <code>01.140.30</code>
+      <text>Documents in administration, commerce and industry</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>40874</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

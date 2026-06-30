@@ -1,0 +1,213 @@
+== Data Capture and Classification
+
+Data source: S-125 products must be based on data sources released by an
+appropriate authority such as AtoN authority and Hydrographic Offices.
+Data source should be described in each data product. The production
+process used to generate Marine AtoN products may be described in the
+comment attribute of the dataset metadata.
+
+[[tab-10-1]]
+.Data capture information
+[cols="a,a,a,a",options=header]
+|===
+| Item Name | Description | Multiplicity | Type
+
+| dataSource
+| Identification of the kinds of data sources usable to product datasets
+compliant with the considering specification
+| 0..*
+| CharacterString
+
+| productionProcess
+| Link to a textual description of the production process (including encoding
+guide) applicable to the datasets compliant with the considering specification
+| 0..*
+| CharacterString (URL)
+
+|===
+
+=== Data Encoding and Product Delivery
+
+==== Data Encoding
+
+The principal encoding will be the Open Geospatial Consortium (OGC),
+Geography Markup Language (GML) format. GML is an XML grammar designed to
+express geographical features. It serves as a modeling language for
+geographic systems as well as an open interchange format for geographic
+transactions.
+
+==== Types of Datasets
+
+A dataset is a grouping of features, attributes, geometry, and metadata
+which comprises a specific coverage. The following lists the types of
+Marine AtoN datasets which may be produced and contained within an
+exchange set:
+
+[[tab-10-2]]
+.Marine AtoN dataset types
+[cols="a,a",options=header]
+|===
+| Dataset | Explanations
+
+| New dataset (base dataset):
+| Data for an area different (in coverage and/or extent) to existing datasets.
+
+| New Edition of a dataset:
+| A re-issue plus new information which has not been previously distributed by
+Updates. Each New Edition of a dataset must have the same name as the dataset
+that it replaces and should have the same spatial extents. The edition number in
+the dataset discovery metadata shall increment up by one from the previous
+edition.
+
+| Update dataset
+| A data replacement of the latest edition of a dataset.
+
+| Cancellation
+| Used to cancel dataset and any related update datasets.
+|===
+
+==== Content of Update Datasets
+
+Update datasets can only contain replacements, deletions, and additions
+of whole feature instances or information instances. This means that when
+a feature or information instance is updated, the new version must
+contain all the attributes of the old instance, including any inline
+spatial attributes (i.e., inline geometry), except those attributes that
+are being removed.
+
+An association to an instance of a feature or information type is treated
+as an attribute of the referring instance, and therefore adding or
+deleting an association means the original referring instance must be
+replaced with a new version. The instance at the other end of the
+association needs to be replaced if and only if it contains a reference
+to the first instance.
+
+Spatial objects that are not inline (i.e., geometry that is encoded as an
+independent spatial object in the dataset) are treated like any other
+object, i.e., it needs to be updated if and only if the primitive has
+changed (e.g., a coordinate is updated).
+
+Feature and information type instances are deleted without replacement by
+setting the fixedDateRange.dateEnd attribute of the instance to the date
+of deletion, which will usually be the issue date of the update.
+
+=== Encoding of Latitude and Longitude
+
+Values should be encoded as decimal numbers with 7 or fewer digits after
+the decimal. The normative encoding is in degrees, with an accuracy of
+10^-7^ degrees, i.e., 7 digits after the decimal point.
+
+The decimal point must be indicated by the "." character.
+
+Trailing zeroes after the decimal point (and the decimal point itself if
+appropriate) may be omitted at producer discretion, but the accuracy must
+still be as indicated (e.g., 10^-7^ degrees for coordinates of default
+accuracy).
+
+Latitude and longitude multiplication factors held in the Dataset
+Structure Information field under `[coordMultFactorX]` and
+`[coordMultFactorY]` must be set to a value corresponding to the
+encoding, e.g., {1} for coordinates encoded in decimal degrees.
+
+[example]
+A `longitude = 42.0000` is converted into
+`X = longitude * coordMultFactorX = 42.0000 * 1 = 42.0000000`.
+
+=== Numeric Attribute Encoding
+
+Floating point and integer attribute values must not contain leading
+zeros. Floating point attribute values must not contain non-significant
+trailing zeros.
+
+=== Text Attribute Values
+
+Character strings must be encoded using the character set defined in
+<<ISO10646-1>>, in Unicode Transformation Format-8 (UTF-8).
+
+=== Mandatory Attribute Values
+
+There are four reasons why attribute values may be considered mandatory:
+
+* They determine whether a feature is in the display base.
+* Certain features make no logical sense without specific attributes.
+* Some attributes are necessary to determine which symbol is to be
+displayed.
+* Some attributes are required for safety of navigation.
+
+All mandatory attributes are identified in the Feature Catalogue and
+summarized in Annex A - Data Classification and Encoding Guide.
+
+=== Unknown Attribute Values
+
+When a mandatory attribute code or tag is present, but the attribute
+value is missing, it means that the producer wishes to indicate that this
+attribute value is unknown. Missing mandatory attributes must be "nilled"
+with a GML _nilReason_ attribute giving the reason for omission.
+
+Optional attributes must be omitted altogether if the value is unknown or
+missing. They must not be "nilled."
+
+[example]
+====
+An isolated danger beacon feature has unknown color (mandatory
+attribute) and condition (optional attribute). The feature could be coded
+as:
+
+[source,xml]
+----
+<BeaconIsolatedDanger>
+  <beaconShape>beacon tower</beaconShape>
+  <colour nilReason="unknown"/>
+  ... other attributes...
+ ... <condition> is NOT coded ...
+</BeaconIsolatedDanger>
+----
+====
+
+=== Structure of dataset files
+
+The order of data objects in each dataset file is described below:
+
+[pseudocode%unnumbered]
+----
+Dataset Identification Information
+Dataset structure information
+Spatial records for by-reference geometries
+  Point
+  Curve
+  Composite Curve
+Information objects
+Feature objects (Geometry may be encoded inline or by reference.)
+  Meta features
+  Geo features
+----
+
+=== Object identifiers
+
+Features, information types, collection objects, meta features, and
+geometries (inline or external) are all required by the schema to have a
+*gml:id* attribute with a value that is unique within the dataset. The
+*gml:id* values must be used as the reference for the object from
+another object in the same dataset or another dataset.
+
+All geographic feature classes in S-125 have the idCode attribute. This
+attribute shall be used to hold the Maritime Resource Name (MRN)
+identifier for the feature instance.
+
+=== Data coverage
+
+All areas of a dataset must be covered by a *DataCoverage* meta feature.
+
+An update dataset must not change the limit of a *DataCoverage* feature
+for the base dataset. Where the limit of a *DataCoverage* feature for a
+base dataset is to be changed, this must be done by issuing a new
+edition of the dataset.
+
+=== Data overlap
+
+S-125 datasets can overlap other S-125 datasets.
+
+=== Data extent
+
+Datasets must not cross the stem:[180"unitsml(deg)"] meridian of
+longitude.

@@ -1,0 +1,79 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" script="Latn" type="title-intro">Geographic information</title>
+  <title language="en" script="Latn" type="title-main">Rules for application schema</title>
+  <title language="en" script="Latn" type="main">Geographic information - Rules for application schema</title>
+  <title language="fr" script="Latn" type="title-intro">Information géographique</title>
+  <title language="fr" script="Latn" type="title-main">Règles de schéma d'application</title>
+  <title language="fr" script="Latn" type="main">Information géographique - Règles de schéma d'application</title>
+  <uri type="src">https://www.iso.org/standard/39891.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:39891:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/98/39891.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19109:2005</docidentifier>
+  <docidentifier type="iso-reference">ISO 19109:2005(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19109:stage-95.99</docidentifier>
+  <docnumber>19109</docnumber>
+  <date type="published">
+    <on>2005-06-23</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <subdivision type="technical-committee" subtype="TC">
+        <name>Geographic information/Geomatics</name>
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">ISO 19109:2005(E) defines rules for creating and documenting application schemas, including principles for the definition of features. Its scope includes the following: conceptual modelling of features and their properties from a universe of discourse;definition of application schemas;use of the conceptual schema language for application schemas;transition from the concepts in the conceptual model to the data types in the application schema;integration of standardized schemas from other ISO geographic information standards with the application schema. The following are outside the scope: choice of one particular conceptual schema language for application schemas;definition of any particular application schema;representation of feature types and their properties in a feature catalogue;representation of metadata;rules for mapping one application schema to another;implementation of the application schema in a computer environment;computer system and application software design;programming.</abstract>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2005</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO 19109:2015</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19109:2015</docidentifier>
+      <date type="published">
+        <on>2015-11-25</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+  <ext schema-version="v1.1.2">
+    <doctype>international-standard</doctype>
+    <flavor>iso</flavor>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>39891</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

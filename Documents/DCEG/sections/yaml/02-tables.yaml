@@ -1,0 +1,5662 @@
+---
+features:
+  - name: "Aids to Navigation"
+    definition: "A visual, acoustical, or radio device, external to a ship, designed to assist in determining a safe course or a vessel's position, or to warn of dangers and/or obstructions. Aids to navigation usually include buoys, beacons, fog signals, lights, radio beacons, leading marks, radio position fixing systems and GNSS which are chart-related and assist safe navigation."
+    super_type: 
+    primitives: "noGeometry"
+    attributes:
+      - name: "ID Code"
+        s57_acronym: |
+          (Identification Number)
+          
+          (Identification Code)
+        encoding_value:
+        type: "TE"
+        multiplicity: "0, 1"
+      - name: "Interoperability Identifier"
+        s57_acronym: ""
+        encoding_value:
+        type: "UN"
+        multiplicity: "0, 1"
+      - name: "Information"
+        s57_acronym: "(INFORM)"
+        encoding_value:
+        type: "C"
+        multiplicity: "0, *"
+      - name: "File Locator"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "File Reference"
+        s57_acronym: |
+          (TXTDSC)
+          
+          (NTXTDS)
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Headline"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Language"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "1, 1"
+      - name: "Text"
+        s57_acronym: |
+          (INFORM)
+          
+          (NINFOM)
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Feature Name"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, *"
+      - name: "Display Name"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) BO"
+        multiplicity: "0, 1"
+      - name: "Language"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Name"
+        s57_acronym: "(OBJNAM)"
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "1, 1"
+      - name: "Scale Minimum"
+        s57_acronym: "(SCAMIN)"
+        encoding_value:
+        type: "IN"
+        multiplicity: "0, 1"
+      - name: "Source Date"
+        s57_acronym: "(SORDAT)"
+        encoding_value:
+        type: "DA"
+        multiplicity: "0, 1"
+      - name: "Source"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "0, 1"
+      - name: "Pictorial Representation"
+        s57_acronym: "(PICREP)"
+        encoding_value:
+        type: "TE"
+        multiplicity: "0, 1"
+      - name: "AtoN Number"
+        s57_acronym: ""
+        encoding_value:
+        type: "UI"
+        multiplicity: "1, 1"
+      - name: "Installation Date"
+        s57_acronym: ""
+        encoding_value:
+        type: "DA"
+        multiplicity: "0, 1"
+      - name: "Fixed Date Range"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Date End"
+        s57_acronym: "(DATEND)"
+        encoding_value:
+        type: "(S) TD"
+        multiplicity: "0, 1"
+      - name: "Date Start"
+        s57_acronym: "(DATSTA)"
+        encoding_value:
+        type: "(S) TD"
+        multiplicity: "0, 1"
+      - name: "Periodic Date Range"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Date End"
+        s57_acronym: "(DATEND)"
+        encoding_value:
+        type: "(S) TD"
+        multiplicity: "1, 1"
+      - name: "Date Start"
+        s57_acronym: "(DATSTA)"
+        encoding_value:
+        type: "(S) TD"
+        multiplicity: "1, 1"
+      - name: "Seasonal Action Required"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "0, *"
+    associations:
+      - type: "association"
+        name: "Aton Status"
+        class: "AtonStatusInformation"
+        role: "Statuspart"
+        multiplicity: "0, 1"
+      - type: "Asso"
+        name: "Aton Aggregations"
+        class: "AtonAggregation"
+        role: "peer"
+        multiplicity: "0, *"
+      - type: "Asso"
+        name: "Aton Associations"
+        class: "AtonAssociation"
+        role: "peer"
+        multiplicity: "0, *"
+
+  - name: "Structure Object"
+    definition: "Something (such as a house, tower, bridge, etc.) that is built by putting parts together and that usually stands on its own."
+    super_type: "AidsToNavigation"
+    primitives: "noGeometry"
+    attributes: []
+    associations:
+      - type: "Asso"
+        name: "Structure Equipment"
+        class: "Equipment"
+        role: "child"
+        multiplicity: "0, *"
+
+  - name: "Equipment"
+    definition: "The implements used in an operation or activity."
+    super_type: "AidsToNavigation"
+    primitives: "noGeometry"
+    attributes: []
+    associations:
+      - type: "Asso"
+        name: "Structure Equipment"
+        class: "StructureObject"
+        role: "parent"
+        multiplicity: "1, 1"
+
+  - name: "Generic Beacon"
+    definition: "A fixed artificial navigation mark that can be recognized by its shape, colour, pattern, topmark or light character, or a combination of these. It may carry various additional aids to navigation."
+    super_type: "StructureObject"
+    primitives: "noGeometry"
+    attributes:
+      - name: "Beacon Shape"
+        s57_acronym: "(BCNSHP)"
+        encoding_value: |
+          1 : Stake, Pole, Perch, Post
+          
+          2 : Withy
+          
+          3 : Beacon Tower
+          
+          4 : Lattice Beacon
+          
+          5 : Pile Beacon
+          
+          6 : Cairn
+          
+          7 : Buoyant Beacon
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "1, * (ordered)"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Height"
+        s57_acronym: "(HEIGHT)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Marks Navigational - System Of"
+        s57_acronym: "(MARSYS)"
+        encoding_value: |
+          1 : IALA A
+          
+          2 : IALA B
+          
+          9 : No System
+          
+          10 : Other System
+          
+          11 : CEVNI
+          
+          12 : Russian Inland Waterway Regulations
+          
+          13 : Brazilian National Inland Waterway Regulations - Two Sides
+          
+          14 : Brazilian National Inland Waterway Regulations - Side Independent
+          
+          15 : Paraguay-Parana Waterway - Brazilian Complementary Aids
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Nature of Construction"
+        s57_acronym: "(NATCON)"
+        encoding_value: |
+          1 : Masonry
+          
+          2 : Concreted
+          
+          3 : Loose Boulders
+          
+          4 : Hard Surfaced
+          
+          5 : Unsurfaced
+          
+          6 : Wooden
+          
+          7 : Metal
+          
+          8 : Glass Reinforced Plastic
+          
+          9 : Painted
+          
+          10 : Framework
+          
+          11 : Latticed
+          
+          12 : Glass
+          
+          13 : Fiberglass
+          
+          14 : Plastic
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Radar Conspicuous"
+        s57_acronym: "(CONRAD)"
+        encoding_value:
+        type: "BO"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Vertical Length"
+        s57_acronym: "(VERLEN)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Visual Prominence"
+        s57_acronym: "(CONVIS)"
+        encoding_value: |
+          1 : Visually Conspicuous
+          
+          2 : Not Visually Conspicuous
+          
+          3 : Prominent
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Vertical Accuracy"
+        s57_acronym: ""
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+
+
+  - name: "Generic Buoy"
+    definition: "A floating object moored to the bottom in a particular (charted) place, as an aid to navigation or for other specific purposes."
+    super_type: "StructureObject"
+    primitives: "noGeometry"
+    attributes:
+      - name: "Buoy Shape"
+        s57_acronym: "(BOYSHP)"
+        encoding_value: |
+          1 : Conical
+          
+          2 : Can
+          
+          3 : Spherical
+          
+          4 : Pillar
+          
+          5 : Spar
+          
+          6 : Barrel
+          
+          7 : Superbuoy
+          
+          8 : Ice Buoy
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "1, *"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Marks Navigational - System Of"
+        s57_acronym: "(MARSYS)"
+        encoding_value: |
+          1 : IALA A
+          
+          2 : IALA B
+          
+          9 : No System
+          
+          10 : Other System
+          
+          11 : CEVNI
+          
+          12 : Russian Inland Waterway Regulations
+          
+          13 : Brazilian National Inland Waterway Regulations - Two Sides
+          
+          14 : Brazilian National Inland Waterway Regulations - Side Independent
+          
+          15 : Paraguay-Parana Waterway - Brazilian Complementary Aids
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Nature of Construction"
+        s57_acronym: "(NATCON)"
+        encoding_value: |
+          1 : Masonry
+          
+          2 : Concreted
+          
+          3 : Loose Boulders
+          
+          4 : Hard Surfaced
+          
+          5 : Unsurfaced
+          
+          6 : Wooden
+          
+          7 : Metal
+          
+          8 : Glass Reinforced Plastic
+          
+          9 : Painted
+          
+          10 : Framework
+          
+          11 : Latticed
+          
+          12 : Glass
+          
+          13 : Fiberglass
+          
+          14 : Plastic
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Radar Conspicuous"
+        s57_acronym: "(CONRAD)"
+        encoding_value:
+        type: "BO"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Type of Buoy"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "0, 1"
+    associations:
+      - type: "Asso"
+        name: "Structure Equipment"
+        class: "Topmark"
+        role: "equipment"
+        multiplicity: "0, *"
+
+  - name: "Generic Light"
+    definition: "-"
+    super_type: "Equipment"
+    primitives: "noGeometry"
+    attributes:
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "1, *"
+      - name: "Height"
+        s57_acronym: "(HEIGHT)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Vertical Datum"
+        s57_acronym: |
+          (VERDAT)
+          
+          (Datum Level)
+          
+          (Reference Plane)
+          
+          (Levelling Datum)
+          
+          (Datum for Sounding Reduction)
+          
+          (Datum for Heights)
+        encoding_value: |
+          1 : Mean Low Water Springs
+          
+          2 : Mean Lower Low Water Springs
+          
+          3 : Mean Sea Level
+          
+          4 : Lowest Low Water
+          
+          5 : Mean Low Water
+          
+          6 : Lowest Low Water Springs
+          
+          7 : Approximate Mean Low Water Springs
+          
+          8 : Indian Spring Low Water
+          
+          9 : Low Water Springs
+          
+          10 : Approximate Lowest Astronomical Tide
+          
+          11 : Nearly Lowest Low Water
+          
+          12 : Mean Lower Low Water
+          
+          13 : Low Water
+          
+          14 : Approximate Mean Low Water
+          
+          15 : Approximate Mean Lower Low Water
+          
+          16 : Mean High Water
+          
+          17 : Mean High Water Springs
+          
+          18 : High Water
+          
+          19 : Approximate Mean Sea Level
+          
+          20 : High Water Springs
+          
+          21 : Mean Higher High Water
+          
+          22 : Equinoctial Spring Low Water
+          
+          23 : Lowest Astronomical Tide
+          
+          24 : Local Datum
+          
+          25 : International Great Lakes Datum 1985
+          
+          26 : Mean Water Level
+          
+          27 : Lower Low Water Large Tide
+          
+          28 : Higher High Water Large Tide
+          
+          29 : Nearly Highest High Water
+          
+          30 : Highest Astronomical Tide
+          
+          31 : Local Low Water Reference Level
+          
+          32 : Local High Water Reference Level
+          
+          33 : Local Mean Water Reference Level
+          
+          34 : Equivalent Height of Water (German GlW)
+          
+          35 : Highest Shipping Height of Water (German HSW)
+          
+          36 : Reference Low Water Level According to Danube Commission
+          
+          37 : Highest Shipping Height of Water According to Danube Commission
+          
+          38 : Dutch River Low Water Reference Level (OLR)
+          
+          39 : Russian Project Water Level
+          
+          40 : Russian Normal Backwater Level
+          
+          41 : Ohio River Datum
+          
+          43 : Dutch High Water Reference Level
+          
+          44 : Baltic Sea Chart Datum 2000
+          
+          45 : Dutch Estuary Low Water Reference Level (OLW)
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Vertical Length"
+        s57_acronym: "(VERLEN)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Candela"
+        s57_acronym: ""
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+
+
+  - name: "Landmark"
+    id: "LNDMRK"
+    definition: "A prominent object at a fixed location on land which can be used in determining a location or a direction."
+    super_type: "StructureObject"
+    primitives: "point, curve, surface"
+    attributes:
+      - name: "Category of Landmark"
+        s57_acronym: "(CATLMK)"
+        encoding_value: |
+          1 : Cairn
+          
+          2 : Cemetery
+          
+          3 : Chimney
+          
+          4 : Dish Aerial
+          
+          5 : Flagstaff
+          
+          6 : Flare Stack
+          
+          7 : Mast
+          
+          8 : Windsock
+          
+          9 : Monument
+          
+          10 : Column/Pillar
+          
+          11 : Memorial Plaque
+          
+          12 : Obelisk
+          
+          13 : Statue
+          
+          14 : Cross
+          
+          15 : Dome
+          
+          16 : Radar Scanner
+          
+          17 : Tower
+          
+          18 : Windmill
+          
+          19 : Windmotor
+          
+          20 : Spire/Minaret
+          
+          21 : Large Rock or Boulder on Land
+          
+          22 : Triangulation Mark
+          
+          23 : Boundary Mark
+          
+          24 : Observation Wheel
+          
+          25 : Torii
+          
+          26 : Bridge
+          
+          27 : Dam
+        type: "EN"
+        multiplicity: "1, *"
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "0, * (ordered)"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Function"
+        s57_acronym: "(FUNCTN)"
+        encoding_value: |
+          2 : Harbour-Masters Office
+          
+          3 : Customs Office
+          
+          4 : Health Office
+          
+          5 : Hospital
+          
+          6 : Post Office
+          
+          7 : Hotel
+          
+          8 : Railway Station
+          
+          9 : Police Station
+          
+          10 : Water-Police Station
+          
+          11 : Pilot Office
+          
+          12 : Pilot Lookout
+          
+          13 : Bank Office
+          
+          14 : Headquarters for District Control
+          
+          15 : Transit Shed/Warehouse
+          
+          16 : Factory
+          
+          17 : Power Station
+          
+          18 : Administrative
+          
+          19 : Educational Facility
+          
+          20 : Church
+          
+          21 : Chapel
+          
+          22 : Temple
+          
+          23 : Pagoda
+          
+          24 : Shinto Shrine
+          
+          25 : Buddhist Temple
+          
+          26 : Mosque
+          
+          27 : Marabout
+          
+          28 : Lookout
+          
+          29 : Communication
+          
+          30 : Television
+          
+          31 : Radio
+          
+          32 : Radar
+          
+          33 : Light Support
+          
+          34 : Microwave
+          
+          35 : Cooling
+          
+          36 : Observation
+          
+          37 : Timeball
+          
+          38 : Clock
+          
+          39 : Control
+          
+          40 : Airship Mooring
+          
+          41 : Stadium
+          
+          42 : Bus Station
+          
+          43 : Passenger Terminal Building
+          
+          44 : Sea Rescue Control
+          
+          45 : Observatory
+          
+          46 : Ore Crusher
+          
+          47 : Boathouse
+          
+          48 : Pumping Station
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Nature of Construction"
+        s57_acronym: "(NATCON)"
+        encoding_value: |
+          1 : Masonry
+          
+          2 : Concreted
+          
+          3 : Loose Boulders
+          
+          4 : Hard Surfaced
+          
+          5 : Unsurfaced
+          
+          6 : Wooden
+          
+          7 : Metal
+          
+          8 : Glass Reinforced Plastic
+          
+          9 : Painted
+          
+          10 : Framework
+          
+          11 : Latticed
+          
+          12 : Glass
+          
+          13 : Fiberglass
+          
+          14 : Plastic
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Radar Conspicuous"
+        s57_acronym: "(CONRAD)"
+        encoding_value:
+        type: "BO"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Visual Prominence"
+        s57_acronym: "(CONVIS)"
+        encoding_value: |
+          1 : Visually Conspicuous
+          
+          2 : Not Visually Conspicuous
+          
+          3 : Prominent
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Height"
+        s57_acronym: "(HEIGHT)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+
+
+  - name: "Lateral Beacon"
+    definition: "A beacon is a prominent specially constructed object forming a conspicuous mark as a fixed aid to navigation or for use in hydrographic survey (IHO Dictionary, S-32, 5th Edition, 420). A lateral beacon is used to indicate the port or starboard hand side of the route to be followed. They are generally used for well defined channels and are used in conjunction with a conventional direction of buoyage. (UKHO NP 735, 5th Edition)"
+    super_type: "GenericBeacon"
+    primitives: "point"
+    attributes:
+      - name: "Category of Lateral Mark"
+        s57_acronym: "(CATLAM)"
+        encoding_value: |
+          1 : Port-Hand Lateral Mark
+          
+          2 : Starboard-Hand Lateral Mark
+          
+          3 : Preferred Channel to Starboard Lateral Mark
+          
+          4 : Preferred Channel to Port Lateral Mark
+          
+          5 : Right-Hand Side of the Waterway
+          
+          6 : Left-Hand Side of the Waterway
+          
+          7 : Right-Hand Side of the Channel
+          
+          8 : Left-Hand Side of the Channel
+          
+          9 : Bifurcation of the Waterway
+          
+          10 : Bifurcation of the Channel
+          
+          11 : Channel Near the Right Bank
+          
+          12 : Channel Near the Left Bank
+          
+          13 : Channel Cross-Over to the Right Bank
+          
+          14 : Channel Cross-Over to the Left Bank
+          
+          15 : Danger Point or Obstacles at the Right-Hand Side
+          
+          16 : Danger Point or Obstacles at the Left-Hand Side
+          
+          17 : Turn Off at the Right-Hand Side
+          
+          18 : Turn Off at the Left-Hand Side
+          
+          19 : Junction at the Right-Hand Side
+          
+          20 : Junction at the Left-Hand Side
+          
+          21 : Harbour Entry at the Right-Hand Side
+          
+          22 : Harbour Entry at the Left-Hand Side
+          
+          23 : Bridge Pier Mark
+          
+          24 : Entry From a Lake to a Narrower Waterway, Right Bank
+          
+          25 : Entry From a Lake to a Narrower Waterway, Left Bank
+          
+          26 : Change Bank
+          
+          27 : Continue Along Bank
+        type: "EN"
+        multiplicity: "1, 1"
+
+
+  - name: "Lateral Buoy"
+    definition: "A buoy is a floating object moored to the bottom in a particular place, as an aid to navigation or for other specific purposes. (IHO Dictionary, S-32, 5th Edition, 565). A lateral buoy is used to indicate the port or starboard hand side of the route to be followed. They are generally used for well defined channels and are used in conjunction with a conventional direction of buoyage. (UKHO NP 735, 5th Edition)"
+    super_type: "GenericBuoy"
+    primitives: "point"
+    attributes:
+      - name: "Category of Lateral Mark"
+        s57_acronym: "(CATLAM)"
+        encoding_value: |
+          1 : Port-Hand Lateral Mark
+          
+          2 : Starboard-Hand Lateral Mark
+          
+          3 : Preferred Channel to Starboard Lateral Mark
+          
+          4 : Preferred Channel to Port Lateral Mark
+          
+          5 : Right-Hand Side of the Waterway
+          
+          6 : Left-Hand Side of the Waterway
+          
+          7 : Right-Hand Side of the Channel
+          
+          8 : Left-Hand Side of the Channel
+          
+          9 : Bifurcation of the Waterway
+          
+          10 : Bifurcation of the Channel
+          
+          11 : Channel Near the Right Bank
+          
+          12 : Channel Near the Left Bank
+          
+          13 : Channel Cross-Over to the Right Bank
+          
+          14 : Channel Cross-Over to the Left Bank
+          
+          15 : Danger Point or Obstacles at the Right-Hand Side
+          
+          16 : Danger Point or Obstacles at the Left-Hand Side
+          
+          17 : Turn Off at the Right-Hand Side
+          
+          18 : Turn Off at the Left-Hand Side
+          
+          19 : Junction at the Right-Hand Side
+          
+          20 : Junction at the Left-Hand Side
+          
+          21 : Harbour Entry at the Right-Hand Side
+          
+          22 : Harbour Entry at the Left-Hand Side
+          
+          23 : Bridge Pier Mark
+          
+          24 : Entry From a Lake to a Narrower Waterway, Right Bank
+          
+          25 : Entry From a Lake to a Narrower Waterway, Left Bank
+          
+          26 : Change Bank
+          
+          27 : Continue Along Bank
+        type: "EN"
+        multiplicity: "1, 1"
+
+
+  - name: "Navigation Line"
+    id: "NAVLNE"
+    definition: "A straight line extending towards an area of navigational interest and generally generated by two navigational aids or one navigational aid and a bearing."
+    super_type: "AidsToNavigation"
+    primitives: "curve"
+    attributes:
+      - name: "Category of Navigation Line"
+        s57_acronym: "(CATNAV)"
+        encoding_value: |
+          1 : Clearing Line
+          
+          2 : Transit Line
+          
+          3 : Leading Line Bearing a Recommended Track
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Orientation"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "1, 1"
+      - name: "Orientation Uncertainty"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "0, 1"
+      - name: "Orientation Value"
+        s57_acronym: "(ORIENT)"
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+    associations:
+      - type: "Asso"
+        name: "Range System"
+        class: "RecommendedTrack"
+        role: "navigableTrack"
+        multiplicity: "0, *"
+
+  - name: "Recommended Track"
+    id: "RECTRC"
+    definition: "A route which has been specially examined to ensure so far as possible that it is free of dangers and along which ships are advised to navigate."
+    super_type: "AidsToNavigation"
+    primitives: "curve"
+    attributes:
+      - name: "Based On Fixed Marks"
+        s57_acronym: "(CATTRK=1)"
+        encoding_value:
+        type: "BO"
+        multiplicity: "1, 1"
+      - name: "Depth Range Minimum Value"
+        s57_acronym: "(DRVAL1)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Maximal Permitted Draught"
+        s57_acronym: "(lg_drt)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Vertical Datum"
+        s57_acronym: |
+          (VERDAT)
+          
+          (Datum Level)
+          
+          (Reference Plane)
+          
+          (Levelling Datum)
+         
+          (Datum for Sounding Reduction)
+          
+          (Datum for Heights)
+        encoding_value: |
+          1 : Mean Low Water Springs
+          
+          2 : Mean Lower Low Water Springs
+          
+          3 : Mean Sea Level
+          
+          4 : Lowest Low Water
+          
+          5 : Mean Low Water
+          
+          6 : Lowest Low Water Springs
+          
+          7 : Approximate Mean Low Water Springs
+          
+          8 : Indian Spring Low Water
+          
+          9 : Low Water Springs
+          
+          10 : Approximate Lowest Astronomical Tide
+          
+          11 : Nearly Lowest Low Water
+          
+          12 : Mean Lower Low Water
+          
+          13 : Low Water
+          
+          14 : Approximate Mean Low Water
+          
+          15 : Approximate Mean Lower Low Water
+          
+          16 : Mean High Water
+          
+          17 : Mean High Water Springs
+          
+          18 : High Water
+          
+          19 : Approximate Mean Sea Level
+          
+          20 : High Water Springs
+          
+          21 : Mean Higher High Water
+          
+          22 : Equinoctial Spring Low Water
+          
+          23 : Lowest Astronomical Tide
+          
+          24 : Local Datum
+          
+          25 : International Great Lakes Datum 1985
+          
+          26 : Mean Water Level
+          
+          27 : Lower Low Water Large Tide
+          
+          28 : Higher High Water Large Tide
+          
+          29 : Nearly Highest High Water
+          
+          30 : Highest Astronomical Tide
+          
+          31 : Local Low Water Reference Level
+          
+          32 : Local High Water Reference Level
+          
+          33 : Local Mean Water Reference Level
+          
+          34 : Equivalent Height of Water (German GlW)
+          
+          35 : Highest Shipping Height of Water (German HSW)
+          
+          36 : Reference Low Water Level According to Danube Commission
+          
+          37 : Highest Shipping Height of Water According to Danube Commission
+          
+          38 : Dutch River Low Water Reference Level (OLR)
+          
+          39 : Russian Project Water Level
+          
+          40 : Russian Normal Backwater Level
+          
+          41 : Ohio River Datum
+          
+          43 : Dutch High Water Reference Level
+          
+          44 : Baltic Sea Chart Datum 2000
+          
+          45 : Dutch Estuary Low Water Reference Level (OLW)
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Orientation"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "1, 1"
+      - name: "Orientation Uncertainty"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "0, 1"
+      - name: "Orientation Value"
+        s57_acronym: "(ORIENT)"
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Vertical Uncertainty"
+        s57_acronym: |
+          (VERACC)
+          
+          (SOUACC)
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Uncertainty Fixed"
+        s57_acronym: |
+          (POSACC)
+          
+          (SOUACC)
+          
+          (VERACC)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Uncertainty Variable Factor"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "0, 1"
+      - name: "Quality of Vertical Measurement"
+        s57_acronym: "(QUASOU)"
+        encoding_value: |
+          1 : Depth Known
+          
+          2 : Depth or Least Depth Unknown
+          
+          3 : Doubtful Sounding
+          
+          4 : Unreliable Sounding
+          
+          5 : No Bottom Found at Value Shown
+          
+          6 : Least Depth Known
+          
+          7 : Least Depth Unknown, Safe Clearance at Value Shown
+          
+          8 : Value Reported (Not Surveyed)
+          
+          9 : Value Reported (Not Confirmed)
+          
+          10 : Maintained Depth
+          
+          11 : Not Regularly Maintained
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Technique of Vertical Measurement"
+        s57_acronym: "(TECSOU)"
+        encoding_value: |
+          1 : Found by Echo Sounder
+          
+          2 : Found by Side Scan Sonar
+          
+          3 : Found by Multi Beam
+          
+          4 : Found by Diver
+          
+          5 : Found by Lead Line
+          
+          6 : Swept by Wire-Drag
+          
+          7 : Found by Laser
+          
+          8 : Swept by Vertical Acoustic System
+          
+          9 : Found by Electromagnetic Sensor
+          
+          10 : Photogrammetry
+          
+          11 : Satellite Imagery
+          
+          12 : Found by Levelling
+          
+          13 : Swept by Side Scan Sonar
+          
+          14 : Computer Generated
+          
+          15 : Found by LIDAR
+          
+          16 : Synthetic Aperture Radar
+          
+          17 : Hyperspectral Imagery
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Traffic Flow"
+        s57_acronym: "(TRAFIC)"
+        encoding_value: |
+          1 : Inbound
+          
+          2 : Outbound
+          
+          3 : One-Way
+          
+          4 : Two-Way
+        type: "EN"
+        multiplicity: "1, 1"
+    associations:
+      - type: "Asso"
+        name: "Range System"
+        class: "NavigationLine"
+        role: "navigationLine"
+        multiplicity: "1, *"
+
+  - name: "Light Sectored"
+    id: "LIGHTS, Sector Light"
+    definition: "A light presenting different appearances (in particular, different colours) over various parts of the horizon of interest to maritime navigation."
+    super_type: "GenericLight"
+    primitives: "point"
+    attributes:
+      - name: "Category of Light"
+        s57_acronym: "(CATLIT)"
+        encoding_value: |
+          1 : Directional Function
+          
+          4 : Leading Light
+          
+          5 : Aero Light
+          
+          6 : Air Obstruction Light
+          
+          8 : Flood Light
+          
+          9 : Strip Light
+          
+          10 : Subsidiary Light
+          
+          11 : Spotlight
+          
+          12 : Front
+          
+          13 : Rear
+          
+          14 : Lower
+          
+          15 : Upper
+          
+          17 : Emergency
+          
+          18 : Bearing Light
+          
+          19 : Horizontally Disposed
+          
+          20 : Vertically Disposed
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Exhibition Condition of Light"
+        s57_acronym: "(EXCLIT)"
+        encoding_value: |
+          1 : Light Shown Without Change of Character
+          
+          2 : Daytime Light
+          
+          3 : Fog Light
+          
+          4 : Night Light
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Marks Navigational - System Of"
+        s57_acronym: "(MARSYS)"
+        encoding_value: |
+          1 : IALA A
+          
+          2 : IALA B
+          
+          9 : No System
+          
+          10 : Other System
+          
+          11 : CEVNI
+          
+          12 : Russian Inland Waterway Regulations
+          
+          13 : Brazilian National Inland Waterway Regulations - Two Sides
+          
+          14 : Brazilian National Inland Waterway Regulations - Side Independent
+          
+          15 : Paraguay-Parana Waterway - Brazilian Complementary Aids
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Signal Generation"
+        s57_acronym: "(SIGGEN)"
+        encoding_value: |
+          1 : Automatically
+          
+          2 : By Wave Action
+          
+          3 : By Hand
+          
+          4 : By Wind
+          
+          5 : Radio Activated
+          
+          6 : Call Activated
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Obscured Sector"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, *"
+      - name: "Sector Limit"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "1, 1"
+      - name: "Sector Limit One"
+        s57_acronym: "(SECTR1)"
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "1, 1"
+      - name: "Sector Bearing"
+        s57_acronym: |
+          (SECTR1)
+          
+          (SECTR2)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Sector Line Length"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) IN"
+        multiplicity: "0, 1"
+      - name: "Sector Limit Two"
+        s57_acronym: "(SECTR2)"
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "1, 1"
+      - name: "Sector Bearing"
+        s57_acronym: |
+          (SECTR1)
+          
+          (SECTR2)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Sector Line Length"
+        s57_acronym:
+        encoding_value:
+        type: "(S) IN"
+        multiplicity: "0, 1"
+      - name: "Sector Information"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "0, 1"
+      - name: "Language"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Text"
+        s57_acronym: |
+          (INFORM)
+          
+          (NINFOM)
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "1, 1"
+      - name: "Sector Characteristics"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "1, *"
+      - name: "Light Characteristic"
+        s57_acronym: |
+          (LITCHR)
+          
+          (Character of Light)
+        encoding_value: |
+          1 : Fixed
+          
+          2 : Flashing
+          
+          3 : Long-Flashing
+          
+          4 : Quick-Flashing
+          
+          5 : Very Quick-Flashing
+          
+          6 : Continuous Ultra Quick-Flashing
+          
+          7 : Isophased
+          
+          8 : Occulting
+          
+          9 : Interrupted Quick Flashing
+          
+          10 : Interrupted Very Quick Flashing
+          
+          11 : Interrupted Ultra Quick-Flashing
+          
+          12 : Morse
+          
+          13 : Fixed and Flash
+          
+          14 : Flash and Long-Flash
+          
+          15 : Occulting and Flash
+          
+          16 : Fixed and Long-Flash
+          
+          17 : Occulting Alternating
+          
+          18 : Long-Flash Alternating
+          
+          19 : Flash Alternating
+          
+          20 : Group Alternating
+          
+          25 : Quick-Flash Plus Long-Flash
+          
+          26 : Very Quick-Flash Plus Long-Flash
+          
+          27 : Ultra Quick-Flash Plus Long-Flash
+          
+          28 : Alternating
+          
+          29 : Fixed and Alternating Flashing
+        type: "(S) EN"
+        multiplicity: "1, 1"
+      - name: "Light Sector"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "1, 1"
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "(S) EN"
+        multiplicity: "1, * (ordered)"
+      - name: "Directional Character"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "0, 1"
+      - name: "Moire Effect"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) BO"
+        multiplicity: "0, 1"
+      - name: "Orientation"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "1, 1"
+      - name: "Orientation Uncertainty"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "0, 1"
+      - name: "Orientation Value"
+        s57_acronym: "(ORIENT)"
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Light Visibility"
+        s57_acronym: "(LITVIS)"
+        encoding_value: |
+          1 : High Intensity
+          
+          2 : Low Intensity
+          
+          3 : Faint
+          
+          4 : Intensified
+          
+          5 : Unintensified
+          
+          6 : Visibility Deliberately Restricted
+          
+          7 : Obscured
+          
+          8 : Partially Obscured
+          
+          9 : Visible in Line of Range
+        type: "(S) EN"
+        multiplicity: "0, *"
+      - name: "Sector Limit"
+        s57_acronym:
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "0, 1"
+      - name: "Sector Limit One"
+        s57_acronym: "(SECTR1))"
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "1, 1"
+      - name: "Sector Bearing"
+        s57_acronym: |
+          (SECTR1)
+          
+          (SECTR2)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Sector Line Length"
+        s57_acronym:
+        encoding_value:
+        type: "(S) IN"
+        multiplicity: "0, 1"
+      - name: "Sector Limit Two"
+        s57_acronym: "(SECTR2)"
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "1, 1"
+      - name: "Sector Bearing"
+        s57_acronym: |
+          (SECTR1)
+          
+          (SECTR2)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Sector Line Length"
+        s57_acronym:
+        encoding_value:
+        type: "(S) IN"
+        multiplicity: "0, 1"
+      - name: "Value of Nominal Range"
+        s57_acronym: "(VALNMR)"
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "0, 1"
+      - name: "Sector Information"
+        s57_acronym:
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "0, *"
+      - name: "Language"
+        s57_acronym:
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Text"
+        s57_acronym: |
+          (INFORM)
+          
+          (NINFOM)
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "1, 1"
+      - name: "Sector Extension"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) BO"
+        multiplicity: "0, 1"
+      - name: "Signal Group"
+        s57_acronym: "(SIGGRP)"
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1 (ordered)"
+      - name: "Signal Period"
+        s57_acronym: "(SIGPER)"
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "0, 1"
+      - name: "Signal Sequence"
+        s57_acronym: "(SIGSEQ)"
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "0, 1 (ordered)"
+      - name: "Signal Duration"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Signal Status"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Lit/Sound
+          
+          2 : Eclipsed/Silent
+        type: "(S) EN"
+        multiplicity: "1, 1"
+
+  - name: "Light All Around"
+    id: "LIGHTS"
+    definition: "An all around light is a light that is visible over the whole horizon of interest to marine navigation and having no change in the characteristics of the light."
+    super_type: "GenericLight"
+    primitives: "point"
+    attributes:
+      - name: "Category of Light"
+        s57_acronym: "(CATLIT)"
+        encoding_value: |
+          1 : Directional Function
+          
+          4 : Leading Light
+          
+          5 : Aero Light
+          
+          6 : Air Obstruction Light
+          
+          8 : Flood Light
+          
+          9 : Strip Light
+          
+          10 : Subsidiary Light
+          
+          11 : Spotlight
+          
+          12 : Front
+          
+          13 : Rear
+          
+          14 : Lower
+          
+          15 : Upper
+          
+          17 : Emergency
+          
+          18 : Bearing Light
+          
+          19 : Horizontally Disposed
+          
+          20 : Vertically Disposed
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Exhibition Condition of Light"
+        s57_acronym: "(EXCLIT)"
+        encoding_value: |
+          1 : Light Shown Without Change of Character
+          
+          2 : Daytime Light
+          
+          3 : Fog Light
+          
+          4 : Night Light
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Light Visibility"
+        s57_acronym: "(LITVIS)"
+        encoding_value: |
+          1 : High Intensity
+          
+          2 : Low Intensity
+          
+          3 : Faint
+          
+          4 : Intensified
+          
+          5 : Unintensified
+          
+          6 : Visibility Deliberately Restricted
+          
+          7 : Obscured
+          
+          8 : Partially Obscured
+          
+          9 : Visible in Line of Range
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Major Light"
+        s57_acronym: ""
+        encoding_value:
+        type: "BO"
+        multiplicity: "0, 1"
+      - name: "Marks Navigational - System Of"
+        s57_acronym: "(MARSYS)"
+        encoding_value: |
+          1 : IALA A
+          
+          2 : IALA B
+          
+          9 : No System
+          
+          10 : Other System
+          
+          11 : CEVNI
+          
+          12 : Russian Inland Waterway Regulations
+          
+          13 : Brazilian National Inland Waterway Regulations - Two Sides
+          
+          14 : Brazilian National Inland Waterway Regulations - Side Independent
+          
+          15 : Paraguay-Parana Waterway - Brazilian Complementary Aids
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Signal Generation"
+        s57_acronym: "(SIGGEN)"
+        encoding_value: |
+          1 : Automatically
+          
+          2 : By Wave Action
+          
+          3 : By Hand
+          
+          4 : By Wind
+          
+          5 : Radio Activated
+          
+          6 : Call Activated
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Value of Geographic Range"
+        s57_acronym: ""
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Value of Luminous Range"
+        s57_acronym: ""
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Value of Nominal Range"
+        s57_acronym: "(VALNMR)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Multiplicity of Features"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Multiplicity Known"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) BO"
+        multiplicity: "1, 1"
+      - name: "Number of Features"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) IN"
+        multiplicity: "0, 1"
+
+
+  - name: "Light Air Obstruction"
+    id: "LIGHTS"
+    definition: "An air obstruction light is a light marking an obstacle which constitutes a danger to air navigation."
+    super_type: "GenericLight"
+    primitives: "point"
+    attributes:
+      - name: "Exhibition Condition of Light"
+        s57_acronym: "(EXCLIT)"
+        encoding_value: |
+          1 : Light Shown Without Change of Character
+          
+          2 : Daytime Light
+          
+          3 : Fog Light
+          
+          4 : Night Light
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Light Visibility"
+        s57_acronym: "(LITVIS)"
+        encoding_value: |
+          1 : High Intensity
+          
+          2 : Low Intensity
+          
+          3 : Faint
+          
+          4 : Intensified
+          
+          5 : Unintensified
+          
+          6 : Visibility Deliberately Restricted
+          
+          7 : Obscured
+          
+          8 : Partially Obscured
+          
+          9 : Visible in Line of Range
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Value of Geographic Range"
+        s57_acronym: ""
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Value of Luminous Range"
+        s57_acronym: ""
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Value of Nominal Range"
+        s57_acronym: "(VALNMR)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Multiplicity of Features"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Multiplicity Known"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) BO"
+        multiplicity: "1, 1"
+      - name: "Number of Features"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) IN"
+        multiplicity: "0, 1"
+
+
+  - name: "Light Fog Detector"
+    definition: "A fog detector light is a light used to automatically determine conditions of visibility which warrant the turning on or off of a sound signal."
+    super_type: "GenericLight"
+    primitives: "point"
+    attributes:
+      - name: "Signal Generation"
+        s57_acronym: "(SIGGEN)"
+        encoding_value: |
+          1 : Automatically
+          
+          2 : By Wave Action
+          
+          3 : By Hand
+          
+          4 : By Wind
+          
+          5 : Radio Activated
+          
+          6 : Call Activated
+        type: "EN"
+        multiplicity: "0, 1"
+
+
+  - name: "Radar Reflector"
+    id: "RADRFL"
+    definition: "A device capable of, or intended for, reflecting radar signals."
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Height"
+        s57_acronym: "(HEIGHT)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+
+
+  - name: "Fog Signal"
+    id: "FOGSIG"
+    definition: "A warning signal transmitted by a vessel, or aid to navigation, during periods of low visibility. Also, the device producing such a signal."
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Signal Sequence"
+        s57_acronym: "(SIGSEQ)"
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1 (ordered)"
+      - name: "Signal Duration"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Signal Status"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Lit/Sound
+          
+          2 : Eclipsed/Silent
+        type: "(S) EN"
+        multiplicity: "1, 1"
+      - name: "Category of Fog Signal"
+        s57_acronym: "(CATFOG)"
+        encoding_value: |
+          1 : Explosive
+          
+          2 : Diaphone
+          
+          3 : Siren
+          
+          4 : Nautophone
+          
+          5 : Reed
+          
+          6 : Tyfon
+          
+          7 : Bell
+          
+          8 : Whistle
+          
+          9 : Gong
+          
+          10 : Horn
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+
+
+  - name: "Radio Station"
+    id: "RDOSTA, W/T Station"
+    definition: "A place equipped to transmit radio waves. Such a station may be either stationary or mobile, and may also be provided with a radio receiver."
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Category of Radio Station"
+        s57_acronym: "(CATROS)"
+        encoding_value: |
+          1 : Circular (Non-Directional) Marine or Aero-Marine Radiobeacon
+          
+          2 : Directional Radiobeacon
+          
+          3 : Rotating Pattern Radiobeacon
+          
+          4 : Consol Beacon
+          
+          5 : Radio Direction-Finding Station
+          
+          6 : Coast Radio Station Providing QTG Service
+          
+          7 : Aeronautical Radiobeacon
+          
+          8 : Decca
+          
+          9 : Loran C
+          
+          10 : Differential GNSS
+          
+          11 : Toran
+          
+          12 : Omega
+          
+          13 : Syledis
+          
+          14 : Chaika
+          
+          19 : Radio Telephone Station
+          
+          20 : AIS Base Station
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, 1"
+    associations:
+      - type: "Asso"
+        name: "Virtual AIS"
+        class: "PhysicalAISAidToNavigation, SyntheticAISAidToNavigation, VirtualAISAidToNavigation"
+        role: "broadcastBy"
+        multiplicity: "0, *"
+
+  - name: "Daymark"
+    id: "DAYMAR"
+    definition: |
+      +
+      --
+      . The identifying characteristics of an aid to navigation which serve to facilitate its recognition against a daylight viewing background. On those structures that do not by themselves present an adequate viewing area to be seen at the required distance, the aid is made more visible by affixing a daymark to the structure. A daymark so affixed has a distinctive colour and shape depending on the purpose of the aid.
+      . An unlighted navigational mark.
+      --
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Category of Special Purpose Mark"
+        s57_acronym: "(CATSPM)"
+        encoding_value: |
+          1 : Firing Danger Mark
+          
+          2 : Target Mark
+          
+          3 : Marker Ship Mark
+          
+          4 : Degaussing Range Mark
+          
+          5 : Barge Mark
+          
+          6 : Cable Mark
+          
+          7 : Spoil Ground Mark
+          
+          8 : Outfall Mark
+          
+          9 : ODAS
+          
+          10 : Recording Mark
+          
+          11 : Seaplane Anchorage Mark
+          
+          12 : Recreation Zone Mark
+          
+          13 : Private Mark
+          
+          14 : Mooring Mark
+          
+          15 : LANBY
+          
+          16 : Leading Mark
+          
+          17 : Measured Distance Mark
+          
+          18 : Notice Mark
+          
+          19 : TSS Mark
+          
+          20 : Anchoring Prohibited Mark
+          
+          21 : Berthing Prohibited Mark
+          
+          22 : Overtaking Prohibited Mark
+          
+          23 : Two-Way Traffic Prohibited Mark
+          
+          24 : Reduced Wake Mark
+          
+          25 : Speed Limit Mark
+          
+          26 : Stop Mark
+          
+          27 : General Warning Mark
+          
+          28 : Sound Ship's Siren Mark
+          
+          29 : Restricted Vertical Clearance Mark
+          
+          30 : Maximum Vessel's Draught Mark
+          
+          31 : Restricted Horizontal Clearance Mark
+          
+          32 : Strong Current Warning Mark
+          
+          33 : Berthing Permitted Mark
+          
+          34 : Overhead Power Cable Mark
+          
+          35 : Channel Edge Gradient Mark
+          
+          36 : Telephone Mark
+          
+          37 : Ferry Crossing Mark
+          
+          39 : Pipeline Mark
+          
+          40 : Anchorage Mark
+          
+          41 : Clearing Mark
+          
+          42 : Control Mark
+          
+          43 : Diving Mark
+          
+          44 : Refuge Beacon
+          
+          45 : Foul Ground Mark
+          
+          46 : Yachting Mark
+          
+          47 : Heliport Mark
+          
+          48 : GNSS Mark
+          
+          49 : Seaplane Landing Mark
+          
+          50 : Entry Prohibited Mark
+          
+          51 : Work in Progress Mark
+          
+          52 : Mark With Unknown Purpose
+          
+          53 : Wellhead Mark
+          
+          54 : Channel Separation Mark
+          
+          55 : Marine Farm Mark
+          
+          56 : Artificial Reef Mark
+          
+          57 : Ice Mark
+          
+          58 : Nature Reserve Mark
+          
+          59 : Fish Aggregating Device
+          
+          60 : Wreck Mark
+          
+          61 : Customs Mark
+          
+          62 : Causeway Mark
+          
+          63 : Wave Recorder
+          
+          64 : Jetski Prohibited
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "1, *"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Height"
+        s57_acronym: "(HEIGHT)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Nature of Construction"
+        s57_acronym: "(NATCON)"
+        encoding_value: |
+          1 : Masonry
+          
+          2 : Concreted
+          
+          3 : Loose Boulders
+          
+          4 : Hard Surfaced
+          
+          5 : Unsurfaced
+          
+          6 : Wooden
+          
+          7 : Metal
+          
+          8 : Glass Reinforced Plastic
+          
+          9 : Painted
+          
+          10 : Framework
+          
+          11 : Latticed
+          
+          12 : Glass
+          
+          13 : Fiberglass
+          
+          14 : Plastic
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Orientation Value"
+        s57_acronym: "(ORIENT)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Topmark/Daymark Shape"
+        s57_acronym: "(TOPSHP)"
+        encoding_value: |
+          1 : Cone (Point Up)
+          
+          2 : Cone (Point Down)
+          
+          3 : Sphere
+          
+          4 : 2 Spheres
+          
+          5 : Cylinder
+          
+          6 : Board
+          
+          7 : X-Shaped
+          
+          8 : Upright Cross
+          
+          9 : Cube (Point Up)
+          
+          10 : 2 Cones (Point to Point)
+          
+          11 : 2 Cones (Base to Base)
+          
+          12 : Rhombus
+          
+          13 : 2 Cones (Points Upward)
+          
+          14 : 2 Cones (Points Downward)
+          
+          15 : Besom (Point Up)
+          
+          16 : Besom (Point Down)
+          
+          17 : Flag
+          
+          18 : Sphere Over a Rhombus
+          
+          19 : Square
+          
+          20 : Rectangle (Horizontal)
+          
+          21 : Rectangle (Vertical)
+          
+          22 : Trapezium (Up)
+          
+          23 : Trapezium (Down)
+          
+          24 : Triangle (Point Up)
+          
+          25 : Triangle (Point Down)
+          
+          26 : Circle
+          
+          27 : Two Upright Crosses (One Over the Other)
+          
+          28 : T-Shape
+          
+          29 : Triangle Pointing Up Over a Circle
+          
+          30 : Upright Cross Over a Circle
+          
+          31 : Rhombus Over a Circle
+          
+          32 : Circle Over a Triangle Pointing Up
+          
+          33 : Other Shape (See Shape Information)
+          
+          34 : Tubular
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "IsSlatted"
+        s57_acronym: ""
+        encoding_value:
+        type: "BO"
+        multiplicity: "1, 1"
+
+
+  - name: "Retroreflector"
+    id: "RETRFL"
+    definition: "A means of distinguishing unlighted marks at night. Retro-reflective material is secured to the mark in a particular pattern to reflect back light."
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Marks Navigational - System Of"
+        s57_acronym: "(MARSYS)"
+        encoding_value: |
+          1 : IALA A
+          
+          2 : IALA B
+          
+          9 : No System
+          
+          10 : Other System
+          
+          11 : CEVNI
+          
+          12 : Russian Inland Waterway Regulations
+          
+          13 : Brazilian National Inland Waterway Regulations - Two Sides
+          
+          14 : Brazilian National Inland Waterway Regulations - Side Independent
+          
+          15 : Paraguay-Parana Waterway - Brazilian Complementary Aids
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+
+
+  - name: "Radar Transponder Beacon"
+    id: "RTPBCN, Radar Beacon, RACON"
+    definition: "A transponder beacon transmitting a coded signal on radar frequency, permitting an interrogating craft to determine the bearing and range of the transponder."
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Category of Radar Transponder Beacon"
+        s57_acronym: "(CATRTB)"
+        encoding_value: |
+          1 : Ramark, Radar Beacon Transmitting Continuously
+          
+          2 : Racon, Radar Transponder Beacon
+          
+          3 : Leading Racon/Radar Transponder Beacon
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Radar Wave Length"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Radar Band"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "1, 1"
+      - name: "Wave Length Value"
+        s57_acronym: "(RadarWaveLength)"
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Signal Group"
+        s57_acronym: "(SIGGRP)"
+        encoding_value:
+        type: "TE"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Value of Nominal Range"
+        s57_acronym: "(VALNMR)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Sector Limit One"
+        s57_acronym: "(SECTR1)"
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Sector Bearing"
+        s57_acronym: |
+          (SECTR1)
+          
+          (SECTR2)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Sector Line Length"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) IN"
+        multiplicity: "0, 1"
+      - name: "Sector Limit Two"
+        s57_acronym: "(SECTR2)"
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Sector Bearing"
+        s57_acronym: |
+          (SECTR1)
+          
+          (SECTR2)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Sector Line Length"
+        s57_acronym:
+        encoding_value:
+        type: "(S) IN"
+        multiplicity: "0, 1"
+      - name: "Signal Sequence"
+        s57_acronym: "(SIGSEQ)"
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Signal Duration"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Signal Status"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Lit/Sound
+          
+          2 : Eclipsed/Silent
+        type: "(S) EN"
+        multiplicity: "1, 1"
+
+  - name: "Virtual AIS Aid to Navigation"
+    id: "NEWOBJ"
+    definition: "An Automatic Identification System (AIS) message 21 transmitted from an AIS station to simulate on navigation systems an Aid to Navigation which does not physically exist."
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Estimated Range of Transmission"
+        s57_acronym: "(ESTRNG)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "MMSI Code"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "1, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Virtual AIS Aid to Navigation Type"
+        s57_acronym: ""
+        encoding_value: |
+          1 : North Cardinal
+          
+          2 : East Cardinal
+          
+          3 : South Cardinal
+          
+          4 : West Cardinal
+          
+          5 : Port Lateral
+          
+          6 : Starboard Lateral
+          
+          7 : Preferred Channel to Port
+          
+          8 : Preferred Channel to Starboard
+          
+          9 : Isolated Danger
+          
+          10 : Safe Water
+          
+          11 : Special Purpose
+          
+          12 : New Danger Marking
+        type: "EN"
+        multiplicity: "1, 1"
+    associations:
+      - type: "Asso"
+        name: "Virtual AIS"
+        class: "RadioStation"
+        role: "broadcasts"
+        multiplicity: "1, *"
+
+  - name: "Physical AIS Aid to Navigation"
+    definition: "An Automatic Identification System (AIS) message 21 transmitted from a physical Aid to Navigation, or transmitted from an AIS station for an Aid to Navigation which physically exists."
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Category Of Physical AIS Aid To Navigation"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Physical AIS Type 1
+          
+          2 : Physical AIS Type 2
+          
+          3 : Physical AIS Type 3
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Estimated Range of Transmission"
+        s57_acronym: "(ESTRNG)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "MMSI Code"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "1, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Virtual AIS Aid to Navigation Type"
+        s57_acronym: ""
+        encoding_value: |
+          1 : North Cardinal
+          
+          2 : East Cardinal
+          
+          3 : South Cardinal
+          
+          4 : West Cardinal
+          
+          5 : Port Lateral
+          
+          6 : Starboard Lateral
+          
+          7 : Preferred Channel to Port
+          
+          8 : Preferred Channel to Starboard
+          
+          9 : Isolated Danger
+          
+          10 : Safe Water
+          
+          11 : Special Purpose
+          
+          12 : New Danger Marking
+        type: "EN"
+        multiplicity: "1, 1"
+    associations:
+      - type: "Asso"
+        name: "Virtual AIS"
+        class: "RadioStation"
+        role: "broadcasts"
+        multiplicity: "1, *"
+
+  - name: "Synthetic AIS Aid To Navigation"
+    definition: "-"
+    super_type: "Equipment"
+    primitives: "point"
+    attributes:
+      - name: "Category Of Synthetic AIS Aid To Navigation"
+        s57_acronym: ""
+        encoding_value: |
+          1 : predicted
+          
+          2 : monitored
+        type: "EN"
+        multiplicity: "1, 1"
+      - name: "Estimated Range of Transmission"
+        s57_acronym: "(ESTRNG)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "MMSI Code"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "1, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Virtual AIS Aid to Navigation Type"
+        s57_acronym: ""
+        encoding_value: |
+          1 : North Cardinal
+          
+          2 : East Cardinal
+          
+          3 : South Cardinal
+          
+          4 : West Cardinal
+          
+          5 : Port Lateral
+          
+          6 : Starboard Lateral
+          
+          7 : Preferred Channel to Port
+          
+          8 : Preferred Channel to Starboard
+          
+          9 : Isolated Danger
+          
+          10 : Safe Water
+          
+          11 : Special Purpose
+          
+          12 : New Danger Marking
+        type: "EN"
+        multiplicity: "1, 1"
+    associations:
+      - type: "Asso"
+        name: "Virtual AIS"
+        class: "RadioStation"
+        role: "broadcasts"
+        multiplicity: "1, *"
+
+  - name: "Isolated Danger Beacon"
+    definition: "A beacon is a prominent specially constructed object forming a conspicuous mark as a fixed aid to navigation or for use in hydrographic survey (IHO Dictionary, S-32, 5th Edition, 420). An isolated danger beacon is a beacon erected on an isolated danger of limited extent, which has navigable water all around it. (UKHO NP735, 5th Edition)"
+    super_type: "GenericBeacon"
+    primitives: "point"
+    attributes: []
+
+  - name: "Cardinal Beacon"
+    definition: "A cardinal beacon is used in conjunction with the compass to indicate where the mariner may find the best navigable water. It is placed in one of the four quadrants (North, East, South and West), bounded by inter-cardinal bearings from the point marked."
+    super_type: "GenericBeacon"
+    primitives: "point"
+    attributes:
+      - name: "Category of Cardinal Mark"
+        s57_acronym: "(CATCAM)"
+        encoding_value: |
+          1 : North Cardinal Mark
+          
+          2 : East Cardinal Mark
+          
+          3 : South Cardinal Mark
+          
+          4 : West Cardinal Mark
+        type: "EN"
+        multiplicity: "1, 1"
+
+  - name: "Isolated Danger Buoy"
+    definition: "A buoy is a floating object moored to the bottom in a particular place, as an aid to navigation or for other specific purposes. (IHO Dictionary, S-32, 5th Edition, 565). A isolated danger buoy is a buoy moored on or above an isolated danger of limited extent, which has navigable water all around it. (UKHO NP735, 5th Edition)"
+    super_type: "GenericBuoy"
+    primitives: "point"
+    attributes: []
+
+  - name: "Cardinal Buoy"
+    definition: "A cardinal buoy is used in conjunction with the compass to indicate where the mariner may find the best navigable water. It is placed in one of the four quadrants (North, East, South and West), bounded by inter-cardinal bearings from the point marked."
+    super_type: "GenericBuoy"
+    primitives: "point"
+    attributes:
+      - name: "Category of Cardinal Mark"
+        s57_acronym: "(CATCAM)"
+        encoding_value: |
+          1 : North Cardinal Mark
+          
+          2 : East Cardinal Mark
+          
+          3 : South Cardinal Mark
+          
+          4 : West Cardinal Mark
+        type: "EN"
+        multiplicity: "1, 1"
+
+  - name: "Installation Buoy"
+    definition: "A buoy is a floating object moored to the bottom in a particular place, as an aid to navigation or for other specific purposes. (IHO Dictionary, S-32, 5th Edition, 565). An installation buoy is a buoy used for loading tankers with gas or oil. (IHO Chart Specifications, M-4)"
+    super_type: "GenericBuoy"
+    primitives: "point"
+    attributes:
+      - name: "Category Of Installation Buoy"
+        s57_acronym: ""
+        encoding_value: |
+          1 : catenary anchor leg mooring (CALM)
+          
+          2 : catenary anchor leg mooring (CALM)
+        type: "EN"
+        multiplicity: "1, 1"
+
+  - name: "Mooring Buoy"
+    definition: "The equipment or structure used to secure a vessel. (IHO Registry)"
+    super_type: "GenericBuoy"
+    primitives: "point"
+    attributes: []
+
+  - name: "Emergency Wreck Marking Buoy"
+    definition: "An emergency wreck marking buoy is a buoy moored on or above a new wreck, designed to provide a prominent (both visual and radio) and easily identifiable temporary (24-72 hours) first response. (IHO Registry)"
+    super_type: "GenericBuoy"
+    primitives: "point"
+    attributes: []
+
+  - name: "Lighthouse"
+    definition: "A distinctive structure on or off a coast exhibiting a major light designed to serve as an aid to navigation."
+    super_type: "Landmark"
+    primitives: "point, surface"
+    attributes: []
+
+  - name: "Light Float"
+    id: "LITFLT"
+    definition: "A boat-like structure used instead of a light buoy in waters where strong streams or currents are experienced, or when a greater elevation than that of a light buoy is necessary."
+    super_type: "StructureObject"
+    primitives: "point"
+    attributes:
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "1, * (ordered)"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Nature of Construction"
+        s57_acronym: "(NATCON)"
+        encoding_value: |
+          1 : Masonry
+          
+          2 : Concreted
+          
+          3 : Loose Boulders
+          
+          4 : Hard Surfaced
+          
+          5 : Unsurfaced
+          
+          6 : Wooden
+          
+          7 : Metal
+          
+          8 : Glass Reinforced Plastic
+          
+          9 : Painted
+          
+          10 : Framework
+          
+          11 : Latticed
+          
+          12 : Glass
+          
+          13 : Fiberglass
+          
+          14 : Plastic
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Radar Conspicuous"
+        s57_acronym: "(CONRAD)"
+        encoding_value:
+        type: "BO"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Visual Prominence"
+        s57_acronym: "(CONVIS)"
+        encoding_value: |
+          1 : Visually Conspicuous
+          
+          2 : Not Visually Conspicuous
+          
+          3 : Prominent
+        type: "EN"
+        multiplicity: "0, 1"
+
+  - name: "Light Vessel"
+    id: "LITVES, Lightship"
+    definition: "A distinctively marked vessel anchored or moored at a charted point, to serve as an aid to navigation. By night, it displays a characteristic light(s) and is usually equipped with other devices, such as fog signal, submarine sound signal, and radio-beacon, to assist navigation."
+    super_type: "StructureObject"
+    primitives: "point"
+    attributes:
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "1, * (ordered)"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Nature of Construction"
+        s57_acronym: "(NATCON)"
+        encoding_value: |
+          1 : Masonry
+          
+          2 : Concreted
+          
+          3 : Loose Boulders
+          
+          4 : Hard Surfaced
+          
+          5 : Unsurfaced
+          
+          6 : Wooden
+          
+          7 : Metal
+          
+          8 : Glass Reinforced Plastic
+          
+          9 : Painted
+          
+          10 : Framework
+          
+          11 : Latticed
+          
+          12 : Glass
+          
+          13 : Fiberglass
+          
+          14 : Plastic
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Radar Conspicuous"
+        s57_acronym: "(CONRAD)"
+        encoding_value:
+        type: "BO"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Visual Prominence"
+        s57_acronym: "(CONVIS)"
+        encoding_value: |
+          1 : Visually Conspicuous
+          
+          2 : Not Visually Conspicuous
+          
+          3 : Prominent
+        type: "EN"
+        multiplicity: "0, 1"
+
+  - name: "Offshore Platform"
+    id: "OFSPLF"
+    definition: "A permanent offshore structure, either fixed or floating."
+    super_type: "StructureObject"
+    primitives: "point, surface"
+    attributes:
+      - name: "Category of Offshore Platform"
+        s57_acronym: "(CATOFP)"
+        encoding_value: |
+          1 : Oil Rig
+          
+          2 : Production Platform
+          
+          3 : Observation/Research Platform
+          
+          4 : Articulated Loading Platform
+          
+          5 : Single Anchor Leg Mooring
+          
+          6 : Mooring Tower
+          
+          7 : Artificial Island
+          
+          8 : Floating Production, Storage and Off-Loading Vessel
+          
+          9 : Accommodation Platform
+          
+          10 : Navigation, Communication and Control Buoy
+          
+          11 : Floating Oil Tank
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "0, * (ordered)"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Condition"
+        s57_acronym: "(CONDTN)"
+        encoding_value: |
+          1 : Under Construction
+          
+          2 : Ruined
+          
+          3 : Under Reclamation
+          
+          4 : Wingless
+          
+          5 : Planned Construction
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Nature of Construction"
+        s57_acronym: "(NATCON)"
+        encoding_value: |
+          1 : Masonry
+          
+          2 : Concreted
+          
+          3 : Loose Boulders
+          
+          4 : Hard Surfaced
+          
+          5 : Unsurfaced
+          
+          6 : Wooden
+          
+          7 : Metal
+          
+          8 : Glass Reinforced Plastic
+          
+          9 : Painted
+          
+          10 : Framework
+          
+          11 : Latticed
+          
+          12 : Glass
+          
+          13 : Fiberglass
+          
+          14 : Plastic
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Radar Conspicuous"
+        s57_acronym: "(CONRAD)"
+        encoding_value:
+        type: "BO"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Visual Prominence"
+        s57_acronym: "(CONVIS)"
+        encoding_value: |
+          1 : Visually Conspicuous
+          
+          2 : Not Visually Conspicuous
+          
+          3 : Prominent
+        type: "EN"
+        multiplicity: "0, 1"
+
+  - name: "Silo/Tank"
+    id: "SILTNK"
+    definition: "A large storage structure used for storing loose materials, liquids and/or gases."
+    super_type: "StructureObject"
+    primitives: "point, surface"
+    attributes:
+      - name: "Building Shape"
+        s57_acronym: "(BUISHP)"
+        encoding_value: |
+          5 : High-Rise Building
+          
+          6 : Pyramid
+          
+          7 : Cylindrical
+          
+          8 : Spherical
+          
+          9 : Cubic
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Category of Silo/Tank"
+        s57_acronym: "(CATSIL)"
+        encoding_value: |
+          1 : Silo in General
+          
+          2 : Tank in General
+          
+          3 : Grain Elevator
+          
+          4 : Water Tower
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "0, * (ordered)"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Height"
+        s57_acronym: "(HEIGHT)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Nature of Construction"
+        s57_acronym: "(NATCON)"
+        encoding_value: |
+          1 : Masonry
+          
+          2 : Concreted
+          
+          3 : Loose Boulders
+          
+          4 : Hard Surfaced
+          
+          5 : Unsurfaced
+          
+          6 : Wooden
+          
+          7 : Metal
+          
+          8 : Glass Reinforced Plastic
+          
+          9 : Painted
+          
+          10 : Framework
+          
+          11 : Latticed
+          
+          12 : Glass
+          
+          13 : Fiberglass
+          
+          14 : Plastic
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Radar Conspicuous"
+        s57_acronym: "(CONRAD)"
+        encoding_value:
+        type: "BO"
+        multiplicity: "0, 1"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Visual Prominence"
+        s57_acronym: "(CONVIS)"
+        encoding_value: |
+          1 : Visually Conspicuous
+          
+          2 : Not Visually Conspicuous
+          
+          3 : Prominent
+        type: "EN"
+        multiplicity: "0, 1"
+
+  - name: "Pile"
+    id: "PILPNT"
+    definition: "A long heavy timber or section of steel, wood, concrete, etc., forced into the earth or sea floor to serve as a support, as for a pier, or to resist lateral pressure; or as a free standing pole within a marine environment."
+    super_type: "StructureObject"
+    primitives: "point"
+    attributes:
+      - name: "Category of Pile"
+        s57_acronym: "(CATPLE)"
+        encoding_value: |
+          1 : Stake
+          
+          3 : Post
+          
+          4 : Tripodal
+          
+          5 : Piling
+          
+          6 : Area of Piles
+          
+          7 : Pipe
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Height"
+        s57_acronym: "(HEIGHT)"
+        encoding_value:
+        type: "RE"
+        multiplicity: "0, 1"
+      - name: "Visual Prominence"
+        s57_acronym: "(CONVIS)"
+        encoding_value: |
+          1 : Visually Conspicuous
+          
+          2 : Not Visually Conspicuous
+          
+          3 : Prominent
+        type: "EN"
+        multiplicity: "0, 1"
+
+  - name: "Building"
+    id: "BUISGL"
+    definition: "A free-standing self-supporting construction that is roofed, usually walled, and is intended for human occupancy (for example: a place of work or recreation) and/or habitation."
+    super_type: "StructureObject"
+    primitives: "point"
+    attributes: []
+
+  - name: "Bridge"
+    id: "BRIDGE"
+    definition: "(1) An elevated structure extending across or over the weather deck of a vessel, or part of such a structure. The term is sometimes modified to indicate the intended use, such as navigating bridge or signal bridge. (2) A structure erected over a depression or an obstacle such as a body of water, railroad, etc., to provide a roadway for vehicles or pedestrians."
+    super_type: "StructureObject"
+    primitives: "noGeometry"
+    attributes: []
+
+  - name: "Topmark"
+    definition: "A characteristic shape secured at the top of a buoy or beacon to aid in its identification. (IHO Dictionary, S-32, 5th Edition, 5548)"
+    super_type: "AidsToNavigation"
+    primitives: "point"
+    attributes:
+      - name: "Colour"
+        s57_acronym: "(COLOUR)"
+        encoding_value: |
+          1 : White
+          
+          2 : Black
+          
+          3 : Red
+          
+          4 : Green
+          
+          5 : Blue
+          
+          6 : Yellow
+          
+          7 : Grey
+          
+          8 : Brown
+          
+          9 : Amber
+          
+          10 : Violet
+          
+          11 : Orange
+          
+          12 : Magenta
+          
+          13 : Pink
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Colour Pattern"
+        s57_acronym: "(COLPAT)"
+        encoding_value: |
+          1 : Horizontal Stripes
+          
+          2 : Vertical Stripes
+          
+          3 : Diagonal Stripes
+          
+          4 : Squared
+          
+          5 : Stripes (Direction Unknown)
+          
+          6 : Border Stripe
+          
+          7 : Single Colour
+          
+          8 : Rectangle
+          
+          9 : Triangle
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Status"
+        s57_acronym: "(STATUS)"
+        encoding_value: |
+          1 : Permanent
+          
+          2 : Occasional
+          
+          3 : Recommended
+          
+          4 : Not in Use
+          
+          5 : Periodic/Intermittent
+          
+          6 : Reserved
+          
+          7 : Temporary
+          
+          8 : Private
+          
+          9 : Mandatory
+          
+          11 : Extinguished
+          
+          12 : Illuminated
+          
+          13 : Historic
+          
+          14 : Public
+          
+          15 : Synchronized
+          
+          16 : Watched
+          
+          17 : Unwatched
+          
+          18 : Existence Doubtful
+          
+          19 : On Request
+          
+          20 : Drop Away
+          
+          21 : Rising
+          
+          22 : Increasing
+          
+          23 : Decreasing
+          
+          24 : Strong
+          
+          25 : Good
+          
+          26 : Moderately
+          
+          27 : Poor
+          
+          28 : Buoyed
+          
+          29 : Fully Operational
+          
+          30 : Partially Operational
+          
+          31 : Drifting
+          
+          32 : Broken
+          
+          33 : Offline
+          
+          34 : Discontinued
+          
+          35 : Manual Observation
+          
+          36 : Unknown Status
+          
+          37 : Confirmed
+          
+          38 : Candidate
+          
+          39 : Under Modification
+          
+          41 : Under Removal / Deletion
+          
+          42 : Removed / Deleted
+          
+          43 : Candidate for Modification
+        type: "EN"
+        multiplicity: "0, *"
+      - name: "Topmark/Daymark Shape"
+        s57_acronym: "(TOPSHP)"
+        encoding_value: |
+          1 : Cone (Point Up)
+          
+          2 : Cone (Point Down)
+          
+          3 : Sphere
+          
+          4 : 2 Spheres
+          
+          5 : Cylinder
+          
+          6 : Board
+          
+          7 : X-Shaped
+          
+          8 : Upright Cross
+          
+          9 : Cube (Point Up)
+          
+          10 : 2 Cones (Point to Point)
+          
+          11 : 2 Cones (Base to Base)
+          
+          12 : Rhombus
+          
+          13 : 2 Cones (Points Upward)
+          
+          14 : 2 Cones (Points Downward)
+          
+          15 : Besom (Point Up)
+          
+          16 : Besom (Point Down)
+          
+          17 : Flag
+          
+          18 : Sphere Over a Rhombus
+          
+          19 : Square
+          
+          20 : Rectangle (Horizontal)
+          
+          21 : Rectangle (Vertical)
+          
+          22 : Trapezium (Up)
+          
+          23 : Trapezium (Down)
+          
+          24 : Triangle (Point Up)
+          
+          25 : Triangle (Point Down)
+          
+          26 : Circle
+          
+          27 : Two Upright Crosses (One Over the Other)
+          
+          28 : T-Shape
+          
+          29 : Triangle Pointing Up Over a Circle
+          
+          30 : Upright Cross Over a Circle
+          
+          31 : Rhombus Over a Circle
+          
+          32 : Circle Over a Triangle Pointing Up
+          
+          33 : Other Shape (See Shape Information)
+          
+          34 : Tubular
+        type: "EN"
+        multiplicity: "1, 1"
+    associations:
+      - type: "Asso"
+        name: "Structure Equipment"
+        class: "GenericBuoy"
+        role: "structure"
+        multiplicity: "1, 1"
+
+  - name: "Safe Water Beacon"
+    definition: "A safe water beacon is a prominent specially constructed object forming a conspicuous mark as a fixed aid to navigation or for use in hydrographic survey (IHO Dictionary, S-32, 5th Edition, 420). A safe water beacon may be used to indicate that there is navigable water around the mark. (UKHO NP735, 5th Edition)"
+    super_type: "GenericBeacon"
+    primitives: "point"
+    attributes: []
+
+  - name: "Special Purpose General Beacon"
+    definition: "A beacon is a prominent specially constructed object forming a conspicuous mark as a fixed aid to navigation or for use in hydrographic survey (IHO Dictionary, S-32, 5th Edition, 420). A special purpose beacon is primarily used to indicate an area or feature, the nature of which is apparent from reference to a chart, Sailing Directions or Notices to Mariners. (UKHO NP 735, 5th Edition) Beacon in general: A beacon whose appearance or purpose is not adequately known."
+    super_type: "GenericBeacon"
+    primitives: "point"
+    attributes:
+      - name: "Category of Special Purpose Mark"
+        s57_acronym: "(CATSPM)"
+        encoding_value: |
+          1 : Firing Danger Mark
+          
+          2 : Target Mark
+          
+          3 : Marker Ship Mark
+          
+          4 : Degaussing Range Mark
+          
+          5 : Barge Mark
+          
+          6 : Cable Mark
+          
+          7 : Spoil Ground Mark
+          
+          8 : Outfall Mark
+          
+          9 : ODAS
+          
+          10 : Recording Mark
+          
+          11 : Seaplane Anchorage Mark
+          
+          12 : Recreation Zone Mark
+          
+          13 : Private Mark
+          
+          14 : Mooring Mark
+          
+          15 : LANBY
+          
+          16 : Leading Mark
+          
+          17 : Measured Distance Mark
+          
+          18 : Notice Mark
+          
+          19 : TSS Mark
+          
+          20 : Anchoring Prohibited Mark
+          
+          21 : Berthing Prohibited Mark
+          
+          22 : Overtaking Prohibited Mark
+          
+          23 : Two-Way Traffic Prohibited Mark
+          
+          24 : Reduced Wake Mark
+          
+          25 : Speed Limit Mark
+          
+          26 : Stop Mark
+          
+          27 : General Warning Mark
+          
+          28 : Sound Ship's Siren Mark
+          
+          29 : Restricted Vertical Clearance Mark
+          
+          30 : Maximum Vessel's Draught Mark
+          
+          31 : Restricted Horizontal Clearance Mark
+          
+          32 : Strong Current Warning Mark
+          
+          33 : Berthing Permitted Mark
+          
+          34 : Overhead Power Cable Mark
+          
+          35 : Channel Edge Gradient Mark
+          
+          36 : Telephone Mark
+          
+          37 : Ferry Crossing Mark
+          
+          39 : Pipeline Mark
+          
+          40 : Anchorage Mark
+          
+          41 : Clearing Mark
+          
+          42 : Control Mark
+          
+          43 : Diving Mark
+          
+          44 : Refuge Beacon
+          
+          45 : Foul Ground Mark
+          
+          46 : Yachting Mark
+          
+          47 : Heliport Mark
+          
+          48 : GNSS Mark
+          
+          49 : Seaplane Landing Mark
+          
+          50 : Entry Prohibited Mark
+          
+          51 : Work in Progress Mark
+          
+          52 : Mark With Unknown Purpose
+          
+          53 : Wellhead Mark
+          
+          54 : Channel Separation Mark
+          
+          55 : Marine Farm Mark
+          
+          56 : Artificial Reef Mark
+          
+          57 : Ice Mark
+          
+          58 : Nature Reserve Mark
+          
+          59 : Fish Aggregating Device
+          
+          60 : Wreck Mark
+          
+          61 : Customs Mark
+          
+          62 : Causeway Mark
+          
+          63 : Wave Recorder
+          
+          64 : Jetski Prohibited
+        type: "EN"
+        multiplicity: "1, *"
+
+  - name: "Safe Water Buoy"
+    definition: "A buoy is a floating object moored to the bottom in a particular place, as an aid to navigation or for other specific purposes. (IHO Dictionary, S-32, 5th Edition, 565). A safe water buoy is used to indicate that there is navigable water around the mark. (UKHO NP735, 5th Edition)"
+    super_type: "GenericBuoy"
+    primitives: "point"
+    attributes: []
+
+  - name: "Special Purpose General Buoy"
+    definition: "A buoy is a floating object moored to the bottom in a particular place, as an aid to navigation or for other specific purposes. (IHO Dictionary, S-32, 5th Edition, 565). A special purpose buoy is primarily used to indicate an area or feature, the nature of which is apparent from reference to a chart, Sailing Directions or Notices to Mariners. (UKHO NP 735, 5th Edition) Buoy in general: A buoy whose appearance or purpose is not adequately known."
+    super_type: "GenericBuoy"
+    primitives: "point"
+    attributes:
+      - name: "Category of Special Purpose Mark"
+        s57_acronym: "(CATSPM)"
+        encoding_value: |
+          1 : Firing Danger Mark
+          
+          2 : Target Mark
+          
+          3 : Marker Ship Mark
+          
+          4 : Degaussing Range Mark
+          
+          5 : Barge Mark
+          
+          6 : Cable Mark
+          
+          7 : Spoil Ground Mark
+          
+          8 : Outfall Mark
+          
+          9 : ODAS
+          
+          10 : Recording Mark
+          
+          11 : Seaplane Anchorage Mark
+          
+          12 : Recreation Zone Mark
+          
+          13 : Private Mark
+          
+          14 : Mooring Mark
+          
+          15 : LANBY
+          
+          16 : Leading Mark
+          
+          17 : Measured Distance Mark
+          
+          18 : Notice Mark
+          
+          19 : TSS Mark
+          
+          20 : Anchoring Prohibited Mark
+          
+          21 : Berthing Prohibited Mark
+          
+          22 : Overtaking Prohibited Mark
+          
+          23 : Two-Way Traffic Prohibited Mark
+          
+          24 : Reduced Wake Mark
+          
+          25 : Speed Limit Mark
+          
+          26 : Stop Mark
+          
+          27 : General Warning Mark
+          
+          28 : Sound Ship's Siren Mark
+          
+          29 : Restricted Vertical Clearance Mark
+          
+          30 : Maximum Vessel's Draught Mark
+          
+          31 : Restricted Horizontal Clearance Mark
+          
+          32 : Strong Current Warning Mark
+          
+          33 : Berthing Permitted Mark
+          
+          34 : Overhead Power Cable Mark
+          
+          35 : Channel Edge Gradient Mark
+          
+          36 : Telephone Mark
+          
+          37 : Ferry Crossing Mark
+          
+          39 : Pipeline Mark
+          
+          40 : Anchorage Mark
+          
+          41 : Clearing Mark
+          
+          42 : Control Mark
+          
+          43 : Diving Mark
+          
+          44 : Refuge Beacon
+          
+          45 : Foul Ground Mark
+          
+          46 : Yachting Mark
+          
+          47 : Heliport Mark
+          
+          48 : GNSS Mark
+          
+          49 : Seaplane Landing Mark
+          
+          50 : Entry Prohibited Mark
+          
+          51 : Work in Progress Mark
+          
+          52 : Mark With Unknown Purpose
+          
+          53 : Wellhead Mark
+          
+          54 : Channel Separation Mark
+          
+          55 : Marine Farm Mark
+          
+          56 : Artificial Reef Mark
+          
+          57 : Ice Mark
+          
+          58 : Nature Reserve Mark
+          
+          59 : Fish Aggregating Device
+          
+          60 : Wreck Mark
+          
+          61 : Customs Mark
+          
+          62 : Causeway Mark
+          
+          63 : Wave Recorder
+          
+          64 : Jetski Prohibited
+        type: "EN"
+        multiplicity: "1, *"
+
+  - name: "Dangerous Feature"
+    definition: "-"
+    super_type: 
+    primitives: "point"
+    attributes:
+      - name: "Information"
+        s57_acronym: "(INFORM)"
+        encoding_value:
+        type: "C"
+        multiplicity: "0, *"
+      - name: "File Locator"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "File Reference"
+        s57_acronym: |
+          (TXTDSC)
+          
+          (NTXTDS)
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Headline"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Language"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "1, 1"
+      - name: "Text"
+        s57_acronym: |
+          (INFORM)
+          
+          (NINFOM)
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "0, 1"
+      - name: "Interoperability Identifier"
+        s57_acronym: ""
+        encoding_value:
+        type: "UN"
+        multiplicity: "0, 1"
+    associations:
+      - type: "Asso"
+        name: "Dangerous Feature Association"
+        class: "AtonAssociation"
+        role: "markingAton"
+        multiplicity: "1, *"
+
+  - name: "Aton Aggregation"
+    definition: "Used to identify an aggregation of two or more objects. This aggregation may be named content of categoryOfAggregation should be put in information attribute when converting to S-57."
+    super_type: 
+    primitives: "noGeometry"
+    attributes:
+      - name: "Category Of Aggregation"
+        s57_acronym: ""
+        encoding_value: |
+          1 : leading line 
+          
+          3 : measured distance 
+          
+          2 : range system
+        type: "CL"
+        multiplicity: "1, 1"
+    associations:
+      - type: "Asso"
+        name: "Aton Aggregations"
+        class: "AidsToNavigation"
+        role: "peer"
+        multiplicity: "0, *"
+
+  - name: "Aton Association"
+    definition: "Used to identify an association between two or more objects. The association may be named content of categoryOfAssociation should be put in information attribute when converting to S-57"
+    super_type: 
+    primitives: "noGeometry"
+    attributes:
+      - name: "Category Of Association"
+        s57_acronym: ""
+        encoding_value: |
+          1 : channel markings
+          
+          2 : danger markings
+        type: "CL"
+        multiplicity: "1, 1"
+    associations:
+      - type: "Asso"
+        name: "Dangerous Feature Association"
+        class: "DangerousFeature"
+        role: "danger"
+        multiplicity: "0, *"
+      - type: "Asso"
+        name: "Aton Associations"
+        class: "AidsToNavigation"
+        role: "peer"
+        multiplicity: "0, *"

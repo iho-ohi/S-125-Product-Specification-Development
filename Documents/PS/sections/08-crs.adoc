@@ -1,0 +1,66 @@
+== Coordinate Reference System (CRS)
+
+=== Introduction
+
+The location of an object in the S-100 standard is defined by means of
+coordinates which relate a feature to a position. The coordinate
+reference system used for this product specification is World Geodetic
+System 1984 (WGS 84) which is defined by the European Petroleum Survey
+Group (EPSG) code 4326, (or similar - North American Datum 1983 /
+Canadian Spatial Reference System).
+
+Spatial data is expressed as latitude (stem:[varphi])
+and longitude (stem:[lambda]) geographic
+coordinates. Latitude values are stored as a negative number to represent
+a position south of the Equator. Longitude values are stored as a
+negative number to represent a position west of the International Prime
+Meridian. Coordinates are expressed as real value, degree / degree
+decimal format. Datasets conforming to this product specification are not
+projected.
+
+*Horizontal coordinate reference system*:: WGS 84
+
+*Projection*:: None
+
+*Vertical coordinate reference system*:: None
+
+*Temporal reference system*:: Gregorian calendar
+
+*Coordinate reference system registry*::
+http://www.epsg-registry.org/[EPSG Geodetic Parameter]
+http://www.epsg-registry.org/[Registry]
+
+*Date type (according to <<ISO19115>>)*:: 002 - publication
+
+=== Horizontal reference system
+
+Positional data is expressed in latitude and longitude geographic
+coordinates of the World Geodetic System 84 (WGS 84).
+
+=== Projection
+
+Marine AtoN data products are un-projected.
+
+=== Vertical coordinate reference system
+
+Marine Aids to Navigation (AtoN) data products do not provide detailed
+vertical information.
+
+=== Temporal reference system
+
+Time is measured by reference to Calendar dates and Clock time in
+accordance with <<ISO19108,section="5.4.4">>.
+
+=== Coverage of nautical products data and scale
+
+Marine AtoN data must be compiled in the best applicable scale. The use
+of the data itself is "scale independent". That means that the data can
+be used at any scale. S-100 allows the association of multiple spatial
+attributes to a single feature instance. Each of these spatial attributes
+can in principle be qualified by maximum and minimum scales.
+
+For example, it is possible, within one dataset, to have a single
+instance of a feature that has more than one area geometry. Each of these
+geometries has different scale max/min attributes. Moreover, due to
+cluttering in smaller scales, the scale minimum attribute may be used to
+turn off portrayal of some features at smaller scales.

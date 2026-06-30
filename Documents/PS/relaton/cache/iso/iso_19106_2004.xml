@@ -1,0 +1,70 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" script="Latn" type="title-intro">Geographic information</title>
+  <title language="en" script="Latn" type="title-main">Profiles</title>
+  <title language="en" script="Latn" type="main">Geographic information - Profiles</title>
+  <title language="fr" script="Latn" type="title-intro">Information géographique</title>
+  <title language="fr" script="Latn" type="title-main">Profils</title>
+  <title language="fr" script="Latn" type="main">Information géographique - Profils</title>
+  <uri type="src">https://www.iso.org/standard/26011.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26011:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26011.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19106:2004</docidentifier>
+  <docidentifier type="iso-reference">ISO 19106:2004(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19106:stage-90.93</docidentifier>
+  <docnumber>19106</docnumber>
+  <date type="published">
+    <on>2004-06-28</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <subdivision type="technical-committee" subtype="TC">
+        <name>Geographic information/Geomatics</name>
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">ISO 19106:2004 is intended to define the concept of a profile of the ISO geographic information standards developed by ISO/TC 211 and to provide guidance for the creation of such profiles. Only those components of specifications that meet the definition of a profile contained herein can be established and managed through the mechanisms described in this International Standard. These profiles can be standardized internationally using the ISO standardization process. This document also provides guidance for establishing, managing, and standardizing at the national level (or in some other forum).</abstract>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2004</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <place>
+    <city>Geneva</city>
+  </place>
+  <ext schema-version="v1.1.2">
+    <doctype>international-standard</doctype>
+    <flavor>iso</flavor>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>26011</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

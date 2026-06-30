@@ -1,0 +1,18 @@
+{% for ca in att.attributes %}
+[[cls-7.{{ forloop.index }}]]
+=== {{ ca.title }}
+
+.{{ ca.title }}
+[cols="a",options=noheader]
+|===
+| [underline]#IHO Definition:# {{ ca.definition }}
+
+[underline]#Sub-attributes:#
+
+{% for sub in ca.sub_attributes %}
+* *{{ sub.attribute }}* ({{ sub.note }})
+{% endfor %}
+
+[underline]#Remarks:# {% if ca.remarks %} {{ ca.remarks }} {% else %} - {% endif %}
+|===
+{% endfor %}

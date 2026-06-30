@@ -1,0 +1,146 @@
+== Feature Catalogue
+
+=== Introduction
+
+The Feature Catalogue describes the feature types, information types,
+attributes, attribute values, associations and roles which may be used in
+the product. The S-125 Feature Catalogue is available in an XML document
+which conforms to the S-100 XML Feature Catalogue Schema and can be
+downloaded from the IHO website (https://iho.int). Simple attributes used
+in this specification are listed below.
+
+*Name*:: Marine Aids to Navigation (AtoN)
+
+*Scope*:: Ocean, Coastal, Ports, Harbors and Inland waters
+
+*Version Number*:: 1.0.0
+
+*Version Date*:: 2025-04-03
+
+*Producer*:: International Hydrographic Organization (IHO), +
+4 quai Antoine 1er, +
+B.P. 445 +
+MC 98011 MONACO CEDEX +
+Telephone: +377 93 10 81 00 +
+Telefax: + 377 93 10 81 40 +
+URL https://iho.int
+
+*Language*:: English
+
+=== Feature Types
+
+Feature types contain descriptive attributes that characterize real-world
+entities. The word 'feature' may be used in one of two senses - feature
+type and feature instance. A feature type is a class and is defined in a
+Feature Catalogue. A feature instance is a single occurrence of the
+feature type and represented as an object in a dataset. A feature
+instance is located by a relationship to one or more spatial instances. A
+feature instance may exist without referencing a spatial instance.
+
+==== Geographic
+
+Geographic (Geo) feature types carry the descriptive characteristics of a
+real world entity.
+
+==== Meta
+
+Meta features contain information about other features within a data set.
+Information defined by meta features override the default metadata values
+defined by the data set descriptive records. Meta attribution on
+individual features overrides attribution on meta features.
+
+==== Feature Relationship
+
+A feature relationship links instances of one feature type with instances
+of the same or a different feature type.
+
+==== Information Types
+
+Information types are identifiable pieces of information in a dataset
+that can be shared between other features. They have attributes but have
+no relationship to any geometry; information types may reference other
+information types.
+
+==== Attributes
+
+S-125 defines attributes as either simple or complex.
+
+===== Simple Attributes
+
+S-125 uses ten types of simple attributes; they are listed in <<tab-7-1>>.
+
+[[tab-7-1]]
+.Simple feature attributes
+[cols="a,a",options=header]
+|===
+| Type | Definition
+
+| Enumeration
+| A fixed list of valid identifiers of named literal values.
+
+| Boolean
+| A value representing binary logic. The value can be either True or False. The
+default state for Boolean type attributes (i.e. where the attribute is not
+populated for the feature) is False.
+
+| Real
+| A signed Real (floating point) number consisting of a mantissa and an
+exponent.
+
+| Integer
+| A signed integer number. The representation of an integer is encapsulation and
+usage dependent.
+
+| CharacterString
+| An arbitrary-length sequence of characters including accents and special
+characters from a repertoire of one of the adopted character sets.
+
+| Date
+| A date provides values for year, month, and day according to the Gregorian
+Calendar. Character encoding of a date is a string which must follow the
+calendar date format (complete representation, basic format) for date specified
+by <<ISO8601>>.
+
+[example]
+19980918 (YYYY-MM-DD)
+
+| Time
+| A time is given by an hour, minute, and second. Character encoding of a time
+is a string that follows the local time (complete representation, basic format)
+format defined in <<ISO8601>>.
+
+[example]
+183059 or 183059+0100 or 183059Z
+
+| Date and Time
+| A DateTime is a combination of a date and a time type. Character encoding of a
+DateTime shall follow <<ISO8601>>.
+
+[example]
+19850412T101530
+
+| Codelist
+| A type of flexible enumeration. A code list type is a list of literals which
+may be extended only in conformance with specified rules.
+
+| Truncated date
+| One or more components of the Date type are omitted.
+
+|===
+
+===== Complex Attributes
+
+_Complex_ attributes are aggregations of other attributes that are either
+simple or complex. The aggregation is defined by means of attribute
+bindings.
+
+[[fig-7-1]]
+.textContent - a complex attribute
+image::img12.png["",239,147]
+
+=== Geometric Representation
+
+Geometric representation is the digital description of the spatial
+component of an object as described in <<S100>> and <<ISO19107>>. This product
+specification uses three types of geometries: GM_Point,
+GM_OrientableCurve, and GM_OrientableSurface.

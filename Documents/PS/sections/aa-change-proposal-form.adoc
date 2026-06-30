@@ -1,0 +1,37 @@
+[[annex-A]]
+[appendix,obligation=normative]
+== S-125 Maintenance - Change Proposal Form
+
+Organization::
+Date::
+Contact::
+Email:: {blank}
+
+=== Change Proposal Type
+
+_Select only one option_
+
+. Clarification
+. Revision
+. NewEdition
+
+=== Location
+
+_Identify all change proposal locations_
+
+S-125 Version No.::
+Part No.::
+Section No.::
+Proposal Summary:: {blank}
+
+=== Change Proposal
+
+_Please provide a detailed change proposal._
+
+=== Change Proposal Justification
+
+_Please provide a suitable explanation for the change and where
+applicable supporting documentation._
+
+*Please send completed forms and supporting documentation to the IHO
+Secretariat (addt@iho.int).*

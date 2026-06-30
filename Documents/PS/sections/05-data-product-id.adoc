@@ -1,0 +1,22 @@
+== Data product identification
+
+This section describes how to identify data sets that conform to the
+specification. A dataset that conforms to this Product Specification may
+be identified by its discovery metadata as defined in <<cls-14>>. The
+information identifying the data product may include the following items
+from S-100 (adapted from <<ISO19115>>).
+
+*title*:: Marine Aids to Navigation (AtoN)
+*abstract*:: Marine Aids to Navigation (AtoN) is a vector dataset
+containing list of AtoNs and status information like temporary changes,
+proposed changes, advance notice of changes and discrepancy.
+*alternate title*:: AtoN
+*content*:: List of AtoNs and status information like temporary changes,
+proposed changes, advance notice of changes and discrepancy
+*geographicDescription*:: *EX_GeographicDescription:* E.g., official name
+of region
+*spatialResolution*:: MD_Resolution>equivalentScale.denominator (integer)
+or MD_Resolution>levelOfDetail (CharacterString). E.g.: "All scales"
+*purpose*:: Describing list and status of AtoNs, and to allow the
+producer to exchange AtoN datasets with interested stakeholders
+*language*:: English

@@ -1,0 +1,79 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" script="Latn" type="title-intro">Geographic information</title>
+  <title language="en" script="Latn" type="title-main">Spatial referencing by coordinates</title>
+  <title language="en" script="Latn" type="main">Geographic information - Spatial referencing by coordinates</title>
+  <title language="fr" script="Latn" type="title-intro">Information géographique</title>
+  <title language="fr" script="Latn" type="title-main">Système de références spatiales par coordonnées</title>
+  <title language="fr" script="Latn" type="main">Information géographique - Système de références spatiales par coordonnées</title>
+  <uri type="src">https://www.iso.org/standard/26016.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26016:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26016.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19111:2003</docidentifier>
+  <docidentifier type="iso-reference">ISO 19111:2003(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19111:stage-95.99</docidentifier>
+  <docnumber>19111</docnumber>
+  <date type="published">
+    <on>2003-03-04</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <subdivision type="technical-committee" subtype="TC">
+        <name>Geographic information/Geomatics</name>
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">ISO 19111:2003 defines the conceptual schema for the description of spatial referencing by coordinates. It describes the minimum data required to define one-, two- and three-dimensional coordinate reference systems. It allows additional descriptive information to be provided. It also describes the information required to change coordinate values from one coordinate reference system to another. ISO 19111:2003 is applicable to producers and users of geographic information. Although it is applicable to digital geographic data, its principles can be extended to many other forms of geographic data such as maps, charts, and text documents.</abstract>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2003</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO 19111:2007</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19111:2007</docidentifier>
+      <date type="published">
+        <on>2007-06-26</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+  <ext schema-version="v1.1.2">
+    <doctype>international-standard</doctype>
+    <flavor>iso</flavor>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>26016</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

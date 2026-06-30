@@ -1,0 +1,19 @@
+== Overview
+
+=== Introduction
+
+This document has been produced by the IALA ARM Committee and the IHO
+Nautical Information Provision Working Group (NIPWG) in response to a
+requirement to produce an Aids to Navigation (AtoN) data that can be used
+as a Nautical Publication Information Overlay (NPIO) within an Electronic
+Chart Display and Information Systems (ECDIS). It is based on the IHO
+S-100 framework specification and the ISO 19100 series of standards. It
+is a vector product specification that is primarily intended for encoding
+the properties and status of AtoNs. AtoN datasets describe the list of
+AtoNs and status information like temporary changes, proposed changes,
+advance notice of changes and discrepancy. S-125 datasets would be a
+derivative of full AtoN information as the public facing information for
+use in ECDIS/ECS. In other words, S-125 datasets would be the digital
+equivalent of the extended list of lights including all/most AtoN in
+order to meet IMO SOLAS V requirements of having list of lights on board
+and serve as a continually updated list of AtoN.

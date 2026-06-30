@@ -1,0 +1,85 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" type="main">IHO Transfer Standard for Digital Hydrographic Data</title>
+  <title language="fr" type="main">Normes de l'OHI pour le transfert de données hydrographiques numériques</title>
+  <uri type="pdf">https://iho.int/uploads/user/pubs/standards/s-57/31Main.pdf</uri>
+  <docidentifier type="IHO" primary="true">S-57</docidentifier>
+  <docnumber>57</docnumber>
+  <date type="published">
+    <from>2000-11-01</from>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+      <uri>www.iho.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <subdivision type="technical-committee">
+        <name>Hydrographic Services and Standards Committee</name>
+        <identifier>CHRIS</identifier>
+      </subdivision>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <subdivision type="technical-committee">
+        <name>Hydrographic Services and Standards Committee</name>
+        <identifier>HSSC</identifier>
+      </subdivision>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>3.1.0</edition>
+  <version>2000-11-01</version>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2000</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+        <uri>www.iho.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title language="en" script="Latn" type="original">Standards and Specifications</title>
+    <title language="fr" script="Latn" type="original">Normes et Spécifications</title>
+    <place>
+      <formattedPlace>Monaco</formattedPlace>
+    </place>
+    <organization>International Hydrographic Organization</organization>
+    <number>S</number>
+  </series>
+  <place>
+    <formattedPlace>Monaco</formattedPlace>
+  </place>
+  <validity>
+    <validityBegins>2000-11-01T00:00:00Z</validityBegins>
+  </validity>
+  <ext schema-version="v1.1.2">
+    <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>S-57</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata>

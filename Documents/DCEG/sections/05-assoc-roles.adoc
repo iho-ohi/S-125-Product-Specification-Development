@@ -1,0 +1,6 @@
+== Association Roles
+
+[yaml2text,sections/yaml/05-tables.yaml,assoc]
+----
+include::templates/05-table-template.adoc[]
+----

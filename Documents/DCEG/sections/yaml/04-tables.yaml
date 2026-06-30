@@ -1,0 +1,141 @@
+---
+names:
+  - title: "Aton Status"
+    role_type: Association
+    rows:
+      - role: "Status Part"
+        associated_with:
+        multiplicity: "0, 1"
+      - role: "Aton Part"
+        associated_with: "Aids to Navigation"
+        multiplicity: ""
+
+  - title: "Fixing Status"
+    role_type:
+    rows:
+      - role: "Fixed By"
+        associated_with:
+        multiplicity: ""
+      - role: "Fixing Method"
+        associated_with:
+        multiplicity: ""
+
+  - title: "Aton Status"
+    role_type:
+    rows:
+      - role: "Status Part"
+        associated_with:
+        multiplicity: ""
+      - role: "Aton Part"
+        associated_with:
+        multiplicity: ""
+
+  - title: "Dangerous Feature Association"
+    role_type: Association
+    rows:
+      - role: "Marking Aton"
+        associated_with: "Aton Association"
+        multiplicity: "1, *"
+      - role: "Danger"
+        associated_with: "Dangerous Feature"
+        multiplicity: "0, *"
+
+  - title: "Aton Aggregations"
+    role_type: Association
+    rows:
+      - role: "Peer"
+        associated_with: "Aids to Navigation, Aton Aggregation"
+        multiplicity: ""
+      - role: "Peer"
+        associated_with:
+        multiplicity: "0, *"
+
+  - title: "Aton Associations"
+    role_type: Association
+    rows:
+      - role: Peer
+        associated_with: "Aids to Navigation, Aton Association"
+        multiplicity: ""
+      - role: Peer
+        associated_with:
+        multiplicity: "0, *"
+
+  - title: "Swivel Connection"
+    role_type:
+    rows:
+      - role: Holds
+        associated_with:
+        multiplicity: ""
+      - role: Hangs
+        associated_with:
+        multiplicity: ""
+
+  - title: "Cable Connection"
+    role_type:
+    rows:
+      - role: Holds
+        associated_with:
+        multiplicity: ""
+      - role: Attached
+        associated_with:
+        multiplicity: ""
+
+  - title: "Shackle Connection"
+    role_type:
+    rows:
+      - role: "Connected To"
+        associated_with:
+        multiplicity: ""
+      - role: Connected
+        associated_with:
+        multiplicity: ""
+
+  - title: "Bridle Connection"
+    role_type:
+    rows:
+      - role: Holds
+        associated_with:
+        multiplicity: ""
+      - role: Hangs
+        associated_with:
+        multiplicity: ""
+
+  - title: "Structure Equipment"
+    role_type: Association
+    rows:
+      - role: Child
+        associated_with: "Equipment"
+        multiplicity: "0, *"
+      - role: "Parent"
+        associated_with: "Structure Object"
+        multiplicity: "1, 1"
+
+  - title: "Buoy Counter Weight"
+    role_type:
+    rows:
+      - role: Holds
+        associated_with:
+        multiplicity: ""
+      - role: Attached
+        associated_with:
+        multiplicity: ""
+
+  - title: "Virtual AIS"
+    role_type: Association
+    rows:
+      - role: Broadcasts
+        associated_with: "Radio Station"
+        multiplicity: "1, *"
+      - role: "Broadcast By"
+        associated_with: "Virtual AIS Aid to Navigation, Physical AIS Aid to Navigation, Synthetic AIS Aid To Navigation"
+        multiplicity: "0, *"
+
+  - title: "Range System"
+    role_type: Association
+    rows:
+      - role: "Navigation Line"
+        associated_with: "Navigation Line"
+        multiplicity: "1, *"
+      - role: "Navigable Track"
+        associated_with: "Recommended Track"
+        multiplicity: "0, *"

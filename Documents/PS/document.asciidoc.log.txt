@@ -1,0 +1,1484 @@
+= Marine Aids to Navigation (AtoN)
+:series: S
+:docnumber: 125
+:doctype: standard
+:edition: 1.0.0
+:language: en
+:published-date: 2025-04-01
+:copyright-year: 2025
+:status: in-force
+:committee: hssc
+:workgroup: tsmad
+:committee_2: HSSC
+:workgroup_2: NIPWG
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+:toclevels: 3
+
+[.preface]
+== metanorma-extension
+
+=== document history
+
+Changes to this Product Specification are coordinated by the IHO Nautical Information Provision Working Group (NIPWG). New editions will be made available via the IHO web site. Maintenance of the Product Specification shall conform to IHO Technical Resolution 2/2007 (revised 2010).
+
+[source,yaml]
+----
+- date:
+  - type: updated
+    value: 2022-03-07
+  edition: 0.0.1
+  contributor:
+  - person:
+      name:
+        abbreviation: IALA ARM S-201 TG
+        completename: IALA ARM S-201 TG
+  amend:
+    - description: First Draft
+- date:
+  - type: updated
+    value: 2022-09-02
+  edition: 0.0.2
+  contributor:
+  - person:
+      name:
+        abbreviation: IALA ARM S-201 TG
+        completename: IALA ARM S-201 TG
+  amend:
+    - description: Updated various sections
+- date:
+  - type: updated
+    value: 2024-10-20
+  edition: 0.0.3
+  contributor:
+  - person:
+      name:
+        abbreviation: IALA ARM S-201 TG
+        completename: IALA ARM S-201 TG
+  amend:
+    - description: Updated various sections
+- date:
+  - type: updated
+    value: 2025-03-28
+  edition: 1.0.0
+  contributor:
+  - person:
+      name:
+        abbreviation: IALA ARM S-201 TG
+        completename: IALA ARM S-201 TG
+  amend:
+    - description: Updated data model to align with S-201
+----
+
+== Overview
+
+=== Introduction
+
+This document has been produced by the IALA ARM Committee and the IHO
+Nautical Information Provision Working Group (NIPWG) in response to a
+requirement to produce an Aids to Navigation (AtoN) data that can be used
+as a Nautical Publication Information Overlay (NPIO) within an Electronic
+Chart Display and Information Systems (ECDIS). It is based on the IHO
+S-100 framework specification and the ISO 19100 series of standards. It
+is a vector product specification that is primarily intended for encoding
+the properties and status of AtoNs. AtoN datasets describe the list of
+AtoNs and status information like temporary changes, proposed changes,
+advance notice of changes and discrepancy. S-125 datasets would be a
+derivative of full AtoN information as the public facing information for
+use in ECDIS/ECS. In other words, S-125 datasets would be the digital
+equivalent of the extended list of lights including all/most AtoN in
+order to meet IMO SOLAS V requirements of having list of lights on board
+and serve as a continually updated list of AtoN.
+
+== Reference
+
+[bibliography,normative=false]
+=== Informative
+
+The following normative documents contain provisions that, through
+reference in this text, constitute provisions of this document.
+
+* [[[S100,IHO S-100]]]
+
+* [[[ISO8601,ISO 8601]]]
+
+* [[[ISO19101-2,ISO/TS 19101-2:2008]]]
+
+* [[[ISO19103,ISO/TS 19103:2005]]]
+
+* [[[ISO19106,ISO 19106:2004]]]
+
+* [[[ISO19107,ISO 19107:2003]]]
+
+* [[[ISO19109,ISO 19109:2005]]]
+
+* [[[ISO19111,ISO 19111:2003]]]
+
+* [[[ISO19115-1,ISO 19115-1:2014]]]
+
+* [[[ISO19115-2,ISO 19115-2:2009]]]
+
+* [[[ISO19123,ISO 19123:2005]]]
+
+* [[[ISO19129,ISO/TS 19129:2009]]]
+
+* [[[ISO19131,ISO 19131:2007]]]
+
+* [[[ISO19136,ISO 19136:2007]]]
+
+* [[[ISO19136-2,ISO 19136-2:2015]]]
+
+* [[[ISO19139,ISO/TS 19139]]]
+
+* [[[ISO19101,hidden(ISO 19101 (all parts))]]]
+
+* [[[ISO19101-1,hidden(ISO 19101-1)]]]
+
+* [[[ISO19110,hidden(ISO 19110)]]]
+
+* [[[ISO19117,hidden(ISO 19117)]]]
+
+* [[[S57,hidden(IHO S-57)]]]
+
+* [[[ISO19108,hidden(ISO 19108)]]]
+
+* [[[ISO10646-1,hidden(ISO/IEC 10646-1)]]]
+
+[bibliography,normative=true]
+=== Normative
+
+The following informative documents provide additional information,
+including background information, but are not required to develop
+applications for data conforming to this specification.
+
+* [[[ISO19757-3,ISO/IEC 19757-3]]]
+
+* [[[ISO19115,ISO 19115 (all parts)]]]
+
+* [[[S101,IHO S-101]]]
+
+== Terms, Definitions and Abbreviations
+
+=== Terms and Definitions
+
+The S-100 framework is based on the ISO 19100 series of geographic
+standards. The terms and definitions provided here are used to
+standardize the nomenclature found within that framework, whenever
+possible. Modifications have been made when necessary.
+
+==== application
+
+manipulation and processing of data in support of user requirements
+
+[.source]
+<<ISO19101>>
+
+==== application schema
+
+{{conceptual schema}} for data required by one or more
+{{application,applications}}
+
+[.source]
+<<ISO19101>>
+
+==== conceptual model
+
+model that defines concepts of a {{universe of discourse}}
+
+[.source]
+<<ISO19101>>
+
+==== conceptual schema
+
+formal description of a {{conceptual model}}
+
+[.source]
+<<ISO19101>>
+
+==== coverage
+
+{{feature}} that acts as a function to return values from its range for
+any direct position within its spatial, temporal or spatiotemporal
+{{domain}}
+
+[.source]
+<<ISO19123>>
+
+[example]
+Raster image, polygon overlay, digital elevation matrix.
+
+==== data product
+
+{{dataset}} or {{dataset series}} that conforms to a
+{{data product specification}}
+
+==== data product specification
+
+detailed description of a {{dataset}} or {{dataset series}} together with
+additional information that will enable it to be created, supplied to,
+and used by another party
+
+NOTE: A data product specification provides a description of the universe
+of discourse and a specification for mapping the universe of discourse to
+a dataset. It may be used for production, sales, end-use, or other
+purpose.
+
+==== dataset
+
+identifiable collection of data
+
+[.source]
+<<ISO19115>>
+
+NOTE: A dataset may be a smaller grouping of data which, though limited
+by some constraint such as spatial extent or feature type, is located
+physically within a larger dataset. Theoretically, a dataset may be as
+small as a single feature or feature attribute contained within a larger
+dataset. A hardcopy map or chart may be considered a dataset.
+
+==== dataset series
+
+collection of {{dataset,datasets}} sharing common characteristics
+
+[.source]
+<<ISO19115>>
+
+==== domain
+
+well-defined set
+
+[.source]
+<<ISO19103>>
+
+NOTE: Well-defined means that the definition is both necessary and
+sufficient, as everything that satisfies the definition is in the set and
+everything that does not satisfy the definition is necessarily outside
+the set.
+
+==== feature
+
+abstraction of real-world phenomena
+
+[.source]
+<<ISO19101>>
+
+NOTE: A feature can occur as a type or an instance. Feature type or
+feature instance will be used when only one is meant.
+
+==== feature association
+
+relationship that links instances of one {{feature}} type with instances
+of the same or a different {{feature}} type
+
+[.source]
+<<ISO19110>>
+
+==== feature attribute
+
+characteristic of a {{feature}}
+
+[.source]
+<<ISO19101-1,clause="4.1.12">>
+
+[example]
+A feature attribute named "color" can have an attribute value "green"
+which belongs to the data type "text".
+
+[example]
+A feature attribute named length can have an attribute value "82,4" which
+belongs to the data type "real".
+
+NOTE: A feature attribute has a type name, a data type and a value domain
+associated to it. A feature attribute for a feature instance also has an
+attribute value taken from the value domain.
+
+NOTE: In a feature catalogue a feature attribute can include a value
+domain but does not specify attribute values for feature instance.
+
+[NOTE]
+====
+In UML, attribute associations and operations are representation types
+and are not fundamental to the type of a characteristic nor to the type
+of feature. All three are equally capable of representing the same
+characteristics of a feature. Every implementation of a characteristic is
+allowed to use the representation type that is most appropriate and can
+use several different representations for a single characteristic if
+required.
+
+Feature associations and feature operations therefore are different types
+of feature attribute, the distinction between them being based on storage
+and access mechanism rather than semantics.
+====
+
+==== geographic data
+
+data with implicit or explicit reference to a location relative to the
+Earth
+
+[.source]
+<<ISO19109>>
+
+NOTE: Geographic information is also used as a term for information
+concerning phenomena implicitly or explicitly associated with a location
+relative to the Earth.
+
+==== metadata
+
+information about a resource
+
+[.source]
+<<ISO19115-1,clause="4.10">>
+
+==== model
+
+abstraction of some aspects of reality
+
+[.source]
+<<ISO19109>>
+
+==== portrayal
+
+presentation of information to humans
+
+[.source]
+<<ISO19117>>
+
+NOTE: Within the scope of this International Standard Portrayal is
+restricted to the portrayal of geographic information.
+
+[.source]
+<<ISO19117,clause="4.20">>
+
+==== quality
+
+totality of characteristics of a product that bear on its ability to
+satisfy stated and implied needs
+
+[.source]
+<<ISO19101>>
+
+==== universe of discourse
+
+view of the real or hypothetical world that includes everything of
+interest
+
+[.source]
+<<ISO19101>>
+
+=== Abbreviations
+
+This product specification adopts the following convention for symbols
+and abbreviated terms:
+
+ASCII:: American Standard Code for Information Interchange
+ECDIS:: Electronic Chart Display and Information Systems
+ENC:: Electronic Navigational Chart
+GML:: Geography Markup Language
+IHO:: International Hydrographic Organization
+IOC:: International Oceanographic Commission
+ISO:: International Organization for Standardization
+NIPWG:: Nautical Information Provision Working Group
+NPIO:: Nautical Publication Information Overlay
+UML:: Unified Modeling Language
+URI:: Uniform Resource Identifier
+URL:: Uniform Resource Locator
+VTS:: Vessel Traffic Services
+WMS:: Web Map Service
+WFS:: Web Feature Service
+www:: World Wide Web
+WGS:: World Geodetic System
+XML:: Extensible Markup Language
+XSLT:: eXtensible Stylesheet Language Transformations
+XSD:: XML Schema Definition
+
+=== Use of Language
+
+Within this document, including appendices and annexes:
+
+* "Must" indicates a mandatory requirement.
+* "Should" indicates an optional requirement, that is the recommended
+process to be followed but is not mandatory.
+* "May" means "allowed to" or "could possibly" and is not mandatory.
+
+=== UML Notations
+
+In this document, conceptual schemas are presented in the Unified
+Modeling Language (UML). Several model elements used in this schema are
+defined in ISO standards or in IHO S-100 documents. In order to ensure
+that class names in the model are unique ISO TC/211 has adopted a
+convention of establishing a prefix to the names of classes that define
+the TC/211 defined UML package in which the UML class is defined.
+
+== Specification Description
+
+=== Informal Description of Data Product
+
+This section contains general information about the data product.
+
+*Title*:: Marine Aids to Navigation (AtoN)
+
+*Abstract*:: Marine Aids to Navigation (AtoN) datasets describe the list
+of AtoNs and status information like temporary changes, proposed changes,
+advance notice of changes and discrepancy. S-125 datasets would be a
+derivative of full AtoN information as the public facing information for
+use in ECDIS/ECS. In other words, S-125 Marine AtoN data would be the
+digital equivalent of the extended list of lights including all/most AtoN
+in order to meet IMO SOLAS V requirements of having list of lights on
+board and serves as a continually updated list of AtoN.
+
+*Content*:: Datasets conforming to this specification will contain list
+of AtoNs (excluding VTS) and status information like temporary changes,
+proposed changes, advance notice of changes and discrepancy.
+
+*Spatial Extent*:: Global coverage of maritime areas.
+
+*Specific Purpose*:: Describing list and status of AtoNs and to allow the
+producer to exchange AtoN datasets with interested stakeholders.
+
+=== Data product specification metadata
+
+This information uniquely identifies this Product Specification and
+provides information about its creation and maintenance. For further
+information on dataset metadata, see <<cls-14>>.
+
+*Title*:: Marine Aids to Navigation (AtoN)
+
+*S-100 Version*:: 5.2.0
+
+*S-125 Version*:: 1.0.0
+
+*Date*:: 2025-04-02
+
+*Language*:: English
+
+*Classification*:: Unclassified
+
+*Contact*:: International Hydrographic Organization (IHO) +
+4 quai Antoine 1er, +
+B.P. 445 +
+MC 98011 MONACO CEDEX +
+Telephone: +377 93 10 81 00 +
+Telefax: + 377 93 10 81 40
+
+*URL*:: link:++https://iho.int++[]
+
+*Identifier*:: S-125
+
+*Maintenance*:: Amendments to this specification will be produced on a
+needs basis. For reporting issues with this specification which need
+correction, use the contact information.
+
+=== Product Specification Maintenance
+
+==== Introduction
+
+Changes to S-125 will be released by the IHO as a new edition, a
+revision, or as a document that includes clarification. These are
+described below.
+
+==== New Edition
+
+New Editions introduce significant changes. New Editions enable new
+concepts, such as the ability to support new functions or applications,
+or the introduction of new constructs or data types. New Editions are
+likely to have a significant impact on either existing users or future
+users of S-125.
+
+==== Revisions
+
+Revisions are defined as substantive semantic changes. Typically,
+revisions will introduce change to correct factual errors or introduce
+necessary changes that have become evident as a result of practical
+experience or changing circumstances. A revision must not be classified
+as a clarification. Revisions could have an impact on either existing
+users or future users of this specification. All cumulative
+clarifications will be included with the release of approved corrections
+revisions.
+
+Changes in a revision are minor and ensure backward compatibility with
+the previous versions within the same Edition. Newer revisions, for
+example, introduce new features and attributes. Within the same Edition,
+a dataset of one version could always be processed with a later version
+of the feature and portrayal catalogues. In most cases a new feature or
+portrayal catalogue will result in a revision of this specification.
+
+==== Clarification
+
+Clarifications are non-substantive changes. Typically, clarifications:
+remove ambiguity; correct grammatical and spelling errors; amend or
+update cross references or; insert improved graphics in spelling,
+punctuation, and grammar. Clarification must not cause any substantive
+semantic changes.
+
+Changes in a clarification are minor and ensure backward compatibility
+with the previous versions within the same Edition. Within the same
+Edition, a dataset of one clarification version could always be processed
+with a later version of the feature and portrayal catalogues, and a
+portrayal catalogue can always rely on earlier versions of the feature
+catalogues.
+
+Changes in a clarification are minor and ensure backward compatibility
+with the previous versions.
+
+==== Version Numbers
+
+The associated version control numbering to identify changes (n) to this
+specification must be as follows:
+
+* New Editions denoted as *n*.0.0
+* Revisions denoted as n.*n*.0
+* Clarifications denoted as n.n.*n*
+
+=== Specification Scope
+
+This product specification describes one data product and therefore
+requires only one scope which is described below:
+
+*Scope ID*:: Marine Aids to Navigation (AtoN)
+
+*Hierarchical level*:: MD_ScopeCode - 005 (dataset)
+
+*Hierarchical level name*:: Marine AtoN Dataset
+
+*Level description*:: Information applies to the dataset
+
+*Extent*:: EX_Extent.description: Global coverage of maritime areas
+
+== Data product identification
+
+This section describes how to identify data sets that conform to the
+specification. A dataset that conforms to this Product Specification may
+be identified by its discovery metadata as defined in <<cls-14>>. The
+information identifying the data product may include the following items
+from S-100 (adapted from <<ISO19115>>).
+
+*title*:: Marine Aids to Navigation (AtoN)
+*abstract*:: Marine Aids to Navigation (AtoN) is a vector dataset
+containing list of AtoNs and status information like temporary changes,
+proposed changes, advance notice of changes and discrepancy.
+*alternate title*:: AtoN
+*content*:: List of AtoNs and status information like temporary changes,
+proposed changes, advance notice of changes and discrepancy
+*geographicDescription*:: *EX_GeographicDescription:* E.g., official name
+of region
+*spatialResolution*:: MD_Resolution>equivalentScale.denominator (integer)
+or MD_Resolution>levelOfDetail (CharacterString). E.g.: "All scales"
+*purpose*:: Describing list and status of AtoNs, and to allow the
+producer to exchange AtoN datasets with interested stakeholders
+*language*:: English
+
+== Data Content and Structure
+
+=== Introduction
+
+A Marine Aids to Navigation (AtoN) dataset is a feature-based product.
+The following sub-sections contain the product application schema
+expressed in UML and an associated feature catalogue. The feature
+catalogue provides a full description of each feature type including its
+attributes and attribute values in the data product.
+
+=== Application Schema
+
+The application schema conforms to the modelling conventions of UML as
+constrained in <<S100,part=1>>, and conforms to the General Feature Model
+described in <<S100,part=3>>.
+
+An overview of the application schema is provided in the following figure
+(<<fig-1>>). The subsequent figures provide details for feature types and
+their relationships. The allowed values for enumeration attributes are
+depicted in the following Figures. In conformance to <<S57>> and
+<<S101>>, aids to navigation are described by combinations of structure
+and equipment features.
+
+* The feature type AidsToNavigation is an abstract type from which the
+geographic feature types for aids to navigation are ultimately derived.
+* StructureObject and Equipment are abstract types which collect the
+attributes and relationships common to structure and equipment features
+respectively. The relationship that exists between them is between
+structure and equipment features in the combining of structure and
+equipment object(s) to make up an individual aid to navigation.
+* GenericBeacon and GenericBuoy are abstract types which collect
+attributes common to multiple types of beacon and buoy features
+respectively.
+* Links to the geographic features for individual AtoNs constituting the
+collection object are modelled by feature associations (the
+"Aggregations" and "Associations" links between Aggregation and
+Association classes and the common supertype for geographic AtoN features
+(AidsToNavigation)). The type of the collection feature is indicated by
+the attribute categoryOfAggregation which can take the allowed values
+listed in the codelists of the same names.
+* Structure-equipment associations are modelled by the association
+labelled StructureEquipment, between classes Structure and Equipment in
+<<fig-1>> below.
+* Features participating in the same range system are indicated by the
+association labelled RangeSystem, between feature classes NavigationLine
+and RecommendedTrack.
+* The S-125 model supports three types of AIS features, physical (real),
+virtual and synthetic. The broadcasting station for virtual AIS is
+encoded as RadioStation, and may be associated with the virtual AIS it
+broadcasts by an association labelled VirtualAIS. AIS related items are
+shown in <<fig-6>>.
+* Only RadioStation that are AIS base stations can be included.
+* The structure features include Lighthouse, Landmark, Pile, LightFloat,
+OffShorePlatform, LightVessel, and SiloTank features as well as buoys and
+beacons of different kinds. The detailed models of structure features are
+depicted in <<fig-2>>.
+* The equipment features include Daymark, FogSignal, RadarReflector,
+Light, Retroreflector, Topmark, RadarTransponderBeacon,
+EnvironmentalObservationEquipment, PhysicalAISAidToNavigation, and
+RadioStation. Daymark is allowed to act as either a structure or
+equipment feature in practice but this cannot at present be modelled in
+the application schema since S-100 discourages multiple inheritance. The
+detailed model of equipment features is depicted in <<fig-3>>.
+* Every feature AtoN feature can have information association with
+AtoNStatusInformation which includes changeTypes and changeDetails.
+* changeDetails is defined to describe type of AtoN change and the
+detailed model is depicted in <<fig-7>>.
+
+The feature classes NavigationLine and RecommendedTrack are neither
+structure nor equipment objects and are depicted in complete detail in
+the overview (<<fig-1>>).
+
+[%landscape]
+<<<
+
+[[fig-1]]
+.Overview of Feature types
+image::img01.png[height=50%]
+
+[[fig-2]]
+.Structure Feature Types
+image::img02.png[height=60%]
+
+[%portrait]
+<<<
+
+[[fig-3]]
+.Equipment Feature Types
+image::img03.png["",759,711]
+
+[[fig-4]]
+.Light Feature Types
+image::img04.png["",759,382]
+
+[[fig-5]]
+.Mooring Buoy and Emergency Wreck Marking Buoy Feature Types
+image::img05.png["",759,739]
+
+[[fig-6]]
+.AIS Feature Types
+image::img06.png["",759,644]
+
+[[fig-7]]
+.Aton change details Enumeration
+image::img07.png["",759,734]
+
+[[fig-8]]
+.Categories Enumeration
+image::img08.png["",759,828]
+
+[[fig-9]]
+.Colors and Shapes Enumeration
+image::img09.png["",759,850]
+
+[[fig-10]]
+.Others Enumeration
+image::img10.png["",759,823]
+
+[[fig-11]]
+.Code lists
+image::img11.png["",717,370]
+
+== Feature Catalogue
+
+=== Introduction
+
+The Feature Catalogue describes the feature types, information types,
+attributes, attribute values, associations and roles which may be used in
+the product. The S-125 Feature Catalogue is available in an XML document
+which conforms to the S-100 XML Feature Catalogue Schema and can be
+downloaded from the IHO website (link:++https://iho.int++[]). Simple attributes used
+in this specification are listed below.
+
+*Name*:: Marine Aids to Navigation (AtoN)
+
+*Scope*:: Ocean, Coastal, Ports, Harbors and Inland waters
+
+*Version Number*:: 1.0.0
+
+*Version Date*:: 2025-04-03
+
+*Producer*:: International Hydrographic Organization (IHO), +
+4 quai Antoine 1er, +
+B.P. 445 +
+MC 98011 MONACO CEDEX +
+Telephone: +377 93 10 81 00 +
+Telefax: + 377 93 10 81 40 +
+URL link:++https://iho.int++[]
+
+*Language*:: English
+
+=== Feature Types
+
+Feature types contain descriptive attributes that characterize real-world
+entities. The word 'feature' may be used in one of two senses - feature
+type and feature instance. A feature type is a class and is defined in a
+Feature Catalogue. A feature instance is a single occurrence of the
+feature type and represented as an object in a dataset. A feature
+instance is located by a relationship to one or more spatial instances. A
+feature instance may exist without referencing a spatial instance.
+
+==== Geographic
+
+Geographic (Geo) feature types carry the descriptive characteristics of a
+real world entity.
+
+==== Meta
+
+Meta features contain information about other features within a data set.
+Information defined by meta features override the default metadata values
+defined by the data set descriptive records. Meta attribution on
+individual features overrides attribution on meta features.
+
+==== Feature Relationship
+
+A feature relationship links instances of one feature type with instances
+of the same or a different feature type.
+
+==== Information Types
+
+Information types are identifiable pieces of information in a dataset
+that can be shared between other features. They have attributes but have
+no relationship to any geometry; information types may reference other
+information types.
+
+==== Attributes
+
+S-125 defines attributes as either simple or complex.
+
+===== Simple Attributes
+
+S-125 uses ten types of simple attributes; they are listed in <<tab-7-1>>.
+
+[[tab-7-1]]
+.Simple feature attributes
+[cols="a,a",options=header]
+|===
+| Type | Definition
+
+| Enumeration
+| A fixed list of valid identifiers of named literal values.
+
+| Boolean
+| A value representing binary logic. The value can be either True or False. The
+default state for Boolean type attributes (i.e. where the attribute is not
+populated for the feature) is False.
+
+| Real
+| A signed Real (floating point) number consisting of a mantissa and an
+exponent.
+
+| Integer
+| A signed integer number. The representation of an integer is encapsulation and
+usage dependent.
+
+| CharacterString
+| An arbitrary-length sequence of characters including accents and special
+characters from a repertoire of one of the adopted character sets.
+
+| Date
+| A date provides values for year, month, and day according to the Gregorian
+Calendar. Character encoding of a date is a string which must follow the
+calendar date format (complete representation, basic format) for date specified
+by <<ISO8601>>.
+
+[example]
+19980918 (YYYY-MM-DD)
+
+| Time
+| A time is given by an hour, minute, and second. Character encoding of a time
+is a string that follows the local time (complete representation, basic format)
+format defined in <<ISO8601>>.
+
+[example]
+183059 or 183059+0100 or 183059Z
+
+| Date and Time
+| A DateTime is a combination of a date and a time type. Character encoding of a
+DateTime shall follow <<ISO8601>>.
+
+[example]
+19850412T101530
+
+| Codelist
+| A type of flexible enumeration. A code list type is a list of literals which
+may be extended only in conformance with specified rules.
+
+| Truncated date
+| One or more components of the Date type are omitted.
+
+|===
+
+===== Complex Attributes
+
+_Complex_ attributes are aggregations of other attributes that are either
+simple or complex. The aggregation is defined by means of attribute
+bindings.
+
+[[fig-7-1]]
+.textContent - a complex attribute
+image::img12.png["",239,147]
+
+=== Geometric Representation
+
+Geometric representation is the digital description of the spatial
+component of an object as described in <<S100>> and <<ISO19107>>. This product
+specification uses three types of geometries: GM_Point,
+GM_OrientableCurve, and GM_OrientableSurface.
+
+== Coordinate Reference System (CRS)
+
+=== Introduction
+
+The location of an object in the S-100 standard is defined by means of
+coordinates which relate a feature to a position. The coordinate
+reference system used for this product specification is World Geodetic
+System 1984 (WGS 84) which is defined by the European Petroleum Survey
+Group (EPSG) code 4326, (or similar - North American Datum 1983 /
+Canadian Spatial Reference System).
+
+Spatial data is expressed as latitude (stem:[varphi])
+and longitude (stem:[lambda]) geographic
+coordinates. Latitude values are stored as a negative number to represent
+a position south of the Equator. Longitude values are stored as a
+negative number to represent a position west of the International Prime
+Meridian. Coordinates are expressed as real value, degree / degree
+decimal format. Datasets conforming to this product specification are not
+projected.
+
+*Horizontal coordinate reference system*:: WGS 84
+
+*Projection*:: None
+
+*Vertical coordinate reference system*:: None
+
+*Temporal reference system*:: Gregorian calendar
+
+*Coordinate reference system registry*::
+link:++http://www.epsg-registry.org/++[EPSG Geodetic Parameter]
+link:++http://www.epsg-registry.org/++[Registry]
+
+*Date type (according to <<ISO19115>>)*:: 002 - publication
+
+=== Horizontal reference system
+
+Positional data is expressed in latitude and longitude geographic
+coordinates of the World Geodetic System 84 (WGS 84).
+
+=== Projection
+
+Marine AtoN data products are un-projected.
+
+=== Vertical coordinate reference system
+
+Marine Aids to Navigation (AtoN) data products do not provide detailed
+vertical information.
+
+=== Temporal reference system
+
+Time is measured by reference to Calendar dates and Clock time in
+accordance with <<ISO19108,section="5.4.4">>.
+
+=== Coverage of nautical products data and scale
+
+Marine AtoN data must be compiled in the best applicable scale. The use
+of the data itself is "scale independent". That means that the data can
+be used at any scale. S-100 allows the association of multiple spatial
+attributes to a single feature instance. Each of these spatial attributes
+can in principle be qualified by maximum and minimum scales.
+
+For example, it is possible, within one dataset, to have a single
+instance of a feature that has more than one area geometry. Each of these
+geometries has different scale max/min attributes. Moreover, due to
+cluttering in smaller scales, the scale minimum attribute may be used to
+turn off portrayal of some features at smaller scales.
+
+== Data Quality
+
+Data quality allows users and user systems to assess fitness for use of
+the provided data. Data quality measures and the associated evaluation
+are reported as metadata of a data product. This metadata improves
+interoperability with other data products and provides usage by user
+groups that the data product was not originally intended for. The
+secondary users can make assessments of the data product usefulness in
+their application based on the reported data quality measures.
+
+For S-125 the following data quality elements have been included:
+
+* Conformance to this Product Specification;
+* Intended purpose of the data product;
+* Completeness of the data product in terms of coverage;
+* Logical Consistency;
+* Positional Uncertainty and Accuracy;
+* Thematic Accuracy;
+* Temporal Quality;
+* Aggregation measures;
+* Elements specifically required for the data product (none currently
+identified for S-125);
+* Validation checks or conformance checks including:
+** General tests for dataset integrity;
+** Specific tests for a specific data model.
+
+== Data Capture and Classification
+
+Data source: S-125 products must be based on data sources released by an
+appropriate authority such as AtoN authority and Hydrographic Offices.
+Data source should be described in each data product. The production
+process used to generate Marine AtoN products may be described in the
+comment attribute of the dataset metadata.
+
+[[tab-10-1]]
+.Data capture information
+[cols="a,a,a,a",options=header]
+|===
+| Item Name | Description | Multiplicity | Type
+
+| dataSource
+| Identification of the kinds of data sources usable to product datasets
+compliant with the considering specification
+| 0..*
+| CharacterString
+
+| productionProcess
+| Link to a textual description of the production process (including encoding
+guide) applicable to the datasets compliant with the considering specification
+| 0..*
+| CharacterString (URL)
+
+|===
+
+=== Data Encoding and Product Delivery
+
+==== Data Encoding
+
+The principal encoding will be the Open Geospatial Consortium (OGC),
+Geography Markup Language (GML) format. GML is an XML grammar designed to
+express geographical features. It serves as a modeling language for
+geographic systems as well as an open interchange format for geographic
+transactions.
+
+==== Types of Datasets
+
+A dataset is a grouping of features, attributes, geometry, and metadata
+which comprises a specific coverage. The following lists the types of
+Marine AtoN datasets which may be produced and contained within an
+exchange set:
+
+[[tab-10-2]]
+.Marine AtoN dataset types
+[cols="a,a",options=header]
+|===
+| Dataset | Explanations
+
+| New dataset (base dataset):
+| Data for an area different (in coverage and/or extent) to existing datasets.
+
+| New Edition of a dataset:
+| A re-issue plus new information which has not been previously distributed by
+Updates. Each New Edition of a dataset must have the same name as the dataset
+that it replaces and should have the same spatial extents. The edition number in
+the dataset discovery metadata shall increment up by one from the previous
+edition.
+
+| Update dataset
+| A data replacement of the latest edition of a dataset.
+
+| Cancellation
+| Used to cancel dataset and any related update datasets.
+|===
+
+==== Content of Update Datasets
+
+Update datasets can only contain replacements, deletions, and additions
+of whole feature instances or information instances. This means that when
+a feature or information instance is updated, the new version must
+contain all the attributes of the old instance, including any inline
+spatial attributes (i.e., inline geometry), except those attributes that
+are being removed.
+
+An association to an instance of a feature or information type is treated
+as an attribute of the referring instance, and therefore adding or
+deleting an association means the original referring instance must be
+replaced with a new version. The instance at the other end of the
+association needs to be replaced if and only if it contains a reference
+to the first instance.
+
+Spatial objects that are not inline (i.e., geometry that is encoded as an
+independent spatial object in the dataset) are treated like any other
+object, i.e., it needs to be updated if and only if the primitive has
+changed (e.g., a coordinate is updated).
+
+Feature and information type instances are deleted without replacement by
+setting the fixedDateRange.dateEnd attribute of the instance to the date
+of deletion, which will usually be the issue date of the update.
+
+=== Encoding of Latitude and Longitude
+
+Values should be encoded as decimal numbers with 7 or fewer digits after
+the decimal. The normative encoding is in degrees, with an accuracy of
+10^-7^ degrees, i.e., 7 digits after the decimal point.
+
+The decimal point must be indicated by the "." character.
+
+Trailing zeroes after the decimal point (and the decimal point itself if
+appropriate) may be omitted at producer discretion, but the accuracy must
+still be as indicated (e.g., 10^-7^ degrees for coordinates of default
+accuracy).
+
+Latitude and longitude multiplication factors held in the Dataset
+Structure Information field under pass:c,q,a,m,p[`[coordMultFactorX\]`] and
+pass:c,q,a,m,p[`[coordMultFactorY\]`] must be set to a value corresponding to the
+encoding, e.g., {1} for coordinates encoded in decimal degrees.
+
+[example]
+A pass:c,q,a,m,p[`longitude = 42.0000`] is converted into
+pass:c,q,a,m,p[`X = longitude * coordMultFactorX = 42.0000 * 1 = 42.0000000`].
+
+=== Numeric Attribute Encoding
+
+Floating point and integer attribute values must not contain leading
+zeros. Floating point attribute values must not contain non-significant
+trailing zeros.
+
+=== Text Attribute Values
+
+Character strings must be encoded using the character set defined in
+<<ISO10646-1>>, in Unicode Transformation Format-8 (UTF-8).
+
+=== Mandatory Attribute Values
+
+There are four reasons why attribute values may be considered mandatory:
+
+* They determine whether a feature is in the display base.
+* Certain features make no logical sense without specific attributes.
+* Some attributes are necessary to determine which symbol is to be
+displayed.
+* Some attributes are required for safety of navigation.
+
+All mandatory attributes are identified in the Feature Catalogue and
+summarized in Annex A - Data Classification and Encoding Guide.
+
+=== Unknown Attribute Values
+
+When a mandatory attribute code or tag is present, but the attribute
+value is missing, it means that the producer wishes to indicate that this
+attribute value is unknown. Missing mandatory attributes must be "nilled"
+with a GML _nilReason_ attribute giving the reason for omission.
+
+Optional attributes must be omitted altogether if the value is unknown or
+missing. They must not be "nilled."
+
+[example]
+====
+An isolated danger beacon feature has unknown color (mandatory
+attribute) and condition (optional attribute). The feature could be coded
+as:
+
+[source,xml]
+----
+<BeaconIsolatedDanger>
+  <beaconShape>beacon tower</beaconShape>
+  <colour nilReason="unknown"/>
+  ... other attributes...
+ ... <condition> is NOT coded ...
+</BeaconIsolatedDanger>
+----
+====
+
+=== Structure of dataset files
+
+The order of data objects in each dataset file is described below:
+
+[pseudocode%unnumbered]
+----
+Dataset Identification Information
+Dataset structure information
+Spatial records for by-reference geometries
+  Point
+  Curve
+  Composite Curve
+Information objects
+Feature objects (Geometry may be encoded inline or by reference.)
+  Meta features
+  Geo features
+----
+
+=== Object identifiers
+
+Features, information types, collection objects, meta features, and
+geometries (inline or external) are all required by the schema to have a
+*gml:id* attribute with a value that is unique within the dataset. The
+*gml:id* values must be used as the reference for the object from
+another object in the same dataset or another dataset.
+
+All geographic feature classes in S-125 have the idCode attribute. This
+attribute shall be used to hold the Maritime Resource Name (MRN)
+identifier for the feature instance.
+
+=== Data coverage
+
+All areas of a dataset must be covered by a *DataCoverage* meta feature.
+
+An update dataset must not change the limit of a *DataCoverage* feature
+for the base dataset. Where the limit of a *DataCoverage* feature for a
+base dataset is to be changed, this must be done by issuing a new
+edition of the dataset.
+
+=== Data overlap
+
+S-125 datasets can overlap other S-125 datasets.
+
+=== Data extent
+
+Datasets must not cross the stem:[180"unitsml(deg)"] meridian of
+longitude.
+
+== Data Delivery
+
+=== Data Product Delivery Information
+
+This data product specification defines GML as the primary format in
+which Marine AtoN data products are delivered. The delivery format is
+described by the following items (from <<ISO19131>>): format name,
+version, specification, language, and character set.
+
+[[tab-11-1]]
+.Data product delivery format
+[cols="a,a,a",options=header]
+|===
+| Name | ISO 19131 Elements | Value
+
+| Format name
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.formatName
+| GML{blank}footnoteblock:[gml]
+
+| Version
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.version
+| 3.2.1
+
+| Specification description
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.specification
+| GML{blank}footnoteblock:[gml]
+
+| Language
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.language
+| English
+
+| Character set
+| DPS_DeliveryInformation.deliveryFormat >
+
+DPS_DeliveryFormat.characterSet >
+
+MD_CharacterSetCode
+| 004 - utf8
+|===
+
+[[gml]]
+[NOTE]
+--
+GML is an XML encoding for the transport and storage of geographic information,
+including both the geometry and the properties of geographic features, between
+distributed systems. The XML Schema for the GML application schema is provided
+in a schema document pass:c,q,a,m,p[`S125.xsd`] which imports other schema(s) defining common
+types. These files are available in the IHO Geospatial Information Registry.
+Feature instance shall validate against pass:c,q,a,m,p[`S125.xsd`] and conform to all other
+requirements specified in this data product specification including all
+constraints not captured in the XML Schema document.
+--
+
+==== Dataset loading
+
+New datasets must always replace old datasets.
+
+==== New editions
+
+When a new edition of a dataset is received, the system must replace the
+previous edition, along with any updates, with the new edition of the
+dataset.
+
+=== Dataset size
+
+Marine AtoN datasets must not exceed 10MB in accordance with other S-100
+products displayed on ECDIS.
+
+=== Exchange Set
+
+Data which conforms to this product specification must be delivered by
+means of an exchange set. An exchange set will consist of one or more
+Marine AtoN datasets. An exchange set may also include one or more
+support files containing supplementary information encoded in separate
+files. These are linked to the Marine AtoN dataset features, by feature
+and information type attributes defined in the application schema, e.g.,
+*fileReference*. Each exchange set will include a single (XML) exchange
+catalogue file. S-125 exchange set catalogues conform to
+<<S100,part=17>> without modification, containing discovery metadata for
+each Marine AtoN dataset as well as support files. S-125 exchange set
+structure conforms to <<S100,part=17>> without modification.
+
+=== Support Files
+
+Support files contain ancillary textual or graphic information in
+separate (linked to the dataset) files. The following formats are
+allowed for support files:
+
+* Text files must contain only UTF-8 encoded text as defined by this
+standard (text consisting only of printable characters and without HTML,
+XML, or other markup).
+* Picture files must be in TIFF Revision 6.0 (TIFF).
+
+Support files shall be used for data management and additional
+information to users. Portraying and using support files in ECDIS or
+other systems is not mandatory.
+
+=== Support File Naming Convention
+
+All support files will have unique world-wide file identifiers. The file
+identifier of support information should not be used to describe the
+physical content of the file. The support file metadata that accompanies
+the file will inform the user of the name and purpose of the file (new,
+replacement, and deletion).
+
+In this encoding the support files are named according to the
+specifications given below:
+
+125CCCCXXXXXXXXXX.YYY
+
+The main part forms an identifier where:
+
+* The first three characters are always "125" and identify the dataset
+as an S-125 dataset.
+* The next four characters identify the issuing agency by its
+alphanumeric agency code in the IHO producer code register in the IHO GI
+Registry (i.e., the IHO is identified as "AA", not "1810"). Where the
+agency code consists of fewer than four characters, sufficient zeros
+must be suffixed to make the length exactly four characters (e.g.,
+"AA00" for IHO).
+* The eighth up to the seventeenth character can be used in any way by
+the producer to provide a unique file name for the dataset. The
+following characters are allowed in the dataset name. A to Z, 0 to 9,
+and the special character _ (underscore). The ninth through seventeenth
+characters are optional (i.e., at least one character must be used).
+* .YYY - support file extension.
+
+[[cls-11.6]]
+=== Dataset Naming Convention
+
+All dataset files will have unique world-wide file identifiers. The file
+identifier of the dataset should not be used to describe the physical
+content of the file. The dataset file metadata that accompanies the file
+will inform the user of the name and purpose of the file (new,
+replacement, and deletion).
+
+In this encoding the dataset files are named according to the
+specifications given below:
+
+125CCCCXXXXXXXXXX.GML
+
+The main part forms an identifier where:
+
+* The first three characters are always "125" and identify the dataset
+as an S-125 dataset.
+* The next four characters identify the issuing agency by its
+alphanumeric agency code in the IHO producer code register in the IHO GI
+Registry (i.e., the IHO is identified as "AA", not "1810"). Where the
+agency code consists of fewer than four characters, sufficient zeros
+must be suffixed to make the length exactly four characters (e.g.,
+"AA00" for IHO).
+* The eighth up to the seventeenth character can be used in any way by
+the producer to provide a unique file name for the dataset. The
+following characters are allowed in the dataset name, A to Z, 0 to 9 and
+the special character _ (underscore). The ninth through seventeenth
+characters are optional (i.e., at least one character must be used).
+
+=== Update dataset naming convention
+
+All update dataset files will have an identical name to the base
+dataset, aside from the separator and update number sequence.
+
+In this encoding the update dataset files are named according to the
+specifications given below:
+
+125CCCCXXXXXXXXXX_XXX.GML
+
+The main part forms an identifier where:
+
+* The first up to the seventeenth characters are the same as the dataset
+being updated and therefore conform to the rules described in
+<<cls-11.6>>.
+* The next character must be an underscore "_".
+* The next three characters must be numerical (0-9) characters to
+indicate the place of the update dataset in the update sequence.
+
+=== Catalogue File Naming Convention
+
+The exchange catalogue acts as the table of contents for the exchange
+set. The catalogue file of the exchange set must be named CATALOG.XML.
+No other file in the exchange set may be named CATALOG.XML. The content
+of the exchange catalogue file is described in <<S100,part=17>>.
+
+== Dataset Maintenance
+
+=== Introduction
+
+Datasets are maintained as needed and must include mechanisms for Marine
+AtoN updating. Data updates will be made by new editions or updates. The
+maintenance and update frequency of Marine AtoN datasets should be
+defined by the producers (official national authority) implementing this
+specification. Data Producers must use applicable sources to maintain
+and update data and provide a brief description of the sources that were
+used to produce the dataset in the appropriate metadata field.
+
+=== Production process for base and update datasets
+
+Data Producers should follow their established production processes for
+maintaining and updating datasets. Data is produced against the DCEG and
+checked against the appropriate set of validation rules in <<annex-A>>.
+
+=== Dataset updates and cancellation
+
+The purpose of issue of the dataset is indicated in the "purpose" field
+of the dataset discovery metadata.
+
+Cancellation should be in line with the functionality documented in
+S-100 Ed 5.2. Where a dataset is cancelled and its name is reused at a
+later date, the issue date must be greater than the issue date of the
+cancelled dataset. When the dataset is cancelled, it must be removed
+from the system.
+
+An exchange set may contain base dataset files and update dataset files
+for the same datasets. Under these circumstances the update dataset
+files must follow in the correct sequential order from the last update
+applied to the base dataset file.
+
+=== Support file updates
+
+The purpose of issue is indicated in the "purpose" field of the support
+file discovery metadata. Support files carrying the "deletion" flag in
+exchange catalogue metadata must be removed from the system. When a
+feature or information type pointing to a text, picture, or application
+file is deleted or updated so that it no longer references the file, the
+system software must check to see whether any other feature or
+information type references the same file, before that file is deleted.
+
+Updates, in form of a new edition or a replacement, or deletions of a
+support file may require concurrent updates to feature or information
+type instance attributes that depend on the file, e.g.,
+pictorialRepresentation, fileReference, and fileLocator attributes.
+
+=== Feature and portrayal catalogues
+
+For each new version of the S-125 Product Specification a new feature
+and portrayal catalogue may be released. The system must be able to
+manage datasets and their catalogues that are created on different
+versions of the S-125 product specification.
+
+=== Feature history, versions, and change tracking
+
+If applications or production systems require versioning of individual
+instances of feature or information types, maintenance of histories, or
+change tracking, the methods for versioning, history management, and
+change tracking and display are left to the application or production
+system.
+
+=== Dataset encryption
+
+Datasets may be encrypted according to <<S100,part=15>>.
+
+== Portrayal
+
+The Portrayal Catalogue is found at Annex D.
+
+[[cls-14]]
+== Metadata
+
+=== Introduction
+
+The Marine AtoN metadata specification conforms to the S-100 metadata
+specification in <<S100,part=4a>>, which is a profile of the
+<<ISO19115-1>> standard. These documents provide a structure for
+describing digital geographic data and define metadata elements, a
+common set of metadata terminology, definitions, and extension
+procedures.
+
+The overall structure of metadata in S-125 exchange sets is the same as
+in S-100. Metadata in exchange sets consists of discovery metadata for
+the datasets and support files in the exchange set (classes
+S100_DatasetDiscoveryMetadata and S100_SupportFileDiscoveryMetadata),
+metadata in <<ISO19115-1>> format for datasets, and metadata about any
+feature, portrayal, or interoperability catalogues which are in the
+exchange set (S100_CatalogueMetadata).
+
+The discovery metadata classes have numerous attributes which enable
+important information about the datasets and accompanying support files
+to be examined without the need to process the data, for example
+decrypt, decompress, load, etc. Other catalogues such as feature and
+portrayal catalogues can be included in the exchange set in support of
+the datasets.
+
+Since the class S100_DatasetDiscoveryMetadata aggregates <<ISO19115>>
+metadata (class S100_19115DatasetMetadata), metadata conforming to
+<<ISO19115>> is required to be included. Metadata for each support file
+is required if the exchange set contains support files.
+
+=== Metadata classes
+
+Details for the S-100 metadata classes are depicted in <<S100,part=17>>.
+
+[[annex-A]]
+[appendix,obligation=normative]
+== S-125 Maintenance - Change Proposal Form
+
+Organization::
+Date::
+Contact::
+Email:: {blank}
+
+=== Change Proposal Type
+
+_Select only one option_
+
+. Clarification
+. Revision
+. NewEdition
+
+=== Location
+
+_Identify all change proposal locations_
+
+S-125 Version No.::
+Part No.::
+Section No.::
+Proposal Summary:: {blank}
+
+=== Change Proposal
+
+_Please provide a detailed change proposal._
+
+=== Change Proposal Justification
+
+_Please provide a suitable explanation for the change and where
+applicable supporting documentation._
+
+*Please send completed forms and supporting documentation to the IHO
+Secretariat (addt@iho.int).*

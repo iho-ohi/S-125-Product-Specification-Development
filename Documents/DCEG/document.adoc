@@ -1,0 +1,43 @@
+= Marine Aids to Navigation (AtoN) -- Annex A: Data Classification and Encoding Guide
+:series: S
+:docnumber: 125
+:annex-id: A
+:doctype: standard
+:edition: 1.0.0
+:language: en
+:published-date: 2025-04-01
+:copyright-year: 2025
+:status: in-force
+:committee: HSSC
+:workgroup: NIPWG
+:committee_2: hssc
+:workgroup_2: s100
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+
+[.preface]
+== metanorma-extension
+
+=== user-css
+
+[source]
+----
+.blue { color: blue}
+----
+
+include::sections/01-metadata-feat.adoc[]
+
+include::sections/02-geo-feat.adoc[]
+
+include::sections/03-info-types.adoc[]
+
+include::sections/04-assoc-names.adoc[]
+
+include::sections/05-assoc-roles.adoc[]
+
+include::sections/06-att-enum-desc.adoc[]
+
+include::sections/07-complex-att.adoc[]

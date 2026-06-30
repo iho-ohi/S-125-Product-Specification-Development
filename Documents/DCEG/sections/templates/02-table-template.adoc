@@ -1,0 +1,62 @@
+{% for gf in feat.features %}
+=== {{ gf.name }}
+
+.{{ gf.name }}
+[cols="a,a,a,a,a",options=noheader]
+|===
+5+| [underline]#IHO Definition:# {{ gf.definition }}
+
+5+| [underline]#*S-10x Geo Feature:*# *{{ gf.name }}* {% if gf.id %} *({{ gf.id }})* {% endif %}
+
+5+| [underline]#*Super Type:*# {% if gf.super_type %} *{{ gf.super_type }}* {% endif %}
+
+5+| [underline]#*Primitives:*# *{{ gf.primitives }}*
+
+| _span:blue[Real World]_
+2+| _span:blue[Paper Chart Symbol]_
+2+| _span:blue[ECDIS Symbol]_
+
+h| S-10x Attribute
+h| S-57 Acronym
+h| Allowable Encoding Value
+h| Type
+h| Multiplicity
+
+{% for att in gf.attributes%}
+| {{ att.name }}
+| {{ att.s57_acronym }}
+| {{ att.encoding_value }}
+| {{ att.type }}
+| {{ att.multiplicity }}
+{% endfor %}
+
+5+| [underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+|===
+
+{% if gf.associations %}
+[%unnumbered,options=noheader,cols="a,a,a,a,a"]
+|===
+5+| [underline]#*Feature/Information associations*#
+
+.2+| *Type*
+.2+| *Association Name*
+3+| *Association Ends*
+| *Class*
+| *Role*
+| *Mult*
+
+{% for gfa in gf.associations %}
+| {{ gfa.type }}
+| {{ gfa.name }}
+| *{{ gfa.class }}*
+| {{ gfa.role }}
+| {{ gfa.multiplicity }}
+{% endfor %}
+|===
+{% endif %}
+
+{% endfor %}

@@ -1,0 +1,23 @@
+{% for aed in att.attributes %}
+[[cls-6.{{ forloop.index }}]]
+=== {{ aed.title }}
+
+.{{ aed.title }}
+[cols="a",options=noheader]
+|===
+| [underline]#IHO Definition:# {{ aed.definition }}
+
+{% for sub in aed.sub_definitions %}
+{% if sub.start %}
+[start={{ sub.start }}]
+{% endif %}
+. *{{ sub.name }}*
++
+--
+[underline]#IHO Definition:# {{ sub.definition }}
+--
+{% endfor %}
+
+[underline]#Remarks:# {% if aed.remarks %} {{ aed.remarks }} {% else %} - {% endif %}
+|===
+{% endfor %}

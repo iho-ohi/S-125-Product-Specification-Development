@@ -1,0 +1,25 @@
+== Data Quality
+
+Data quality allows users and user systems to assess fitness for use of
+the provided data. Data quality measures and the associated evaluation
+are reported as metadata of a data product. This metadata improves
+interoperability with other data products and provides usage by user
+groups that the data product was not originally intended for. The
+secondary users can make assessments of the data product usefulness in
+their application based on the reported data quality measures.
+
+For S-125 the following data quality elements have been included:
+
+* Conformance to this Product Specification;
+* Intended purpose of the data product;
+* Completeness of the data product in terms of coverage;
+* Logical Consistency;
+* Positional Uncertainty and Accuracy;
+* Thematic Accuracy;
+* Temporal Quality;
+* Aggregation measures;
+* Elements specifically required for the data product (none currently
+identified for S-125);
+* Validation checks or conformance checks including:
+** General tests for dataset integrity;
+** Specific tests for a specific data model.

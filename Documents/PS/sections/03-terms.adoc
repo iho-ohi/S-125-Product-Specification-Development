@@ -1,0 +1,251 @@
+== Terms, Definitions and Abbreviations
+
+=== Terms and Definitions
+
+The S-100 framework is based on the ISO 19100 series of geographic
+standards. The terms and definitions provided here are used to
+standardize the nomenclature found within that framework, whenever
+possible. Modifications have been made when necessary.
+
+==== application
+
+manipulation and processing of data in support of user requirements
+
+[.source]
+<<ISO19101>>
+
+==== application schema
+
+{{conceptual schema}} for data required by one or more
+{{application,applications}}
+
+[.source]
+<<ISO19101>>
+
+==== conceptual model
+
+model that defines concepts of a {{universe of discourse}}
+
+[.source]
+<<ISO19101>>
+
+==== conceptual schema
+
+formal description of a {{conceptual model}}
+
+[.source]
+<<ISO19101>>
+
+==== coverage
+
+{{feature}} that acts as a function to return values from its range for
+any direct position within its spatial, temporal or spatiotemporal
+{{domain}}
+
+[.source]
+<<ISO19123>>
+
+[example]
+Raster image, polygon overlay, digital elevation matrix.
+
+==== data product
+
+{{dataset}} or {{dataset series}} that conforms to a
+{{data product specification}}
+
+==== data product specification
+
+detailed description of a {{dataset}} or {{dataset series}} together with
+additional information that will enable it to be created, supplied to,
+and used by another party
+
+NOTE: A data product specification provides a description of the universe
+of discourse and a specification for mapping the universe of discourse to
+a dataset. It may be used for production, sales, end-use, or other
+purpose.
+
+==== dataset
+
+identifiable collection of data
+
+[.source]
+<<ISO19115>>
+
+NOTE: A dataset may be a smaller grouping of data which, though limited
+by some constraint such as spatial extent or feature type, is located
+physically within a larger dataset. Theoretically, a dataset may be as
+small as a single feature or feature attribute contained within a larger
+dataset. A hardcopy map or chart may be considered a dataset.
+
+==== dataset series
+
+collection of {{dataset,datasets}} sharing common characteristics
+
+[.source]
+<<ISO19115>>
+
+==== domain
+
+well-defined set
+
+[.source]
+<<ISO19103>>
+
+NOTE: Well-defined means that the definition is both necessary and
+sufficient, as everything that satisfies the definition is in the set and
+everything that does not satisfy the definition is necessarily outside
+the set.
+
+==== feature
+
+abstraction of real-world phenomena
+
+[.source]
+<<ISO19101>>
+
+NOTE: A feature can occur as a type or an instance. Feature type or
+feature instance will be used when only one is meant.
+
+==== feature association
+
+relationship that links instances of one {{feature}} type with instances
+of the same or a different {{feature}} type
+
+[.source]
+<<ISO19110>>
+
+==== feature attribute
+
+characteristic of a {{feature}}
+
+[.source]
+<<ISO19101-1,clause="4.1.12">>
+
+[example]
+A feature attribute named "color" can have an attribute value "green"
+which belongs to the data type "text".
+
+[example]
+A feature attribute named length can have an attribute value "82,4" which
+belongs to the data type "real".
+
+NOTE: A feature attribute has a type name, a data type and a value domain
+associated to it. A feature attribute for a feature instance also has an
+attribute value taken from the value domain.
+
+NOTE: In a feature catalogue a feature attribute can include a value
+domain but does not specify attribute values for feature instance.
+
+[NOTE]
+====
+In UML, attribute associations and operations are representation types
+and are not fundamental to the type of a characteristic nor to the type
+of feature. All three are equally capable of representing the same
+characteristics of a feature. Every implementation of a characteristic is
+allowed to use the representation type that is most appropriate and can
+use several different representations for a single characteristic if
+required.
+
+Feature associations and feature operations therefore are different types
+of feature attribute, the distinction between them being based on storage
+and access mechanism rather than semantics.
+====
+
+==== geographic data
+
+data with implicit or explicit reference to a location relative to the
+Earth
+
+[.source]
+<<ISO19109>>
+
+NOTE: Geographic information is also used as a term for information
+concerning phenomena implicitly or explicitly associated with a location
+relative to the Earth.
+
+==== metadata
+
+information about a resource
+
+[.source]
+<<ISO19115-1,clause="4.10">>
+
+==== model
+
+abstraction of some aspects of reality
+
+[.source]
+<<ISO19109>>
+
+==== portrayal
+
+presentation of information to humans
+
+[.source]
+<<ISO19117>>
+
+NOTE: Within the scope of this International Standard Portrayal is
+restricted to the portrayal of geographic information.
+
+[.source]
+<<ISO19117,clause="4.20">>
+
+==== quality
+
+totality of characteristics of a product that bear on its ability to
+satisfy stated and implied needs
+
+[.source]
+<<ISO19101>>
+
+==== universe of discourse
+
+view of the real or hypothetical world that includes everything of
+interest
+
+[.source]
+<<ISO19101>>
+
+=== Abbreviations
+
+This product specification adopts the following convention for symbols
+and abbreviated terms:
+
+ASCII:: American Standard Code for Information Interchange
+ECDIS:: Electronic Chart Display and Information Systems
+ENC:: Electronic Navigational Chart
+GML:: Geography Markup Language
+IHO:: International Hydrographic Organization
+IOC:: International Oceanographic Commission
+ISO:: International Organization for Standardization
+NIPWG:: Nautical Information Provision Working Group
+NPIO:: Nautical Publication Information Overlay
+UML:: Unified Modeling Language
+URI:: Uniform Resource Identifier
+URL:: Uniform Resource Locator
+VTS:: Vessel Traffic Services
+WMS:: Web Map Service
+WFS:: Web Feature Service
+www:: World Wide Web
+WGS:: World Geodetic System
+XML:: Extensible Markup Language
+XSLT:: eXtensible Stylesheet Language Transformations
+XSD:: XML Schema Definition
+
+=== Use of Language
+
+Within this document, including appendices and annexes:
+
+* "Must" indicates a mandatory requirement.
+* "Should" indicates an optional requirement, that is the recommended
+process to be followed but is not mandatory.
+* "May" means "allowed to" or "could possibly" and is not mandatory.
+
+=== UML Notations
+
+In this document, conceptual schemas are presented in the Unified
+Modeling Language (UML). Several model elements used in this schema are
+defined in ISO standards or in IHO S-100 documents. In order to ensure
+that class names in the model are unique ISO TC/211 has adopted a
+convention of establishing a prefix to the names of classes that define
+the TC/211 defined UML package in which the UML class is defined.

@@ -1,0 +1,134 @@
+== Specification Description
+
+=== Informal Description of Data Product
+
+This section contains general information about the data product.
+
+*Title*:: Marine Aids to Navigation (AtoN)
+
+*Abstract*:: Marine Aids to Navigation (AtoN) datasets describe the list
+of AtoNs and status information like temporary changes, proposed changes,
+advance notice of changes and discrepancy. S-125 datasets would be a
+derivative of full AtoN information as the public facing information for
+use in ECDIS/ECS. In other words, S-125 Marine AtoN data would be the
+digital equivalent of the extended list of lights including all/most AtoN
+in order to meet IMO SOLAS V requirements of having list of lights on
+board and serves as a continually updated list of AtoN.
+
+*Content*:: Datasets conforming to this specification will contain list
+of AtoNs (excluding VTS) and status information like temporary changes,
+proposed changes, advance notice of changes and discrepancy.
+
+*Spatial Extent*:: Global coverage of maritime areas.
+
+*Specific Purpose*:: Describing list and status of AtoNs and to allow the
+producer to exchange AtoN datasets with interested stakeholders.
+
+=== Data product specification metadata
+
+This information uniquely identifies this Product Specification and
+provides information about its creation and maintenance. For further
+information on dataset metadata, see <<cls-14>>.
+
+*Title*:: Marine Aids to Navigation (AtoN)
+
+*S-100 Version*:: 5.2.0
+
+*S-125 Version*:: 1.0.0
+
+*Date*:: 2025-04-02
+
+*Language*:: English
+
+*Classification*:: Unclassified
+
+*Contact*:: International Hydrographic Organization (IHO) +
+4 quai Antoine 1er, +
+B.P. 445 +
+MC 98011 MONACO CEDEX +
+Telephone: +377 93 10 81 00 +
+Telefax: + 377 93 10 81 40
+
+*URL*:: https://iho.int
+
+*Identifier*:: S-125
+
+*Maintenance*:: Amendments to this specification will be produced on a
+needs basis. For reporting issues with this specification which need
+correction, use the contact information.
+
+=== Product Specification Maintenance
+
+==== Introduction
+
+Changes to S-125 will be released by the IHO as a new edition, a
+revision, or as a document that includes clarification. These are
+described below.
+
+==== New Edition
+
+New Editions introduce significant changes. New Editions enable new
+concepts, such as the ability to support new functions or applications,
+or the introduction of new constructs or data types. New Editions are
+likely to have a significant impact on either existing users or future
+users of S-125.
+
+==== Revisions
+
+Revisions are defined as substantive semantic changes. Typically,
+revisions will introduce change to correct factual errors or introduce
+necessary changes that have become evident as a result of practical
+experience or changing circumstances. A revision must not be classified
+as a clarification. Revisions could have an impact on either existing
+users or future users of this specification. All cumulative
+clarifications will be included with the release of approved corrections
+revisions.
+
+Changes in a revision are minor and ensure backward compatibility with
+the previous versions within the same Edition. Newer revisions, for
+example, introduce new features and attributes. Within the same Edition,
+a dataset of one version could always be processed with a later version
+of the feature and portrayal catalogues. In most cases a new feature or
+portrayal catalogue will result in a revision of this specification.
+
+==== Clarification
+
+Clarifications are non-substantive changes. Typically, clarifications:
+remove ambiguity; correct grammatical and spelling errors; amend or
+update cross references or; insert improved graphics in spelling,
+punctuation, and grammar. Clarification must not cause any substantive
+semantic changes.
+
+Changes in a clarification are minor and ensure backward compatibility
+with the previous versions within the same Edition. Within the same
+Edition, a dataset of one clarification version could always be processed
+with a later version of the feature and portrayal catalogues, and a
+portrayal catalogue can always rely on earlier versions of the feature
+catalogues.
+
+Changes in a clarification are minor and ensure backward compatibility
+with the previous versions.
+
+==== Version Numbers
+
+The associated version control numbering to identify changes (n) to this
+specification must be as follows:
+
+* New Editions denoted as *n*.0.0
+* Revisions denoted as n.*n*.0
+* Clarifications denoted as n.n.*n*
+
+=== Specification Scope
+
+This product specification describes one data product and therefore
+requires only one scope which is described below:
+
+*Scope ID*:: Marine Aids to Navigation (AtoN)
+
+*Hierarchical level*:: MD_ScopeCode - 005 (dataset)
+
+*Hierarchical level name*:: Marine AtoN Dataset
+
+*Level description*:: Information applies to the dataset
+
+*Extent*:: EX_Extent.description: Global coverage of maritime areas

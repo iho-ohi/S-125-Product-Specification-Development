@@ -1,0 +1,6 @@
+== Information types
+
+[yaml2text,sections/yaml/03-tables.yaml,info]
+----
+include::templates/03-table-template.adoc[]
+----

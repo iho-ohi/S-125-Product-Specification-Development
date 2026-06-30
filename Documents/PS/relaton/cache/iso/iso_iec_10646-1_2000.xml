@@ -1,0 +1,377 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" script="Latn" type="title-intro">Information technology</title>
+  <title language="en" script="Latn" type="title-main">Universal Multiple-Octet Coded Character Set (UCS)</title>
+  <title language="en" script="Latn" type="title-part">Part 1: Architecture and Basic Multilingual Plane</title>
+  <title language="en" script="Latn" type="main">Information technology - Universal Multiple-Octet Coded Character Set (UCS) - Part 1: Architecture and Basic Multilingual Plane</title>
+  <title language="fr" script="Latn" type="title-intro">Technologies de l'information</title>
+  <title language="fr" script="Latn" type="title-main">Jeu universel de caractères codés sur plusieurs octets (JUC)</title>
+  <title language="fr" script="Latn" type="title-part">Partie 1: Architecture et plan multilingue de base</title>
+  <title language="fr" script="Latn" type="main">Technologies de l'information - Jeu universel de caractères codés sur plusieurs octets (JUC) - Partie 1: Architecture et plan multilingue de base</title>
+  <uri type="src">https://www.iso.org/standard/29819.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:29819:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/02/98/29819.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:2000</docidentifier>
+  <docidentifier type="iso-reference">ISO/IEC 10646-1:2000(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso-iec:10646:-1:stage-95.99</docidentifier>
+  <docnumber>10646</docnumber>
+  <date type="published">
+    <on>2000-10-05</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Electrotechnical Commission</name>
+      <abbreviation>IEC</abbreviation>
+      <uri>www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <subdivision type="technical-committee" subtype="IEC">
+        <name>Coded character sets</name>
+        <identifier>ISO/IEC JTC 1/SC 2</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2000</from>
+    <owner>
+      <organization>
+        <name>ISO/IEC</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 6:1997</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 6:1997</docidentifier>
+      <date type="published">
+        <on>1997-11-13</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 1:1996</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 1:1996</docidentifier>
+      <date type="published">
+        <on>1996-10-24</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 7:1997</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 7:1997</docidentifier>
+      <date type="published">
+        <on>1997-11-13</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 2:1996</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 2:1996</docidentifier>
+      <date type="published">
+        <on>1996-10-24</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 18:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 18:1999</docidentifier>
+      <date type="published">
+        <on>1999-07-22</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 16:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 16:1998</docidentifier>
+      <date type="published">
+        <on>1998-10-22</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 19:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 19:1998</docidentifier>
+      <date type="published">
+        <on>1998-11-05</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 30</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 30</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 5:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 5:1998</docidentifier>
+      <date type="published">
+        <on>1998-06-04</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 20:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 20:1998</docidentifier>
+      <date type="published">
+        <on>1998-11-05</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 31</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 31</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 17:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 17:1999</docidentifier>
+      <date type="published">
+        <on>1999-08-12</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 15</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 15</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 9:1997</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 9:1997</docidentifier>
+      <date type="published">
+        <on>1997-12-11</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 14</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 14</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Cor 2:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Cor 2:1998</docidentifier>
+      <date type="published">
+        <on>1998-06-25</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 27</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 27</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 28</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 28</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 29</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 29</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 22</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 22</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 24</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 24</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 13:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 13:1998</docidentifier>
+      <date type="published">
+        <on>1998-10-22</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 25</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 25</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/FDAM 26</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/FDAM 26</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 8:1997</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 8:1997</docidentifier>
+      <date type="published">
+        <on>1997-12-11</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 3:1996</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 3:1996</docidentifier>
+      <date type="published">
+        <on>1996-10-24</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 10:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 10:1998</docidentifier>
+      <date type="published">
+        <on>1998-10-01</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 4:1996</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 4:1996</docidentifier>
+      <date type="published">
+        <on>1996-10-24</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 11:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 11:1998</docidentifier>
+      <date type="published">
+        <on>1998-07-16</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993</docidentifier>
+      <date type="published">
+        <on>1993-05-20</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 12:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 12:1998</docidentifier>
+      <date type="published">
+        <on>1998-09-03</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Cor 1:1996</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Cor 1:1996</docidentifier>
+      <date type="published">
+        <on>1996-02-29</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 23:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 23:1999</docidentifier>
+      <date type="published">
+        <on>1999-05-06</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:1993/Amd 21:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:1993/Amd 21:1999</docidentifier>
+      <date type="published">
+        <on>1999-05-20</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/IEC 10646:2003</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646:2003</docidentifier>
+      <date type="published">
+        <on>2003-12-15</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:2000/Amd 1:2002</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:2000/Amd 1:2002</docidentifier>
+      <date type="published">
+        <on>2002-07-18</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO/IEC 10646-1:2000/FDAM 2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:2000/FDAM 2</docidentifier>
+    </bibitem>
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+  <ext schema-version="v1.1.2">
+    <doctype>international-standard</doctype>
+    <flavor>iso</flavor>
+    <ics>
+      <code>35.040.10</code>
+      <text>Coding of character sets</text>
+    </ics>
+    <structuredidentifier type="ISO/IEC">
+      <project-number>29819</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

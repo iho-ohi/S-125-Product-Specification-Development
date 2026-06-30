@@ -1,0 +1,9 @@
+{% for ar in assoc.roles %}
+=== {{ ar.title }}
+
+.{{ ar.title }}
+[cols="a",options=noheader]
+|===
+| [underline]#IHO Definition:# {{ ar.definition }}
+|===
+{% endfor %}

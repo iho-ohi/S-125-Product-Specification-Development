@@ -1,0 +1,771 @@
+---
+types:
+  - name: "AtoN Fixing Method"
+    definition: "Method used for fixing the position of an aid to navigation."
+    super_type: 
+    primitives: "None"
+    attributes:
+      - name: "Reference Point"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "0, 1"
+      - name: "Horizontal Datum"
+        s57_acronym: "(HORDAT)"
+        encoding_value: |
+          1 : WGS 72
+          
+          2 : WGS 84
+          
+          3 : European 1950
+          
+          4 : Potsdam Datum
+          
+          5 : Adindan
+          
+          6 : Afgooye
+          
+          7 : Ain el Abd 1970
+          
+          8 : Anna 1 Astro 1965
+          
+          9 : Antigua Island Astro 1943
+          
+          10 : Arc 1950
+          
+          11 : Arc 1960
+          
+          12 : Ascension Island 1958
+          
+          13 : Astro Beacon 'E' 1945
+          
+          14 : Astro DOS 71/4
+          
+          15 : Astro Tern Island (FRIG) 1961
+          
+          16 : Astronomical Station 1952
+          
+          17 : Australian Geodetic 1966
+          
+          18 : Australian Geodetic 1984
+          
+          19 : Ayabelle Lighthouse
+          
+          20 : Bellevue (IGN)
+          
+          21 : Bermuda 1957
+          
+          22 : Bissau
+          
+          23 : Bogota Observatory
+          
+          24 : Bukit Rimpah
+          
+          25 : Camp Area Astro
+          
+          26 : Campo Inchauspe 1969
+          
+          27 : Canton Astro 1966
+          
+          28 : Cape Datum
+          
+          29 : Cape Canaveral
+          
+          30 : Carthage
+          
+          31 : Chatam Island Astro 1971
+          
+          32 : Chua Astro
+          
+          33 : Corrego Alegre
+          
+          34 : Dabola
+          
+          35 : Djakarta (Batavia)
+          
+          36 : DOS 1968
+          
+          37 : Easter Island 1967
+          
+          38 : European 1979
+          
+          39 : Fort Thomas 1955
+          
+          40 : Gan 1970
+          
+          41 : Geodetic Datum 1949
+          
+          42 : Graciosa Base SW 1948
+          
+          43 : Guam 1963
+          
+          44 : Gunung Segara
+          
+          45 : GUX 1 Astro
+          
+          46 : Herat North
+          
+          47 : Hjorsey 1955
+          
+          48 : Hong Kong 1963
+          
+          49 : Hu-Tzu-Shan
+          
+          50 : Indian
+          
+          51 : Indian 1954
+          
+          52 : Indian 1975
+          
+          53 : Ireland 1965
+          
+          54 : ISTS 061 Astro 1968
+          
+          55 : ISTS 073 Astro 1969
+          
+          56 : Johnston Island 1961
+          
+          57 : Kandawala
+          
+          58 : Kerguelen Island 1949
+          
+          59 : Kertau 1968
+          
+          60 : Kusaie Astro 1951
+          
+          61 : L. C. 5 Astro 1961
+          
+          62 : Leigon
+          
+          63 : Liberia 1964
+          
+          64 : Luzon
+          
+          65 : Mahe 1971
+          
+          66 : Massawa
+          
+          67 : Merchich
+          
+          68 : Midway Astro 1961
+          
+          69 : Minna
+          
+          70 : Montserrat Island Astro 1958
+          
+          71 : M'poraloko
+          
+          72 : Nahrwan
+          
+          73 : Naparima, BWI
+          
+          74 : North American 1927
+          
+          75 : North American 1983
+          
+          76 : Observatorio Meteorologico 1939
+          
+          77 : Old Egyptian 1907
+          
+          78 : Old Hawaiian
+          
+          79 : Oman
+          
+          80 : Ordnance Survey of Great Britain 1936
+          
+          81 : Pico de las Nieves
+          
+          82 : Pitcairn Astro 1967
+          
+          83 : Point 58
+          
+          84 : Pointe Noire 1948
+          
+          85 : Porto Santo 1936
+          
+          86 : Provisional South American 1956
+          
+          87 : Provisional South Chilean 1963
+          
+          88 : Puerto Rico
+          
+          89 : Qatar National
+          
+          90 : Qornoq
+          
+          91 : Reunion
+          
+          92 : Rome 1940
+          
+          93 : Santo (DOS) 1965
+          
+          94 : Sao Braz
+          
+          95 : Sapper Hill 1943
+          
+          96 : Schwarzeck
+          
+          97 : Selvagem Grande 1938
+          
+          98 : South American 1969
+          
+          99 : South Asia
+          
+          100 : Tananarive Observatory 1925
+          
+          101 : Timbalai 1948
+          
+          102 : Tokyo
+          
+          103 : Tristan Astro 1968
+          
+          104 : Viti Levu 1916
+          
+          105 : Wake-Eniwetok 1960
+          
+          106 : Wake Island Astro 1952
+          
+          107 : Yacare
+          
+          108 : Zanderij
+          
+          109 : American Samoa 1962
+          
+          110 : Deception Island
+          
+          111 : Indian 1960
+          
+          112 : Indonesian 1974
+          
+          113 : North Sahara 1959
+          
+          114 : Pulkovo 1942
+          
+          116 : S-JTSK
+          
+          117 : Voirol 1950
+          
+          118 : Average Terrestrial System 1977
+          
+          119 : Compensation Geodesique du Quebec 1977
+          
+          120 : Finnish (KKJ)
+          
+          121 : Ordnance Survey of Ireland
+          
+          122 : Revised Kertau
+          
+          123 : Revised Nahrwan
+          
+          124 : GGRS 76 (Greece)
+          
+          125 : Nouvelle Triangulation de France
+          
+          126 : RT 90 (Sweden)
+          
+          127 : Geocentric Datum of Australia
+          
+          128 : BJZ54 (A954 Beijing Coordinates)
+          
+          129 : Modified BJZ54
+          
+          130 : GDZ80
+          
+          131 : Local Datum
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Source Date"
+        s57_acronym: "(SORDAT)"
+        encoding_value:
+        type: "DA"
+        multiplicity: "1, 1"
+      - name: "Positioning Procedure"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "1, 1"
+
+  - name: "Aton Status Information"
+    definition: "-"
+    super_type: 
+    primitives: "None"
+    attributes:
+      - name: "Change Details"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "1, 1"
+      - name: "Aton Commissioning"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Buoy establishment
+          
+          2 : Light establishment
+          
+          3 : Beacon establishment
+          
+          4 : Audible signal establishment
+          
+          5 : Fog signal establishment
+          
+          6 : AIS transmitter establishment
+          
+          7 : V-AIS establishment
+          
+          8 : RACON establishment
+          
+          9 : DGPS station establishment
+          
+          10 : eLORAN station establishment
+          
+          11 : DGLONASS station establishment
+          
+          12 : e-Chayka station establishment
+          
+          13 : EGNOS establishment
+        type: "(S) EN"
+        multiplicity: "0, 1"
+      - name: "Aton Removal"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Buoy removal
+          
+          2 : Buoy temporary removal
+          
+          3 : Light removal
+          
+          4 : Light temporary removal
+          
+          5 : Beacon removal
+          
+          6 : Beacon temporary removal
+          
+          7 : Fog signal removal
+          
+          8 : Fog signal temporary removal
+          
+          9 : Audible signal removal
+          
+          10 : Audible signal temporary removal
+          
+          11 : V-AIS removal
+          
+          12 : V-AIS temporary removal
+          
+          13 : RACON signal removal
+          
+          14 : RACON temporary removal
+          
+          15 : DGPS removal
+          
+          16 : DGPS temporary removal
+          
+          17 : EGNOS removal
+          
+          18 : EGNOS temporary removal
+          
+          19 : LORAN C station removal
+          
+          20 : LORAN C station temporary removal
+          
+          21 : eLORAN removal
+          
+          22 : eLORAN temporary removal
+          
+          23 : Chayka station removal
+          
+          24 : Chayka station temporary removal
+          
+          25 : e-Chayka station removal
+          
+          26 : e-Chayka station temporary removal
+          
+          27 :
+        type: "(S) EN"
+        multiplicity: "0, 1"
+      - name: "Aton Replacement"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Buoy change
+          
+          2 : Buoy temporary change
+          
+          3 : Light change
+          
+          4 : Light temporary change
+          
+          5 : Sector light change
+          
+          6 : Sector light temporary change
+          
+          7 : Beacon change
+          
+          8 : Beacon temporary change
+          
+          9 : Fog signal change
+          
+          10 : Fog signal temporary change
+          
+          11 : Audible signal change
+          
+          12 : Audible signal temporary change
+          
+          13 : V-AIS change
+          
+          14 : V-AIS temporary change
+          
+          15 : RACON signal change
+          
+          16 : RACON temporary change
+        type: "(S) EN"
+        multiplicity: "0, 1"
+      - name: "Fixed Aton Change"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Beacon missing
+          
+          2 : Beacon damaged
+          
+          3 : Light beacon Unlit
+          
+          4 : Light beacon Unreliable
+          
+          5 : Light beacon Not synchronized
+          
+          6 : Light beacon damaged
+          
+          7 : Beacon topmark missing
+          
+          8 : Beacon topmark damaged
+          
+          9 : Beacon daymark unreliable
+          
+          10 : Floodlit beacon Unlit
+          
+          11 : Beacon restored to normal
+        type: "(S) EN"
+        multiplicity: "0, 1"
+      - name: "Floating Aton Change"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Buoy adrift
+          
+          2 : Buoy damaged
+          
+          3 : Buoy daymark unreliable
+          
+          4 : Buoy destroyed
+          
+          5 : Buoy missing
+          
+          6 : Buoy move
+          
+          7 : Buoy off position
+          
+          8 : Buoy re-establishment
+          
+          9 : Buoy restored to normal
+          
+          10 : Buoy topmark damaged
+          
+          11 : Buoy topmark missing
+          
+          12 : Buoy will be withdrawn
+          
+          13 : Buoy withdrawn
+          
+          14 : Decommissioned for winter
+          
+          15 : Lifted for Winter
+          
+          16 : Light buoy Light damaged
+          
+          17 : Light buoy Light not synchronized
+          
+          18 : Light buoy Light unlit
+          
+          19 : Light buoy Light unreliable
+          
+          20 : Marine Aids to Navigation unreliable
+          
+          21 : Recommissioned for navigation season
+          
+          22 : Replaced by Winter Spar
+          
+          23 : Seasonal decommissioning complete
+          
+          24 : Seasonal decommissioning in progress
+          
+          25 : Seasonal recommissioning complete
+          
+          26 : Seasonal recommissioning in progress
+        type: "(S) EN"
+        multiplicity: "0, 1"
+      - name: "Audible Signal Aton Change"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Audible signal out of service
+          
+          2 : Fog signal out of service
+          
+          3 : Audible signal operating properly
+          
+          4 : Fog signal operating properly
+        type: "(S) EN"
+        multiplicity: "0, 1"
+      - name: "Lighted Aton Change"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Light unlit
+          
+          2 : Light unreliable
+          
+          3 : Light re-establishment
+          
+          4 : Light range reduced
+          
+          5 : Light without rhythm
+          
+          6 : Light out of synchronization
+          
+          7 : Light daymark unreliable
+          
+          8 : Light operating properly
+          
+          9 : Sector light Sector obscured
+          
+          10 : Front leading/range light Unlit
+          
+          11 : Rear leading/range light Unlit
+          
+          12 : Front leading/range light Unreliable
+          
+          13 : Rear leading/range light Unreliable
+          
+          14 : Front leading/range light Light range reduced
+          
+          15 : Rear leading/range light Light range reduced
+          
+          16 : Front leading/range light without rhythm
+          
+          17 : Rear leading/range light without rhythm
+          
+          18 : Leading/range lights out of synchronization
+          
+          19 : Front leading/range beacon Unreliable
+          
+          20 : Rear leading/range beacon Unreliable
+          
+          21 : Front leading/range light is operating properly
+          
+          22 : Rear leading/range light is operating properly
+          
+          23 : Front leading/range beacon restored to normal
+          
+          24 : Rear leading/range beacon restored to normal
+        type: "(S) EN"
+        multiplicity: "0, 1"
+      - name: "Electronic Aton Change"
+        s57_acronym: ""
+        encoding_value: |
+          1 : AIS transmitter out of service
+          
+          2 : AIS transmitter unreliable
+          
+          3 : AIS transmitter operating properly
+          
+          4 : V-AIS out of service
+          
+          5 : V-AIS unreliable
+          
+          6 : V-AIS operating properly
+          
+          7 : RACON out of service
+          
+          8 : RACON unreliable
+          
+          9 : RACON operating properly
+          
+          10 : DGPS out of service
+          
+          11 : DGPS operating properly
+          
+          12 : DGPS unreliable
+          
+          13 : LORAN C operating properly
+          
+          14 : LORAN C unreliable
+          
+          15 : LORAN C out of service
+          
+          16 : eLORAN operating properly
+          
+          17 : eLORAN unreliable
+          
+          18 : eLORAN out of service
+          
+          19 : DGLOANSS operating properly
+          
+          20 : DGLOANSS unreliable
+          
+          21 : DGLOANSS out of service
+          
+          22 : Chayka operating properly
+          
+          23 : Chayka unreliable
+          
+          24 : Chayka out of service
+          
+          25 : e-Chayka operating properly
+          
+          26 : e-Chayka unreliable
+          
+          27 : e-Chayka out of service
+          
+          28 : EGNOS operating properly
+          
+          29 : EGNOS unreliable
+          
+          30 : EGNOS out of service
+        type: "(S) EN"
+        multiplicity: "0, 1"
+      - name: "Change Types"
+        s57_acronym: ""
+        encoding_value: |
+          1 : Advanced notice of changes 
+          
+          2 : Discrepancy 
+          
+          3 : Proposed changes 
+          
+          4 : Temporary changes
+        type: "EN"
+        multiplicity: "0, 1"
+
+  - name: "Positioning Information"
+    definition: "Information about how a position was obtained. (proposed by CCG)"
+    super_type: 
+    primitives: "None"
+    attributes:
+      - name: "Positioning Device"
+        s57_acronym: ""
+        encoding_value:
+        type: "TE"
+        multiplicity: "1, 1"
+      - name: "Positioning Method"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Positioning Equipment"
+        s57_acronym: ""
+        encoding_value: |
+          1 : DGPS Receiver
+          
+          2 : GLONASS Receiver
+          
+          3 : GPS Receiver
+          
+          4 : GPS/WAAS Receiver
+        type: "(S) EN"
+        multiplicity: "1, 1"
+      - name: "NMEAString"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) TE"
+        multiplicity: "1, 1"
+
+  - name: "Spatial Quality"
+    definition: "The indication of the quality of the locational information for features in a dataset."
+    super_type: 
+    primitives: "None"
+    attributes:
+      - name: "Quality of Horizontal Measurement"
+        s57_acronym: "(QUAPOS)"
+        encoding_value: |
+          1 : Surveyed
+          
+          2 : Unsurveyed
+          
+          3 : Inadequately Surveyed
+          
+          4 : Approximate
+          
+          5 : Position Doubtful
+          
+          6 : Unreliable
+          
+          7 : Reported (Not Surveyed)
+          
+          8 : Reported (Not Confirmed)
+          
+          9 : Estimated
+          
+          10 : Precisely Known
+          
+          11 : Calculated
+        type: "EN"
+        multiplicity: "0, 1"
+      - name: "Spatial Accuracy"
+        s57_acronym: ""
+        encoding_value:
+        type: "C"
+        multiplicity: "0, 1"
+      - name: "Fixed Date Range"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "0, 1"
+      - name: "Date End"
+        s57_acronym: "(DATEND)"
+        encoding_value:
+        type: "(S) TD"
+        multiplicity: "0, 1"
+      - name: "Date Start"
+        s57_acronym: "(DATSTA)"
+        encoding_value:
+        type: "(S) TD"
+        multiplicity: "0, 1"
+      - name: "Horizontal Position Uncertainty"
+        s57_acronym: "(POSACC)"
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "0, 1"
+      - name: "Uncertainty Fixed"
+        s57_acronym: |
+          (POSACC)
+          
+          (SOUACC)
+          
+          (VERACC)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Uncertainty Variable Factor"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "0, 1"
+      - name: "Vertical Uncertainty"
+        s57_acronym: |
+          (VERACC)
+          
+          (SOUACC)
+        encoding_value:
+        type: "(S) C"
+        multiplicity: "0, 1"
+      - name: "Uncertainty Fixed"
+        s57_acronym: |
+          (POSACC)
+          
+          (SOUACC)
+          
+          (VERACC)
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "1, 1"
+      - name: "Uncertainty Variable Factor"
+        s57_acronym: ""
+        encoding_value:
+        type: "(S) RE"
+        multiplicity: "0, 1"

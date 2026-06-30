@@ -1,0 +1,54 @@
+[.preface]
+== metanorma-extension
+
+=== document history
+
+Changes to this Product Specification are coordinated by the IHO Nautical Information Provision Working Group (NIPWG). New editions will be made available via the IHO web site. Maintenance of the Product Specification shall conform to IHO Technical Resolution 2/2007 (revised 2010).
+
+[source,yaml]
+----
+- date:
+  - type: updated
+    value: 2022-03-07
+  edition: 0.0.1
+  contributor:
+  - person:
+      name:
+        abbreviation: IALA ARM S-201 TG
+        completename: IALA ARM S-201 TG
+  amend:
+    - description: First Draft
+- date:
+  - type: updated
+    value: 2022-09-02
+  edition: 0.0.2
+  contributor:
+  - person:
+      name:
+        abbreviation: IALA ARM S-201 TG
+        completename: IALA ARM S-201 TG
+  amend:
+    - description: Updated various sections
+- date:
+  - type: updated
+    value: 2024-10-20
+  edition: 0.0.3
+  contributor:
+  - person:
+      name:
+        abbreviation: IALA ARM S-201 TG
+        completename: IALA ARM S-201 TG
+  amend:
+    - description: Updated various sections
+- date:
+  - type: updated
+    value: 2025-03-28
+  edition: 1.0.0
+  contributor:
+  - person:
+      name:
+        abbreviation: IALA ARM S-201 TG
+        completename: IALA ARM S-201 TG
+  amend:
+    - description: Updated data model to align with S-201
+----

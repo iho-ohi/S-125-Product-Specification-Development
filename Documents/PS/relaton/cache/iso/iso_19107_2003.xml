@@ -1,0 +1,79 @@
+<bibdata type="standard" schema-version="v1.5.6">
+  <fetched>2026-06-30</fetched>
+  <title language="en" script="Latn" type="title-intro">Geographic information</title>
+  <title language="en" script="Latn" type="title-main">Spatial schema</title>
+  <title language="en" script="Latn" type="main">Geographic information - Spatial schema</title>
+  <title language="fr" script="Latn" type="title-intro">Information géographique</title>
+  <title language="fr" script="Latn" type="title-main">Schéma spatial</title>
+  <title language="fr" script="Latn" type="main">Information géographique - Schéma spatial</title>
+  <uri type="src">https://www.iso.org/standard/26012.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26012:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26012.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19107:2003</docidentifier>
+  <docidentifier type="iso-reference">ISO 19107:2003(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19107:stage-95.99</docidentifier>
+  <docnumber>19107</docnumber>
+  <date type="published">
+    <on>2003-05-08</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <subdivision type="technical-committee" subtype="TC">
+        <name>Geographic information/Geomatics</name>
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">ISO 19107:2003 specifies conceptual schemas for describing the spatial characteristics of geographic features, and a set of spatial operations consistent with these schemas. It treats vector geometry and topology up to three dimensions. It defines standard spatial operations for use in access, query, management, processing, and data exchange of geographic information for spatial (geometric and topological) objects of up to three topological dimensions embedded in coordinate spaces of up to three axes.</abstract>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2003</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO 19107:2019</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19107:2019</docidentifier>
+      <date type="published">
+        <on>2019-12-02</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+  <ext schema-version="v1.1.2">
+    <doctype>international-standard</doctype>
+    <flavor>iso</flavor>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>26012</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

@@ -1,0 +1,25 @@
+<bibdata type="standard">
+<title language="en" type="main">Marine Aids to Navigation (AtoN) — Annex A: Data Classification and Encoding Guide</title>
+
+<title language="en" type="title-annex-prefix">Annex A</title>
+<docidentifier primary="true" type="IHO">S-125 Annex A</docidentifier><docidentifier type="IHO-parent-document">S-125</docidentifier><docnumber>125</docnumber><date type="published"><on>2025-04-01</on></date><contributor><role type="author"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Hydrographic Organization</name>
+<subdivision type="Committee">
+<name>HSSC</name>
+</subdivision><subdivision type="Workgroup">
+<name>NIPWG</name>
+</subdivision></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Hydrographic Organization</name>
+<subdivision type="Committee">
+<name>hssc</name>
+</subdivision><subdivision type="Workgroup">
+<name>s100</name>
+</subdivision></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><edition>1.0.0</edition><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2025</from><owner><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
+<title>Standards and Specifications</title>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><structuredidentifier><docnumber>125</docnumber><annexid>A</annexid></structuredidentifier></ext></bibdata>

@@ -1,0 +1,6 @@
+== Geo Features
+
+[yaml2text,sections/yaml/02-tables.yaml,feat]
+----
+include::templates/02-table-template.adoc[]
+----

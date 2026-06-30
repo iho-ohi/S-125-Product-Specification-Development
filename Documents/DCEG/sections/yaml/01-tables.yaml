@@ -1,0 +1,333 @@
+---
+features:
+  - name: "Data Coverage"
+    id: "M_COVR, M_CSCL"
+    definition: "A geographical area that describes the coverage and extent of spatial objects."
+    super_type: 
+    primitives: "surface"
+    attributes:
+      - name: "Maximum Display Scale"
+        s57_acronym: ""
+        encoding_value: ""
+        type: "IN"
+        multiplicity: "1, 1"
+      - name: "Minimum Display Scale"
+        s57_acronym: ""
+        encoding_value: ""
+        type: "IN"
+        multiplicity: "1, 1"
+    content:
+      - "INT 1 Reference:"
+      - ""
+      - "Remarks:"
+      - ""
+      - "Distinction:"
+
+  - name: "Local Direction of Buoyage"
+    id: "M_NSYS"
+    definition: "An area within which the navigational system of marks has been established in relation to a specific direction."
+    super_type: 
+    primitives: "surface"
+    attributes:
+      - name: "Orientation"
+        s57_acronym: ""
+        encoding_value: ""
+        type: "C"
+        multiplicity: "1, 1"
+      - name: "Orientation Uncertainty"
+        s57_acronym: ""
+        encoding_value: ""
+        type: "(S) RE"
+        multiplicity: "0, 1"
+      - name: "Orientation Value"
+        s57_acronym: "(ORIENT)"
+        encoding_value: ""
+        type: "(S) RE"
+        multiplicity: "1, 1"
+    content:
+      - "INT 1 Reference:"
+      - ""
+      - "Remarks:"
+      - ""
+      - "Distinction:"
+
+  - name: "Navigational System of Marks"
+    id: "M_NSYS"
+    definition: "An area within which the navigational system of marks has been established in relation to a specific direction."
+    super_type: 
+    primitives: "surface"
+    attributes:
+      - name: "Marks Navigational - System Of"
+        s57_acronym: "(MARSYS)"
+        encoding_value: |
+          1 : IALA A
+          
+          2 : IALA B
+          
+          9 : No System
+          
+          10 : Other System
+          
+          11 : CEVNI
+          
+          12 : Russian Inland Waterway Regulations
+          
+          13 : Brazilian National Inland Waterway Regulations - Two Sides
+          
+          15 : Paraguay-Parana Waterway - Brazilian Complementary Aids
+        type: "EN"
+        multiplicity: "1, 1"
+    content:
+      - "INT 1 Reference:"
+      - ""
+      - "Remarks:"
+      - ""
+      - "Distinction:"
+
+  - name: "Sounding Datum"
+    id: "M_SDAT"
+    definition: "The horizontal plane or tidal datum to which soundings have been reduced. Also called datum for sounding reduction."
+    super_type: 
+    primitives: "surface"
+    attributes:
+      - name: "Vertical Datum"
+        s57_acronym: |
+          (VERDAT)
+          
+          (Datum Level)
+          
+          (Reference Plane)
+          
+          (Levelling Datum)
+          
+          (Datum for Sounding Reduction)
+          
+          (Datum for Heights)
+        encoding_value: |
+          1 : Mean Low Water Springs
+          
+          2 : Mean Lower Low Water Springs
+          
+          3 : Mean Sea Level
+          
+          4 : Lowest Low Water
+          
+          5 : Mean Low Water
+          
+          6 : Lowest Low Water Springs
+          
+          7 : Approximate Mean Low Water Springs
+          
+          8 : Indian Spring Low Water
+          
+          9 : Low Water Springs
+          
+          10 : Approximate Lowest Astronomical Tide
+          
+          11 : Nearly Lowest Low Water
+          
+          12 : Mean Lower Low Water
+          
+          13 : Low Water
+          
+          14 : Approximate Mean Low Water
+          
+          15 : Approximate Mean Lower Low Water
+          
+          16 : Mean High Water
+          
+          17 : Mean High Water Springs
+          
+          18 : High Water
+          
+          19 : Approximate Mean Sea Level
+          
+          20 : High Water Springs
+          
+          21 : Mean Higher High Water
+          
+          22 : Equinoctial Spring Low Water
+          
+          23 : Lowest Astronomical Tide
+          
+          24 : Local Datum
+          
+          25 : International Great Lakes Datum 1985
+          
+          26 : Mean Water Level
+          
+          27 : Lower Low Water Large Tide
+          
+          28 : Higher High Water Large Tide
+          
+          29 : Nearly Highest High Water
+          
+          30 : Highest Astronomical Tide
+          
+          31 : Local Low Water Reference Level
+          
+          32 : Local High Water Reference Level
+          
+          33 : Local Mean Water Reference Level
+          
+          34 : Equivalent Height of Water (German GlW)
+          
+          35 : Highest Shipping Height of Water (German HSW)
+          
+          36 : Reference Low Water Level According to Danube Commission
+          
+          37 : Highest Shipping Height of Water According to Danube Commission
+          
+          38 : Dutch River Low Water Reference Level (OLR)
+          
+          39 : Russian Project Water Level
+          
+          40 : Russian Normal Backwater Level
+          
+          41 : Ohio River Datum
+          
+          43 : Dutch High Water Reference Level
+          
+          44 : Baltic Sea Chart Datum 2000
+          
+          45 : Dutch Estuary Low Water Reference Level (OLW)
+          
+          46 :
+          
+          47 :
+          
+          48 :
+          
+          49 :
+        type: "EN"
+        multiplicity: "1, 1"
+    content:
+      - "INT 1 Reference:"
+      - ""
+      - "Remarks:"
+      - ""
+      - "Distinction:"
+
+  - name: "Vertical Datum of Data"
+    id: "M_VDAT"
+    definition: "Any level surface (for example Mean Sea Level) taken as a surface of reference to which the elevations within a data set are reduced. Also called datum level, reference level, reference plane, levelling datum, datum for heights."
+    super_type: 
+    primitives: "surface"
+    attributes:
+      - name: "Vertical Datum"
+        s57_acronym: |
+          (VERDAT)
+          
+          (Datum Level)
+          
+          (Reference Plane)
+          
+          (Levelling Datum)
+          
+          (Datum for Sounding Reduction)
+          
+          (Datum for Heights)
+        encoding_value: |
+          1 : Mean Low Water Springs
+          
+          2 : Mean Lower Low Water Springs
+          
+          3 : Mean Sea Level
+          
+          4 : Lowest Low Water
+          
+          5 : Mean Low Water
+          
+          6 : Lowest Low Water Springs
+          
+          7 : Approximate Mean Low Water Springs
+          
+          8 : Indian Spring Low Water
+          
+          9 : Low Water Springs
+          
+          10 : Approximate Lowest Astronomical Tide
+          
+          11 : Nearly Lowest Low Water
+          
+          12 : Mean Lower Low Water
+          
+          13 : Low Water
+          
+          14 : Approximate Mean Low Water
+          
+          15 : Approximate Mean Lower Low Water
+          
+          16 : Mean High Water
+          
+          17 : Mean High Water Springs
+          
+          18 : High Water
+          
+          19 : Approximate Mean Sea Level
+          
+          20 : High Water Springs
+          
+          21 : Mean Higher High Water
+          
+          22 : Equinoctial Spring Low Water
+          
+          23 : Lowest Astronomical Tide
+          
+          24 : Local Datum
+          
+          25 : International Great Lakes Datum 1985
+          
+          26 : Mean Water Level
+          
+          27 : Lower Low Water Large Tide
+          
+          28 : Higher High Water Large Tide
+          
+          29 : Nearly Highest High Water
+          
+          30 : Highest Astronomical Tide
+          
+          31 : Local Low Water Reference Level
+          
+          32 : Local High Water Reference Level
+          
+          33 : Local Mean Water Reference Level
+          
+          34 : Equivalent Height of Water (German GlW)
+          
+          35 : Highest Shipping Height of Water (German HSW)
+          
+          36 : Reference Low Water Level According to Danube Commission
+          
+          37 : Highest Shipping Height of Water According to Danube Commission
+          
+          38 : Dutch River Low Water Reference Level (OLR)
+          
+          39 : Russian Project Water Level
+          
+          40 : Russian Normal Backwater Level
+          
+          41 : Ohio River Datum
+          
+          43 : Dutch High Water Reference Level
+          
+          44 : Baltic Sea Chart Datum 2000
+          
+          45 : Dutch Estuary Low Water Reference Level (OLW)
+          
+          46 :
+          
+          47 :
+          
+          48 :
+          
+          49 :
+        type: "EN"
+        multiplicity: "1, 1"
+    content:
+      - "INT 1 Reference:"
+      - ""
+      - "Remarks:"
+      - ""
+      - "Distinction:"
