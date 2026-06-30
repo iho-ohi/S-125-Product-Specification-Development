@@ -51,4 +51,15 @@ Changes to this Product Specification are coordinated by the IHO Nautical Inform
         completename: IALA ARM S-201 TG
   amend:
     - description: Updated data model to align with S-201
+- date:
+  - type: updated
+    value: 2025-12-10
+  edition: 1.0.0
+  contributor:
+  - person:
+      name:
+        abbreviation: IHO/IALA Joint S-125 TG
+        completename: IHO/IALA Joint S-125 TG
+  amend:
+    - description: Updated various sections from the comments of S-125 TG
 ----

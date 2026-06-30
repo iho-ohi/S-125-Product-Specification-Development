@@ -1,19 +1,13 @@
 <bibdata type="standard">
 <title language="en" type="main">Marine Aids to Navigation (AtoN)</title>
-<docidentifier primary="true" type="IHO">S-125</docidentifier><docnumber>125</docnumber><date type="published"><on>2025-04-01</on></date><contributor><role type="author"/><organization>
+<docidentifier primary="true" type="IHO">S-125</docidentifier><docnumber>125</docnumber><date type="published"><on>2025-12-01</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
 <name>International Hydrographic Organization</name>
 <subdivision type="Committee">
 <name>hssc</name>
 </subdivision><subdivision type="Workgroup">
-<name>tsmad</name>
-</subdivision></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
-<name>International Hydrographic Organization</name>
-<subdivision type="Committee">
-<name>HSSC</name>
-</subdivision><subdivision type="Workgroup">
-<name>NIPWG</name>
+<name>nipwg</name>
 </subdivision></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><edition>1.0.0</edition><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2025</from><owner><organization>
@@ -66,6 +60,18 @@
   </contributor>
   <edition>1.0.0</edition>
 <amend change="modify"><description><p id="_bbfa09e6-ed2b-6069-a511-0d5b263a3492">Updated data model to align with S-201</p>
+</description></amend></bibitem></relation><relation type="updatedBy"><bibitem schema-version="v1.5.6">
+  <docidentifier type="IHO">S-125</docidentifier>
+  <date type="updated">
+    <on>2025-12-10</on>
+  </date>
+  <contributor>
+    <person>
+      <name>          <abbreviation>IHO/IALA Joint S-125 TG</abbreviation>          <completename>IHO/IALA Joint S-125 TG</completename>       </name>
+    </person>
+  </contributor>
+  <edition>1.0.0</edition>
+<amend change="modify"><description><p id="_c194e363-b57a-a104-e2bd-12f853601f39">Updated various sections from the comments of S-125 TG</p>
 </description></amend></bibitem></relation><series type="main">
 <title>Standards and Specifications</title>
 <abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><structuredidentifier><docnumber>125</docnumber></structuredidentifier></ext></bibdata>

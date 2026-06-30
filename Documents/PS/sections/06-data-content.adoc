@@ -75,11 +75,11 @@ the overview (<<fig-1>>).
 
 [[fig-1]]
 .Overview of Feature types
-image::img01.png[height=50%]
+image::img01.png["", 1050, auto]
 
 [[fig-2]]
 .Structure Feature Types
-image::img02.png[height=60%]
+image::img02.png["", 800, auto]
 
 [%portrait]
 <<<
@@ -101,21 +101,25 @@ image::img05.png["",759,739]
 image::img06.png["",759,644]
 
 [[fig-7]]
-.Aton change details Enumeration
+.Meta Features Types
 image::img07.png["",759,734]
 
 [[fig-8]]
-.Categories Enumeration
-image::img08.png["",759,828]
+.Aton change details Enumeration
+image::img08.png["",759,734]
 
 [[fig-9]]
-.Colors and Shapes Enumeration
-image::img09.png["",759,850]
+.Categories Enumeration
+image::img09.png["",759,828]
 
 [[fig-10]]
-.Others Enumeration
-image::img10.png["",759,823]
+.Colors and Shapes Enumeration
+image::img10.png["",759,850]
 
 [[fig-11]]
+.Others Enumeration
+image::img11.png["",759,823]
+
+[[fig-12]]
 .Code lists
-image::img11.png["",717,370]
+image::img12.png["",717,370]

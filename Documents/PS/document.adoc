@@ -4,13 +4,11 @@
 :doctype: standard
 :edition: 1.0.0
 :language: en
-:published-date: 2025-04-01
+:published-date: 2025-12-01
 :copyright-year: 2025
 :status: in-force
 :committee: hssc
-:workgroup: tsmad
-:committee_2: HSSC
-:workgroup_2: NIPWG
+:workgroup: nipwg
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:

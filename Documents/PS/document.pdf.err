@@ -1,2 +1,2 @@
-The contents of fo:region-body on page 12 exceed its viewport by 6562 millipoints. (See position 1:2614)
+The contents of fo:region-body on page 12 exceed its viewport by 13216 millipoints. (See position 1:2614)
 Please check the PDF and if necessary, report this issue at the following link: https://github.com/metanorma/mn-native-pdf/issues/new, and attach the XSL-FO file or fragment: '/mnt/c/Users/Administrator/Documents/GitHub/S-125-Product-Specification-Development/Documents/PS/document.pdf.fo.xml'.
