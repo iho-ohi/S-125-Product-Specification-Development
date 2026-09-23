@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.5.6">
-  <fetched>2026-06-30</fetched>
+  <fetched>2026-09-23</fetched>
   <title language="en" script="Latn" type="title-intro">Data elements and interchange formats</title>
   <title language="en" script="Latn" type="title-main">Information interchange</title>
   <title language="en" script="Latn" type="title-part">Representation of dates and times</title>
@@ -12,6 +12,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40874:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/08/40874.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>
+  <docidentifier type="iso-undated">ISO 8601</docidentifier>
   <docidentifier type="iso-reference">ISO 8601:2004(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:8601:stage-95.99</docidentifier>
   <docnumber>8601</docnumber>

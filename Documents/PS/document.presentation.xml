@@ -264,12 +264,12 @@ sourcecode .nt {
 </clause>
 </clause>
 
-<clause id="_061acf02-952c-b160-f1e3-bee1f84ad3a6" obligation="normative" semx-id="_061acf02-952c-b160-f1e3-bee1f84ad3a6" displayorder="4">
-<title id="_703eb650-8cf6-1608-dc32-304148ad8490" semx-id="_7a794d10-29b7-9676-e585-aa0ef59fff76">Reference</title><fmt-title depth="1" id="_114d0ea7-db89-e3c2-21aa-147035319108"><span class="fmt-caption-label"><semx element="autonum" source="_061acf02-952c-b160-f1e3-bee1f84ad3a6">2</semx></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_703eb650-8cf6-1608-dc32-304148ad8490">Reference</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Section</span> <semx element="autonum" source="_061acf02-952c-b160-f1e3-bee1f84ad3a6">2</semx></fmt-xref-label>
-<references id="_25e9754c-8372-98bf-4bee-3899d90a61fa" normative="false" obligation="informative" semx-id="_25e9754c-8372-98bf-4bee-3899d90a61fa">
-<title id="_bcdd2b41-6dd1-0157-7628-d62fa2a50ef9" semx-id="_7635ecf2-c753-49ef-0f7e-9f1a4e566f35">Informative</title><fmt-title depth="2" id="_16f5fa55-b50b-e3e7-3a77-5ef376af470e"><span class="fmt-caption-label"><semx element="autonum" source="_061acf02-952c-b160-f1e3-bee1f84ad3a6">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_25e9754c-8372-98bf-4bee-3899d90a61fa">1</semx></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bcdd2b41-6dd1-0157-7628-d62fa2a50ef9">Informative</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_061acf02-952c-b160-f1e3-bee1f84ad3a6">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_25e9754c-8372-98bf-4bee-3899d90a61fa">1</semx></fmt-xref-label>
-<p id="_d9904407-acbe-689a-b3f0-2c0192f3fdc1" semx-id="_d9904407-acbe-689a-b3f0-2c0192f3fdc1">The following normative documents contain provisions that, through reference in this text, constitute provisions of this document.</p><bibitem id="S100" type="standard" schema-version="v1.5.6" anchor="S100" semx-id="_629b1bca-c68f-564a-f525-322ff5aebd08"><biblio-tag>[1]<tab/></biblio-tag><formattedref>S-100 edition 1.0.0: IHO Universal Hydrographic Data Model, International Hydrographic Organization, committee, International Hydrographic Organization (<fmt-link target="https://iho.int/uploads/user/pubs/standards/s-100/S-100_Version_1.0.0.pdf">https://iho.int/uploads/user/pubs/standards/s-100/S-100_Version_1.0.0.pdf</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+<clause id="_ec6886de-dec5-981f-b9a1-d727f7aaea92" obligation="normative" semx-id="_ec6886de-dec5-981f-b9a1-d727f7aaea92" displayorder="4">
+<title id="_703eb650-8cf6-1608-dc32-304148ad8490" semx-id="_7a794d10-29b7-9676-e585-aa0ef59fff76">Reference</title><fmt-title depth="1" id="_114d0ea7-db89-e3c2-21aa-147035319108"><span class="fmt-caption-label"><semx element="autonum" source="_ec6886de-dec5-981f-b9a1-d727f7aaea92">2</semx></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_703eb650-8cf6-1608-dc32-304148ad8490">Reference</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Section</span> <semx element="autonum" source="_ec6886de-dec5-981f-b9a1-d727f7aaea92">2</semx></fmt-xref-label>
+<references id="_73422031-7b45-c361-98cf-1a919b7889da" normative="false" obligation="informative" semx-id="_73422031-7b45-c361-98cf-1a919b7889da">
+<title id="_bcdd2b41-6dd1-0157-7628-d62fa2a50ef9" semx-id="_7635ecf2-c753-49ef-0f7e-9f1a4e566f35">Informative</title><fmt-title depth="2" id="_16f5fa55-b50b-e3e7-3a77-5ef376af470e"><span class="fmt-caption-label"><semx element="autonum" source="_ec6886de-dec5-981f-b9a1-d727f7aaea92">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_73422031-7b45-c361-98cf-1a919b7889da">1</semx></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bcdd2b41-6dd1-0157-7628-d62fa2a50ef9">Informative</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_ec6886de-dec5-981f-b9a1-d727f7aaea92">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_73422031-7b45-c361-98cf-1a919b7889da">1</semx></fmt-xref-label>
+<p id="_d9904407-acbe-689a-b3f0-2c0192f3fdc1" semx-id="_d9904407-acbe-689a-b3f0-2c0192f3fdc1">The following normative documents contain provisions that, through reference in this text, constitute provisions of this document.</p><bibitem id="S100" type="standard" schema-version="v1.5.6" anchor="S100" semx-id="_5969d943-9841-7d50-f4d3-d1c3f19fad68"><biblio-tag>[1]<tab/></biblio-tag><formattedref>S-100 edition 1.0.0: IHO Universal Hydrographic Data Model, International Hydrographic Organization, committee, International Hydrographic Organization (<fmt-link target="https://iho.int/uploads/user/pubs/standards/s-100/S-100_Version_1.0.0.pdf">https://iho.int/uploads/user/pubs/standards/s-100/S-100_Version_1.0.0.pdf</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" type="main">IHO Universal Hydrographic Data Model</title>
 
@@ -348,8 +348,8 @@ sourcecode .nt {
   <validity>
     <validityBegins>2010-01-01T00:00:00Z</validityBegins>
   </validity>
-</bibitem><bibitem id="ISO8601" type="standard" schema-version="v1.5.6" anchor="ISO8601" semx-id="_058e91c0-9817-9218-d0b9-11f87d5c6d56"><biblio-tag>[2]<tab/></biblio-tag><formattedref>ISO 8601:2004: Data elements and interchange formats — Information interchange — Representation of dates and times, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/40874.html">https://www.iso.org/standard/40874.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="ISO8601" type="standard" schema-version="v1.5.6" anchor="ISO8601" semx-id="_fad4a7cb-6f88-ccd9-b4ca-075284db71c9"><biblio-tag>[2]<tab/></biblio-tag><formattedref>ISO 8601:2004: Data elements and interchange formats — Information interchange — Representation of dates and times, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/40874.html">https://www.iso.org/standard/40874.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Data elements and interchange formats</title>
 
@@ -378,6 +378,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40874:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/08/40874.detail.rss</uri><docidentifier type="metanorma-ordinal">[2]</docidentifier>
   <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO 8601</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 8601:2004(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:8601:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO 8601:2004</docidentifier>
   <docnumber>8601</docnumber>
@@ -406,7 +407,7 @@ sourcecode .nt {
         
 <name>Processes, data elements and documents in commerce, industry and administration</name>
 
-        <identifier id="_3297000c-2219-bdb7-ca0a-f0f6b21a7766">ISO/TC 154</identifier><fmt-identifier><tt><semx element="identifier" source="_3297000c-2219-bdb7-ca0a-f0f6b21a7766">ISO/TC 154</semx></tt></fmt-identifier>
+        <identifier id="_a6a97705-54ce-5d02-822e-1e796c47f5d1">ISO/TC 154</identifier><fmt-identifier><tt><semx element="identifier" source="_a6a97705-54ce-5d02-822e-1e796c47f5d1">ISO/TC 154</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -1685,8 +1686,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO19139" type="standard" schema-version="v1.5.6" anchor="ISO19139" semx-id="_db850a56-1cb0-dd21-bfc1-de22001e0257"><biblio-tag>[16]<tab/></biblio-tag><formattedref>ISO/TS 19139:2007: Geographic information — Metadata — XML schema implementation, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/32557.html">https://www.iso.org/standard/32557.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="ISO19139" type="standard" schema-version="v1.5.6" anchor="ISO19139" semx-id="_a0b788ca-43a0-312e-74db-edaf6f5c187b"><biblio-tag>[16]<tab/></biblio-tag><formattedref>ISO/TS 19139:2007: Geographic information — Metadata — XML schema implementation, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/32557.html">https://www.iso.org/standard/32557.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1715,6 +1716,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32557:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32557.detail.rss</uri><docidentifier type="metanorma-ordinal">[16]</docidentifier>
   <docidentifier type="ISO" primary="true">ISO/TS 19139:2007</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO/TS 19139</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO/TS 19139:2007(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:ts:19139:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO/TS 19139:2007</docidentifier>
   <docnumber>19139</docnumber>
@@ -1743,7 +1745,7 @@ sourcecode .nt {
         
 <name>Geographic information/Geomatics</name>
 
-        <identifier id="_ed060a3c-f31a-39c4-855e-fe4e01211ad1">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_ed060a3c-f31a-39c4-855e-fe4e01211ad1">ISO/TC 211</semx></tt></fmt-identifier>
+        <identifier id="_c78921d4-b424-2504-6163-67f1f1f3f221">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_c78921d4-b424-2504-6163-67f1f1f3f221">ISO/TC 211</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -1786,8 +1788,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO19101" type="standard" schema-version="v1.5.6" anchor="ISO19101" hidden="true" semx-id="_d2b3c562-da7b-3d51-d1a6-a65aee1f1ab7"><formattedref>ISO 19101 (all parts): Geographic information — Reference model, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="ISO19101" type="standard" schema-version="v1.5.6" anchor="ISO19101" hidden="true" semx-id="_8d9160df-21fe-a3f8-5efe-78705521e510"><formattedref>ISO 19101 (all parts): Geographic information — Reference model, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1810,6 +1812,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101 (all parts)</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO 19101 (all parts)</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 19101(E) (all parts)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:19101:ser</docidentifier><docidentifier scope="biblio-tag">ISO 19101 (all parts)</docidentifier>
   <docnumber>19101</docnumber>
@@ -1838,7 +1841,7 @@ sourcecode .nt {
         
 <name>Geographic information/Geomatics</name>
 
-        <identifier id="_04482e28-a37b-3356-e209-8faa21b88639">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_04482e28-a37b-3356-e209-8faa21b88639">ISO/TC 211</semx></tt></fmt-identifier>
+        <identifier id="_0a54dc29-1764-25c7-25bb-a2339ca252c7">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_0a54dc29-1764-25c7-25bb-a2339ca252c7">ISO/TC 211</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -1882,8 +1885,8 @@ sourcecode .nt {
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref>ISO/AWI 19101-1</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
+      <formattedref>ISO/CD 19101-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19101-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -1917,6 +1920,7 @@ sourcecode .nt {
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
+      <docidentifier type="iso-undated">ISO 19101-1</docidentifier>
       <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.92</docidentifier>
       <docnumber>19101</docnumber>
@@ -1945,7 +1949,7 @@ sourcecode .nt {
             
 <name>Geographic information/Geomatics</name>
 
-            <identifier id="_5110e162-1844-ab7c-3047-5ae393cbadcd">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_5110e162-1844-ab7c-3047-5ae393cbadcd">ISO/TC 211</semx></tt></fmt-identifier>
+            <identifier id="_43489c43-985a-080c-b1c5-d7694a87699d">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_43489c43-985a-080c-b1c5-d7694a87699d">ISO/TC 211</semx></tt></fmt-identifier>
           </subdivision>
           <abbreviation>ISO</abbreviation>
         </organization>
@@ -1990,8 +1994,8 @@ sourcecode .nt {
       </relation>
       <relation type="obsoletedBy">
         <bibitem>
-          <formattedref>ISO/AWI 19101-1</formattedref>
-          <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
+          <formattedref>ISO/CD 19101-1</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/CD 19101-1</docidentifier>
         </bibitem>
 
       </relation>
@@ -2011,8 +2015,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO19101-1" type="standard" schema-version="v1.5.6" anchor="ISO19101-1" hidden="true" semx-id="_231a968b-39c5-1b1f-c019-d00fb4de0859"><formattedref>ISO 19101-1:2014: Geographic information — Reference model — Part 1: Fundamentals, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="ISO19101-1" type="standard" schema-version="v1.5.6" anchor="ISO19101-1" hidden="true" semx-id="_936acde6-9c35-714a-459f-45a7c8260dd7"><formattedref>ISO 19101-1:2014: Geographic information — Reference model — Part 1: Fundamentals, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2041,6 +2045,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO 19101-1</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 19101-1:2014(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:19101:-1:stage-90.92</docidentifier><docidentifier scope="biblio-tag">ISO 19101-1:2014</docidentifier>
   <docnumber>19101</docnumber>
@@ -2069,7 +2074,7 @@ sourcecode .nt {
         
 <name>Geographic information/Geomatics</name>
 
-        <identifier id="_799a5e84-0a43-e574-0770-7c2c7b69d256">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_799a5e84-0a43-e574-0770-7c2c7b69d256">ISO/TC 211</semx></tt></fmt-identifier>
+        <identifier id="_d1436257-e006-da3c-b7a0-9dd439285a09">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_d1436257-e006-da3c-b7a0-9dd439285a09">ISO/TC 211</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2114,16 +2119,16 @@ sourcecode .nt {
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref>ISO/AWI 19101-1</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
+      <formattedref>ISO/CD 19101-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19101-1</docidentifier>
     </bibitem>
 
   </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO19110" type="standard" schema-version="v1.5.6" anchor="ISO19110" hidden="true" semx-id="_1cfad79a-7d3d-6cc6-0b46-8edaaf5ee62e"><formattedref>ISO 19110:2016: Geographic information — Methodology for feature cataloguing, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/57303.html">https://www.iso.org/standard/57303.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="ISO19110" type="standard" schema-version="v1.5.6" anchor="ISO19110" hidden="true" semx-id="_145a48bc-39e0-7a58-f4ca-d4a65e0f202b"><formattedref>ISO 19110:2016: Geographic information — Methodology for feature cataloguing, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/57303.html">https://www.iso.org/standard/57303.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2146,6 +2151,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:57303:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/73/57303.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19110:2016</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO 19110</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 19110:2016(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:19110:stage-90.93</docidentifier><docidentifier scope="biblio-tag">ISO 19110:2016</docidentifier>
   <docnumber>19110</docnumber>
@@ -2174,7 +2180,7 @@ sourcecode .nt {
         
 <name>Geographic information/Geomatics</name>
 
-        <identifier id="_36b54276-7559-4df9-82a0-0c9744bdffa9">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_36b54276-7559-4df9-82a0-0c9744bdffa9">ISO/TC 211</semx></tt></fmt-identifier>
+        <identifier id="_f13a3e81-aeab-a2bd-3b4e-67f6168d3ed9">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_f13a3e81-aeab-a2bd-3b4e-67f6168d3ed9">ISO/TC 211</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2223,8 +2229,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO19117" type="standard" schema-version="v1.5.6" anchor="ISO19117" hidden="true" semx-id="_c6777040-3cf7-dd5e-8744-fcf272149b84"><formattedref>ISO 19117:2012: Geographic information — Portrayal, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/46226.html">https://www.iso.org/standard/46226.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="ISO19117" type="standard" schema-version="v1.5.6" anchor="ISO19117" hidden="true" semx-id="_8e0682c8-3519-2ebd-1a18-a43e7e19c7b5"><formattedref>ISO 19117:2012: Geographic information — Portrayal, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/46226.html">https://www.iso.org/standard/46226.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2247,6 +2253,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46226:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/62/46226.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19117:2012</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO 19117</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 19117:2012(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:19117:stage-90.93</docidentifier><docidentifier scope="biblio-tag">ISO 19117:2012</docidentifier>
   <docnumber>19117</docnumber>
@@ -2275,7 +2282,7 @@ sourcecode .nt {
         
 <name>Geographic information/Geomatics</name>
 
-        <identifier id="_a8fe352f-acb4-7e24-eac1-02e4f0e9ef06">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_a8fe352f-acb4-7e24-eac1-02e4f0e9ef06">ISO/TC 211</semx></tt></fmt-identifier>
+        <identifier id="_dbc0ad89-eadb-0094-369c-7cb0e72ab77e">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_dbc0ad89-eadb-0094-369c-7cb0e72ab77e">ISO/TC 211</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2312,8 +2319,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="S57" type="standard" schema-version="v1.5.6" anchor="S57" hidden="true" semx-id="_5ee17d3e-a4bd-c4a9-2f79-ab578419be89"><formattedref>S-57 edition 3.1.0: IHO Transfer Standard for Digital Hydrographic Data, International Hydrographic Organization and International Hydrographic Organization, committee, International Hydrographic Organization (<fmt-link target="https://iho.int/uploads/user/pubs/standards/s-57/31Main.pdf">https://iho.int/uploads/user/pubs/standards/s-57/31Main.pdf</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="S57" type="standard" schema-version="v1.5.6" anchor="S57" hidden="true" semx-id="_ed74218c-99cf-41f6-a6a0-d4055655c38f"><formattedref>S-57 edition 3.1.0: IHO Transfer Standard for Digital Hydrographic Data, International Hydrographic Organization and International Hydrographic Organization, committee, International Hydrographic Organization (<fmt-link target="https://iho.int/uploads/user/pubs/standards/s-57/31Main.pdf">https://iho.int/uploads/user/pubs/standards/s-57/31Main.pdf</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" type="main">IHO Transfer Standard for Digital Hydrographic Data</title>
 
@@ -2409,8 +2416,8 @@ sourcecode .nt {
   <validity>
     <validityBegins>2000-11-01T00:00:00Z</validityBegins>
   </validity>
-</bibitem><bibitem id="ISO19108" type="standard" schema-version="v1.5.6" anchor="ISO19108" hidden="true" semx-id="_b0c93787-9d9c-cba3-f6f9-d74a01de6090"><formattedref>ISO 19108:2002: Geographic information — Temporal schema, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/26013.html">https://www.iso.org/standard/26013.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="ISO19108" type="standard" schema-version="v1.5.6" anchor="ISO19108" hidden="true" semx-id="_a0a767d5-f8a5-cfba-5bc7-5de8c4d2d861"><formattedref>ISO 19108:2002: Geographic information — Temporal schema, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/26013.html">https://www.iso.org/standard/26013.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2433,8 +2440,9 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26013:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26013.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19108:2002</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO 19108</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 19108:2002(E)</docidentifier>
-  <docidentifier type="URN">URN urn:iso:std:iso:19108</docidentifier><docidentifier scope="biblio-tag">ISO 19108:2002</docidentifier>
+  <docidentifier type="URN">URN urn:iso:std:iso:19108:stage-90.93</docidentifier><docidentifier scope="biblio-tag">ISO 19108:2002</docidentifier>
   <docnumber>19108</docnumber>
   <date type="published">
     <on>2002-09-12</on>
@@ -2461,7 +2469,7 @@ sourcecode .nt {
         
 <name>Geographic information/Geomatics</name>
 
-        <identifier id="_31b44384-12b2-79a0-da21-0a9a438bf478">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_31b44384-12b2-79a0-da21-0a9a438bf478">ISO/TC 211</semx></tt></fmt-identifier>
+        <identifier id="_a83c79fa-3549-f09c-1115-3a5cf9699d8b">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_a83c79fa-3549-f09c-1115-3a5cf9699d8b">ISO/TC 211</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2472,7 +2480,7 @@ sourcecode .nt {
   <abstract language="en" script="Latn">ISO 19108:2002 defines concepts for describing temporal characteristics of geographic information. It depends upon existing information technology standards for the interchange of temporal information. It provides a basis for defining temporal feature attributes, feature operations, and feature associations, and for defining the temporal aspects of metadata about geographic information. Since this International Standard is concerned with the temporal characteristics of geographic information as they are abstracted from the real world, it emphasizes valid time rather than transaction time.</abstract>
   <status>
     <stage>90</stage>
-    <substage>60</substage>
+    <substage>93</substage>
   </status>
   <copyright>
     <from>2002</from>
@@ -2504,8 +2512,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO10646-1" type="standard" schema-version="v1.5.6" anchor="ISO10646-1" hidden="true" semx-id="_fb57c33d-e204-7889-09b6-861652693fb3"><formattedref>ISO/IEC 10646-1:2000: Information technology — Universal Multiple-Octet Coded Character Set (UCS) — Part 1: Architecture and Basic Multilingual Plane, International Organization for Standardization, committee, International Organization for Standardization and International Electrotechnical Commission (<fmt-link target="https://www.iso.org/standard/29819.html">https://www.iso.org/standard/29819.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+</bibitem><bibitem id="ISO10646-1" type="standard" schema-version="v1.5.6" anchor="ISO10646-1" hidden="true" semx-id="_f4c65c25-83cc-2a62-445f-350c5acbc9f1"><formattedref>ISO/IEC 10646-1:2000: Information technology — Universal Multiple-Octet Coded Character Set (UCS) — Part 1: Architecture and Basic Multilingual Plane, International Organization for Standardization, committee, International Organization for Standardization and International Electrotechnical Commission (<fmt-link target="https://www.iso.org/standard/29819.html">https://www.iso.org/standard/29819.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -2534,6 +2542,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:29819:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/98/29819.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:2000</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO/IEC 10646-1</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO/IEC 10646-1:2000(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso-iec:10646:-1:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 10646-1:2000</docidentifier>
   <docnumber>10646</docnumber>
@@ -2572,7 +2581,7 @@ sourcecode .nt {
         
 <name>Coded character sets</name>
 
-        <identifier id="_138025c8-a27b-7a43-e4de-59a15839d929">ISO/IEC JTC 1/SC 2</identifier><fmt-identifier><tt><semx element="identifier" source="_138025c8-a27b-7a43-e4de-59a15839d929">ISO/IEC JTC 1/SC 2</semx></tt></fmt-identifier>
+        <identifier id="_2f30bcc8-ad35-69c8-f1f5-7f8e97211454">ISO/IEC JTC 1/SC 2</identifier><fmt-identifier><tt><semx element="identifier" source="_2f30bcc8-ad35-69c8-f1f5-7f8e97211454">ISO/IEC JTC 1/SC 2</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2959,12 +2968,12 @@ sourcecode .nt {
 
 </references>
 
-<references id="_b530e5bb-9720-c3cf-a25f-a9bf26a3cfbc" normative="true" obligation="informative" semx-id="_b530e5bb-9720-c3cf-a25f-a9bf26a3cfbc">
-<title id="_445924ad-f45f-f43e-5426-9c901a43e4ed" semx-id="_119eeae8-7f32-883c-e5a7-5ca7cc23518a">Normative</title><fmt-title depth="2" id="_036a7be4-b0a6-5248-fc09-f105555e93e0"><span class="fmt-caption-label"><semx element="autonum" source="_061acf02-952c-b160-f1e3-bee1f84ad3a6">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_b530e5bb-9720-c3cf-a25f-a9bf26a3cfbc">2</semx></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_445924ad-f45f-f43e-5426-9c901a43e4ed">Normative</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_061acf02-952c-b160-f1e3-bee1f84ad3a6">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_b530e5bb-9720-c3cf-a25f-a9bf26a3cfbc">2</semx></fmt-xref-label>
+<references id="_3b6db1d8-1f00-bf0e-d417-31d65997b7ed" normative="true" obligation="informative" semx-id="_3b6db1d8-1f00-bf0e-d417-31d65997b7ed">
+<title id="_445924ad-f45f-f43e-5426-9c901a43e4ed" semx-id="_119eeae8-7f32-883c-e5a7-5ca7cc23518a">Normative</title><fmt-title depth="2" id="_036a7be4-b0a6-5248-fc09-f105555e93e0"><span class="fmt-caption-label"><semx element="autonum" source="_ec6886de-dec5-981f-b9a1-d727f7aaea92">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_3b6db1d8-1f00-bf0e-d417-31d65997b7ed">2</semx></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_445924ad-f45f-f43e-5426-9c901a43e4ed">Normative</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_ec6886de-dec5-981f-b9a1-d727f7aaea92">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_3b6db1d8-1f00-bf0e-d417-31d65997b7ed">2</semx></fmt-xref-label>
 <p id="_91a48985-c790-2aa0-739e-80d628c037bb" semx-id="_91a48985-c790-2aa0-739e-80d628c037bb">The following informative documents provide additional information, including background information, but are not required to develop applications for data conforming to this specification.</p>
 
-<bibitem id="ISO19757-3" type="standard" schema-version="v1.5.6" anchor="ISO19757-3" semx-id="_b54f8129-1a50-1726-4134-539f00c564c9"><biblio-tag>[1]<tab/></biblio-tag><formattedref>ISO/IEC 19757-3:2025: Information technology — Document Schema Definition Languages (DSDL) — Part 3: Rule-based validation using Schematron, International Organization for Standardization, committee, International Organization for Standardization and International Electrotechnical Commission (<fmt-link target="https://www.iso.org/standard/85625.html">https://www.iso.org/standard/85625.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+<bibitem id="ISO19757-3" type="standard" schema-version="v1.5.6" anchor="ISO19757-3" semx-id="_dba564ae-7212-de5c-8f77-7f6e43cf95ca"><biblio-tag>[1]<tab/></biblio-tag><formattedref>ISO/IEC 19757-3:2025: Information technology — Document Schema Definition Languages (DSDL) — Part 3: Rule-based validation using Schematron, International Organization for Standardization, committee, International Organization for Standardization and International Electrotechnical Commission (<fmt-link target="https://www.iso.org/standard/85625.html">https://www.iso.org/standard/85625.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -2993,6 +3002,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:85625:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/08/56/85625.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 19757-3:2025</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO/IEC 19757-3</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO/IEC 19757-3:2025(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso-iec:19757:-3:stage-90.92</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 19757-3:2025</docidentifier>
   <docnumber>19757</docnumber>
@@ -3031,7 +3041,7 @@ sourcecode .nt {
         
 <name>Document description and processing languages</name>
 
-        <identifier id="_f66dd59f-47bf-f749-6bf2-91080ec2a351">ISO/IEC JTC 1/SC 34</identifier><fmt-identifier><tt><semx element="identifier" source="_f66dd59f-47bf-f749-6bf2-91080ec2a351">ISO/IEC JTC 1/SC 34</semx></tt></fmt-identifier>
+        <identifier id="_2bf8e8bb-3344-ba10-1fff-1827d80f0f56">ISO/IEC JTC 1/SC 34</identifier><fmt-identifier><tt><semx element="identifier" source="_2bf8e8bb-3344-ba10-1fff-1827d80f0f56">ISO/IEC JTC 1/SC 34</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3075,8 +3085,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="ISO19115" type="standard" schema-version="v1.5.6" anchor="ISO19115" semx-id="_5c7ab4d7-4ab8-03cd-bbfb-05473c5aad80"><biblio-tag>[2]<tab/></biblio-tag><formattedref>ISO 19115 (all parts): Geographic information — Metadata, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/53798.html">https://www.iso.org/standard/53798.html</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+<bibitem id="ISO19115" type="standard" schema-version="v1.5.6" anchor="ISO19115" semx-id="_b8e61871-8b0c-88a2-5569-3c1fdd19dfdc"><biblio-tag>[2]<tab/></biblio-tag><formattedref>ISO 19115 (all parts): Geographic information — Metadata, International Organization for Standardization, committee, International Organization for Standardization (<fmt-link target="https://www.iso.org/standard/53798.html">https://www.iso.org/standard/53798.html</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3099,6 +3109,7 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:53798:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/37/53798.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19115 (all parts)</docidentifier>
+  <docidentifier type="iso-undated">iso-undated ISO 19115 (all parts)</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 19115(E) (all parts)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:19115:ser</docidentifier><docidentifier scope="biblio-tag">ISO 19115 (all parts)</docidentifier>
   <docnumber>19115</docnumber>
@@ -3127,7 +3138,7 @@ sourcecode .nt {
         
 <name>Geographic information/Geomatics</name>
 
-        <identifier id="_fdfd5910-bd92-906c-653c-1a522aa568f9">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_fdfd5910-bd92-906c-653c-1a522aa568f9">ISO/TC 211</semx></tt></fmt-identifier>
+        <identifier id="_dfafd253-d77e-f464-03f0-951f7c6d4ff3">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_dfafd253-d77e-f464-03f0-951f7c6d4ff3">ISO/TC 211</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3227,6 +3238,7 @@ sourcecode .nt {
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:53798:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/05/37/53798.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19115-1:2014</docidentifier>
+      <docidentifier type="iso-undated">ISO 19115-1</docidentifier>
       <docidentifier type="iso-reference">ISO 19115-1:2014(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:19115:-1:stage-90.92</docidentifier>
       <docnumber>19115</docnumber>
@@ -3255,7 +3267,7 @@ sourcecode .nt {
             
 <name>Geographic information/Geomatics</name>
 
-            <identifier id="_24e19f4c-672a-b061-9533-7b405ff8fbc7">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_24e19f4c-672a-b061-9533-7b405ff8fbc7">ISO/TC 211</semx></tt></fmt-identifier>
+            <identifier id="_f6fabe8b-7c3d-afbe-8fee-bf26d786f838">ISO/TC 211</identifier><fmt-identifier><tt><semx element="identifier" source="_f6fabe8b-7c3d-afbe-8fee-bf26d786f838">ISO/TC 211</semx></tt></fmt-identifier>
           </subdivision>
           <abbreviation>ISO</abbreviation>
         </organization>
@@ -3357,8 +3369,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="S101" type="standard" schema-version="v1.5.6" anchor="S101" semx-id="_f21e5114-0181-0007-d22f-af8692f3b44a"><biblio-tag>[3]<tab/></biblio-tag><formattedref>S-101 edition 1.0.0: ENC Product Specification, International Hydrographic Organization, committee, International Hydrographic Organization (<fmt-link target="https://registry.iho.int/productspec/view.do?idx=78&amp;product_ID=S-101">https://registry.iho.int/productspec/view.do?idx=78&amp;product_ID=S-101</fmt-link>).</formattedref>
-  <fetched>2026-06-30</fetched>
+<bibitem id="S101" type="standard" schema-version="v1.5.6" anchor="S101" semx-id="_097ec704-7539-f7db-c483-ae8c77213048"><biblio-tag>[3]<tab/></biblio-tag><formattedref>S-101 edition 1.0.0: ENC Product Specification, International Hydrographic Organization, committee, International Hydrographic Organization (<fmt-link target="https://registry.iho.int/productspec/view.do?idx=78&amp;product_ID=S-101">https://registry.iho.int/productspec/view.do?idx=78&amp;product_ID=S-101</fmt-link>).</formattedref>
+  <fetched>2026-09-23</fetched>
   
 <title language="en" type="main">ENC Product Specification</title>
 

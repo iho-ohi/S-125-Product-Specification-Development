@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.5.6">
-  <fetched>2026-06-30</fetched>
+  <fetched>2026-09-23</fetched>
   <title language="en" script="Latn" type="title-intro">Geographic information</title>
   <title language="en" script="Latn" type="title-main">Portrayal</title>
   <title language="en" script="Latn" type="main">Geographic information - Portrayal</title>
@@ -10,6 +10,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46226:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/62/46226.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19117:2012</docidentifier>
+  <docidentifier type="iso-undated">ISO 19117</docidentifier>
   <docidentifier type="iso-reference">ISO 19117:2012(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19117:stage-90.93</docidentifier>
   <docnumber>19117</docnumber>

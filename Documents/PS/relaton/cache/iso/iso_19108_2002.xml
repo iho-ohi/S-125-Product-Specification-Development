@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.5.6">
-  <fetched>2026-06-30</fetched>
+  <fetched>2026-09-23</fetched>
   <title language="en" script="Latn" type="title-intro">Geographic information</title>
   <title language="en" script="Latn" type="title-main">Temporal schema</title>
   <title language="en" script="Latn" type="main">Geographic information - Temporal schema</title>
@@ -10,8 +10,9 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26013:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26013.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19108:2002</docidentifier>
+  <docidentifier type="iso-undated">ISO 19108</docidentifier>
   <docidentifier type="iso-reference">ISO 19108:2002(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19108</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19108:stage-90.93</docidentifier>
   <docnumber>19108</docnumber>
   <date type="published">
     <on>2002-09-12</on>
@@ -43,7 +44,7 @@
   <abstract language="en" script="Latn">ISO 19108:2002 defines concepts for describing temporal characteristics of geographic information. It depends upon existing information technology standards for the interchange of temporal information. It provides a basis for defining temporal feature attributes, feature operations, and feature associations, and for defining the temporal aspects of metadata about geographic information. Since this International Standard is concerned with the temporal characteristics of geographic information as they are abstracted from the real world, it emphasizes valid time rather than transaction time.</abstract>
   <status>
     <stage>90</stage>
-    <substage>60</substage>
+    <substage>93</substage>
   </status>
   <copyright>
     <from>2002</from>
