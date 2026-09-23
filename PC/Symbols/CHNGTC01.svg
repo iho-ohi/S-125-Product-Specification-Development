@@ -8,7 +8,7 @@
       <Description publisher="IHB" creationDate="2022-10-26" source="S52Preslib4.0" format="S100SVG" version="0.1" />
     </S100SVG>
   </metadata>
-  <rect class="symbolBox layout" fill="none" x="-15.75" y="2.09" height="14.9" width="17.82" />
+  <rect class="symbolBox layout" fill="none" x="-15.75" y="-12.81" height="14.9" width="17.82" />
   <rect class="svgBox layout" fill="none" x="-15.75" y="-12.81" height="14.9" width="17.82" />
   <path d=" M -14.75,-7.94 L -7.78,-7.94 L -7.78,-11.78 L -14.75,-11.81 L -14.75,-7.94" class="sl f0 sCHMGD" style="stroke-width:0.64;" />
   <circle cx="-0.01" cy="0.01" r="1.08" class="sl f0 sCHMGD" style="stroke-width:0.64" />
