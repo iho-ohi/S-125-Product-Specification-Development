@@ -1,6 +1,10 @@
 # S-125-Product-Specification-Development
 S-125 Product Specification Development Collaboration space for IHO Nautical Information Provision Working Group for the development of S-125 PS.
 
+## 2026-09-23
+Referenced external resources partly removed and partly re-organized into folder *_archive*.
+S-201 is now available in IALA-IGO github repository: https://github.com/IALA-IGO/S-201_AtoN-Information
+ 
 ## 2026-03-26
 Updated according to discussions in the S-125TG (draft ed1.0.0)
 
