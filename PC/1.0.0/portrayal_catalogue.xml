@@ -45,7 +45,7 @@
 			<fileName>CHNGCC01.svg</fileName>
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
-		</symbol>		
+		</symbol>
 		<symbol id="CHNGDC01">
 			<description>
 				<name>CHNGDC01</name>
@@ -75,7 +75,7 @@
 			<fileName>CHNGSC01.svg</fileName>
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
-		</symbol>		
+		</symbol>
 		<symbol id="CHNGTC01">
 			<description>
 				<name>CHNGTC01</name>
@@ -125,7 +125,7 @@
 			<fileName>CHNGSC02.svg</fileName>
 			<fileType>Symbol</fileType>
 			<fileFormat>SVG</fileFormat>
-		</symbol>				
+		</symbol>
 		<symbol id="CHNGTC02">
 			<description>
 				<name>CHNGTC02</name>
@@ -224,15 +224,21 @@
 		</displayPlane>
 	</displayPlane>
 	<context>
-		<parameter id="ATON_STATUS_SYMBOL_MODE">
-			<description>
-				<name>ATON_STATUS_SYMBOL_MODE</name>
-				<description>ATON_STATUS_SYMBOL_MODE</description>
+	  	<parameter id="PreferredLanguage">
+       		<description>
+				<name>Preferred language</name>
+				<description>3-letter language code. Selects preferred language for chart text.</description>
 				<language>eng</language>
-			</description>
-			<type>Boolean</type>
-			<default>true</default>
-		</parameter>
+       		</description>
+       		<type>String</type>
+       		<default>eng</default>
+	   		<validate>
+      			<regex>^[a-z]{3}(?:\s*,\s*[a-z]{3})*$</regex>
+				<errorMessage>
+					<text>Must be three lower-case characters</text>
+				</errorMessage>
+	   		</validate>
+     	</parameter>
 	</context>
 	<rules>
 		<ruleFile id="1">
@@ -241,9 +247,9 @@
 				<description>main</description>
 				<language>eng</language>
 			</description>
-			<fileName>main.xsl</fileName>
+			<fileName>main.lua</fileName>
 			<fileType>Rule</fileType>
-			<fileFormat>XSLT</fileFormat>
+			<fileFormat>LUA</fileFormat>
 			<ruleType>TopLevelTemplate</ruleType>
 		</ruleFile>
 		<ruleFile id="2">
@@ -252,9 +258,63 @@
 				<description>AtoNStatusIndication</description>
 				<language>eng</language>
 			</description>
-			<fileName>AtoNStatusIndication.xsl</fileName>
+			<fileName>AtoNStatusIndication.lua</fileName>
 			<fileType>Rule</fileType>
-			<fileFormat>XSLT</fileFormat>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="DataCoverage">
+			<description>
+				<name>DataCoverage</name>
+				<description>DataCoverage</description>
+				<language>en</language>
+			</description>
+			<fileName>DataCoverage.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>lua</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="Default">
+			<description>
+				<name>Default</name>
+				<description>Default</description>
+			</description>
+			<fileName>Default.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>lua</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="S100Scripting">
+			<description>
+				<name>S100Scripting</name>
+				<description>S100 Scripting</description>
+				<language>eng</language>
+			</description>
+			<fileName>S100Scripting.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="PortrayalModel">
+			<description>
+				<name>PortrayalModel</name>
+				<description>Portrayal Model</description>
+				<language>eng</language>
+			</description>
+			<fileName>PortrayalModel.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="PortrayalAPI">
+			<description>
+				<name>PortrayalAPI</name>
+				<description>Portrayal API</description>
+				<language>eng</language>
+			</description>
+			<fileName>PortrayalAPI.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
 			<ruleType>SubTemplate</ruleType>
 		</ruleFile>
 	</rules>
